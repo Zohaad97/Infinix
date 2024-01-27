@@ -227,6 +227,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  overflow-y: auto;
 }
 img {
   max-width: 100%;
