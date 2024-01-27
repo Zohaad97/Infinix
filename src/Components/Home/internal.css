@@ -176,7 +176,7 @@
       rotateZ(0) skew(0, 0);
   }
 }
-body {
+.body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: greyscale;
   overflow-x: hidden;
@@ -385,7 +385,7 @@ a[stagger-link] [stagger-link-text="cookie"] {
 
 /* ----------------------------Inside Body CSS------------------------------ */
 
-body {
+.body {
   font-size: 1.0582010582010584vw;
   overscroll-behavior: none;
 }
@@ -398,7 +398,7 @@ body {
 }
 
 @media screen and (min-width: 1700px) {
-  body {
+  .body {
     font-size: 17.98941798941799px;
   }
 }
@@ -533,7 +533,7 @@ input:-webkit-autofill:active {
 }
 
 /* --------------------------------- global w-embedd css-------------------------- */
-body {
+.body {
   font-size: 1.0582010582010584vw;
   overscroll-behavior: none;
 }
@@ -546,7 +546,7 @@ body {
 }
 
 @media screen and (min-width: 1700px) {
-  body {
+  .body {
     font-size: 17.98941798941799px;
   }
 }
@@ -682,7 +682,7 @@ input:-webkit-autofill:active {
 
 /* --------------------------------- global w-embedd 2 css-------------------------- */
 
-body {
+.body {
   font-size: 1.0582010582010584vw;
   overscroll-behavior: none;
 }
@@ -695,7 +695,7 @@ body {
 }
 
 @media screen and (min-width: 1700px) {
-  body {
+  .body {
     font-size: 17.98941798941799px;
   }
 }
@@ -830,150 +830,3 @@ input:-webkit-autofill:active {
 }
 
 /* --------------------------------- global w-embedd 3 css-------------------------- */
-
-body {
-  font-size: 1.0582010582010584vw;
-  overscroll-behavior: none;
-}
-/* Max Font Size */
-
-@media screen and (min-width: 1921px) {
-  .h1.is-home-hero {
-    font-size: 8em;
-  }
-}
-
-@media screen and (min-width: 1700px) {
-  body {
-    font-size: 17.98941798941799px;
-  }
-}
-/* Container Max Width */
-.container {
-  max-width: 1700px;
-}
-
-.no-events,
-.logos-change-wrapper,
-.addifico-sory,
-.footer-image-arrow,
-.nav,
-.navigation,
-.cookie-banner {
-  pointer-events: none;
-}
-
-.nav__logo-wrapper,
-.nav__logo-cta-wrapper,
-.hidden-navigation,
-.cookie__policy-inner {
-  pointer-events: auto;
-}
-
-/* .page__wrap {
-        overflow: clip;
-    } */
-
-.text-balance {
-  text-wrap: balance;
-}
-
-:is (h1, h2, h3, h4, h5, h6, p) a {
-  text-decoration: underline !important;
-}
-
-:root {
-  --bg-0: #fff;
-  --bg-1: #e4ece3;
-  --bg-2: #dcefd8;
-  --bg-3: #43554b;
-  --bg-4: #262d29;
-  --bg-5: #000000;
-  /* --bg-accent: #97d28b; */
-  --bg-accent: white;
-}
-
-.to-clamp {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-textarea {
-  resize: none;
-}
-
-.footer_mail-link-hidden {
-  width: calc(100% - 4em);
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 100px #dcefd8 inset !important;
-  -webkit-text-fill-color: #43554b !important;
-  border: 1px #dcefd8 solid;
-}
-
-/*----------Services Index----------*/
-
-.blog__filter-item .filter__clear-button-warpper .filter__clear-button {
-  transform: scale(0) !important;
-}
-
-.blog__filter-item.fs-cmsfilter_active
-  .filter__clear-button-warpper
-  .filter__clear-button {
-  transform: scale(1) !important;
-}
-
-@media only screen and (max-width: 990px) {
-  .service__single-arrow svg {
-    width: 14px !important;
-    height: 14px !important;
-  }
-
-  .service_single-small-wrapper {
-    max-height: None;
-  }
-
-  .single-service-wrapper:hover .service_single-small-wrapper {
-    max-height: None;
-  }
-
-  .service__single-image-wrap svg {
-    width: 72px !important;
-    height: 72px !important;
-  }
-
-  .swiper-slide {
-    width: 400px !important;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .service__single-arrow svg {
-    width: 12px !important;
-    height: 12px !important;
-  }
-
-  .service__single-image-wrap svg {
-    width: 52px !important;
-    height: 52px !important;
-  }
-
-  .swiper-slide.is-content.w-dyn-item {
-    width: 86% !important;
-  }
-
-  .blog__switcher {
-    overflow: scroll;
-  }
-
-  .home-bg,
-  .section-home-hero {
-    height: calc(100vh - 72px);
-  }
-}
