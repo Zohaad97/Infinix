@@ -20,20 +20,18 @@ import layer_1_6 from "../assets/images/Layer_1 (6).png";
 import layer_1_7 from "../assets/images/Layer_1 (7).png";
 import layer_1_8 from "../assets/images/Layer_1 (8).png";
 import isolationMode from "../assets/images/Isolation_Mode (1).png";
-import MaskGroup from "../assets/images/Mask-group.png"
+import MaskGroup from "../assets/images/Mask-group.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
-import $ from 'jquery';
-import SplitType from 'split-type'
+import $ from "jquery";
+import SplitType from "split-type";
 // import Swiper JS
-import Swiper from 'swiper';
+import Swiper from "swiper";
 // import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 
-gsap.registerPlugin(ScrollTrigger)
-
-
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   useGSAP(() => {
@@ -47,8 +45,6 @@ const Home = () => {
         ease: "power1.inOut",
       }
     );
-
-
 
     let tl = gsap.timeline({
       delay: 0.5,
@@ -68,7 +64,6 @@ const Home = () => {
     }).set(".loader", {
       display: "none",
     });
-
 
     function animateText(textClass, targetClass) {
       let textElements = document.querySelectorAll(textClass);
@@ -147,9 +142,8 @@ const Home = () => {
         path.style.setProperty("--original-color", originalColor);
         path.setAttribute("fill", "currentColor");
       });
-
     });
-  },);
+  });
 
   useEffect(() => {
     window.onbeforeunload = function () {
@@ -162,7 +156,7 @@ const Home = () => {
         window.location.reload(true);
       }
     };
-  }, [])
+  }, []);
 
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", function () {
@@ -254,7 +248,7 @@ const Home = () => {
         console.timeEnd("time1");
       };
     });
-  }, [])
+  }, []);
 
   useEffect(() => {
     let splitText;
@@ -298,10 +292,9 @@ const Home = () => {
         });
       });
     });
-  }, [])
+  }, []);
 
   useEffect(() => {
-
     window.addEventListener("scroll", function () {
       var buttons = document.getElementsByClassName("back-to-top");
       for (var i = 0; i < buttons.length; i++) {
@@ -350,29 +343,23 @@ const Home = () => {
       requestAnimationFrame(scrollStep);
     }
 
-
-
     document.querySelectorAll(".w--current").forEach((el) => {
       let innerDiv = el.querySelector("[stagger-link-text]");
       if (innerDiv) {
         innerDiv.setAttribute("stagger-link-text", "orange");
       }
     });
-  }, [])
+  }, []);
 
-
-  useEffect(() => {
-  })
+  useEffect(() => {});
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
     window.Webflow && window.Webflow.ready();
-    window.Webflow && window.Webflow.require('ix2').init();
-    document.dispatchEvent(new Event('readystatechange'))
-    document.dispatchEvent(new Event('DOMContentLoaded'))
-  })
-
-
+    window.Webflow && window.Webflow.require("ix2").init();
+    document.dispatchEvent(new Event("readystatechange"));
+    document.dispatchEvent(new Event("DOMContentLoaded"));
+  });
 
   return (
     <div className="body">
@@ -900,21 +887,17 @@ const Home = () => {
                 src={background}
                 loading="eager"
                 sizes="(max-width: 479px) 100vw, 97vw"
-                srcset={
-                  (background_500, background_800, background_1080, background)
-                }
+                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
                 className="gradient__image is-home-hero-right"
               />
               <img
                 src={background}
                 loading="eager"
-                sizes="(max-width: 479px) 100vw, 97vw"
-                srcset={
-                  (background_500, background_800, background_1080, background)
-                }
+                sizes="100vw"
+                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
-                className="gradient__image is-home-hero-right"
+                className="gradient__image is-home-hero"
               />
             </div>
           </section>
