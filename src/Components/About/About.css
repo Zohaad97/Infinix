@@ -1,0 +1,42 @@
+.project-heading {
+  color: rgba(255, 255, 255, 1);
+}
+.project-span {
+  color: rgba(105, 211, 219, 1);
+}
+.project-desc {
+  width: 70%;
+  color: rgba(255, 255, 255, 0.83);
+  margin-bottom: 10%;
+}
+.approach-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.approach-right {
+  width: 50%;
+}
+.approach-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  overflow-y: scroll;
+}
+.approach-left-content {
+  margin-bottom: 10%;
+}
+.approach-heading {
+  color: rgba(255, 255, 255, 0.68);
+}
+.approach-left-content img {
+  margin-top: 20%;
+}
+.space-top-10 {
+  margin-top: 5%;
+}
+.line {
+  width: 80vh;
+}

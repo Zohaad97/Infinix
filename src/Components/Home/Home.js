@@ -1,6 +1,5 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
-import animationLogo from "../assets/images/Infinix-logo-animation.gif";
 import layer_1 from "../assets/images/Layer_1.png";
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
@@ -10,10 +9,6 @@ import layer_1_3 from "../assets/images/Layer_1 (3).png";
 import ellipse_6_1 from "../assets/images/Ellipse 6 (1).png";
 import rectangle_9_1 from "../assets/images/Rectangle 9 (1).png";
 import v_rentals from "../assets/images/V-Rentals.png";
-import site2 from "../assets/images/site2.png";
-import tehkom from "../assets/images/tehkom.png";
-import sitee from "../assets/images/sitee.png";
-import general from "../assets/images/general.png";
 import layer_1_4 from "../assets/images/Layer_1 (4).png";
 import layer_1_5 from "../assets/images/Layer_1 (5).png";
 import layer_1_6 from "../assets/images/Layer_1 (6).png";
@@ -30,6 +25,11 @@ import SplitType from "split-type";
 import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
+import Navigation from "../Navigation/Navigation";
+import Loader from "../Loader/Loader";
+import NewsLetter from "../NewsLetter/NewsLetter";
+import Footer from "../Footer/Footer";
+import Project from "../Projects/Project";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -45,17 +45,14 @@ const Home = () => {
         ease: "power1.inOut",
       }
     );
-
     let tl = gsap.timeline({
       delay: 0.5,
       defaults: { duration: 0.2, ease: "power4.out" },
     });
-
     function progressUpdate() {
       let progress = Math.round(this.progress() * 99);
       $(".loader_number").text(progress);
     }
-
     tl.to(".loader_bottom_bar", {
       width: "100%",
       duration: 2.7,
@@ -64,20 +61,16 @@ const Home = () => {
     }).set(".loader", {
       display: "none",
     });
-
     function animateText(textClass, targetClass) {
       let textElements = document.querySelectorAll(textClass);
       let targetDiv = document.querySelector(targetClass);
-
       let endX = targetDiv.getBoundingClientRect().left;
       let endY =
         targetDiv.getBoundingClientRect().top + targetDiv.offsetHeight / 2;
-
       textElements.forEach((textToMove) => {
         let startX = textToMove.getBoundingClientRect().left;
         let startY = textToMove.getBoundingClientRect().top;
         let finalY = endY - textToMove.offsetHeight / 2;
-
         gsap.to(textToMove, {
           x: endX - startX,
           y: finalY - startY,
@@ -90,11 +83,9 @@ const Home = () => {
         });
       });
     }
-
     // Just call these once
     animateText(".move-text-1", ".target-div-1");
     animateText(".move-text-2", ".target-div-2");
-
     document.addEventListener("DOMContentLoaded", function () {
       // Initialize Swiper
       var swiper = new Swiper(".fiverr", {
@@ -112,7 +103,6 @@ const Home = () => {
           disabledClass: "is-disabled",
         },
       });
-
       // Initialize Swiper
       var swiper = new Swiper(".upwork", {
         effect: "cards",
@@ -129,13 +119,11 @@ const Home = () => {
           disabledClass: "is-disabled",
         },
       });
-
       // Append elements
       $(".span-wrapper").each(function (index) {
         let relatedEl = $(".span-element").eq(index);
         relatedEl.appendTo($(this));
       });
-
       // SVG color manipulation
       document.querySelectorAll(".logo__single svg path").forEach((path) => {
         const originalColor = path.getAttribute("fill");
@@ -366,7 +354,7 @@ const Home = () => {
       <div className="globals">
         <div className="w-embed"></div>
         {/* <!-- ------------------------------------------------------------------ NAVIGATION------------------------------------------------------------------ --> */}
-        <div className="nav">
+        {/* <div className="nav">
           <div className="navigation">
             <a
               data-w-id="e2c41eac-496c-f159-1a57-a056f0741e18"
@@ -524,12 +512,7 @@ const Home = () => {
                     </div>
                     <div className="circle-wrapper">
                       <div className="circle"></div>
-                      {/* <!-- <img
-                      src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e8667bfbbf04480e3205e2_Arrow-green.svg"
-                      loading="lazy"
-                      alt=""
-                      className="image-40"
-                    /> --> */}
+            
                     </div>
                   </div>
                 </a>
@@ -743,17 +726,22 @@ const Home = () => {
               className="nav-overlay-closer"
             ></div>
           </div>
-        </div>
+        </div> */}
+
+        <Navigation />
 
         {/* <!-- ------------------------------------------------------------------ Loader ------------------------------------------------------------------ --> */}
-        <div className="loader-logo">
+        {/* <div className="loader-logo">
           <img
             src={animationLogo}
             loading="eager"
             alt=""
             className="loader-image"
           />
-        </div>
+        </div> */}
+
+        <Loader />
+
         {/* <!-- ------------------------------------------------------------------ BANNER------------------------------------------------------------------ --> */}
       </div>
       <main className="page__wrap">
@@ -1243,7 +1231,7 @@ const Home = () => {
         </section>
 
         <section className="section track__record logo-changer">
-          <div className="page-spacing__large is-track-record bg--2 radius-24">
+          {/* <div className="page-spacing__large is-track-record bg--2 radius-24">
             <div className="container-small is-track-record">
               <div className="record-div bg--4">
                 <img
@@ -1274,8 +1262,6 @@ const Home = () => {
                   with Actionable Technologies
                 </span>
               </h2>
-
-              {/* <!-- -----------HERE----------- --> */}
 
               <div className="column-50 flex-vertical is-grid is-footer-grid ">
                 <a className="partner-item" href="/#">
@@ -1368,7 +1354,8 @@ const Home = () => {
                 className="records-arrow"
               />
             </a>
-          </div>
+          </div> */}
+          <Project />
         </section>
         <section className="section is-full logo-changer is-logos">
           <div className="logos_section radius-36">
@@ -1901,7 +1888,7 @@ const Home = () => {
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
-              <div className="blog__newsletter-wrapper is-home radius-16">
+              {/* <div className="blog__newsletter-wrapper is-home radius-16">
                 <div className="container-small is-inner-related">
                   <div className="newsletter__home-heading">
                     <div className="newsletter__heading-text">
@@ -1994,9 +1981,11 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="footer-new">
+              <NewsLetter />
+
+              {/* <div className="footer-new">
                 <div className="footer-content-row">
                   <h3 className="text-3 h3">
                     Seeking Inspiration for Activations? Let's Collaborate!
@@ -2026,7 +2015,9 @@ const Home = () => {
                     ©2023 infinix technology solutions Ltd.
                   </div>
                 </div>
-              </div>
+              </div> */}
+
+              <Footer />
             </div>
           </div>
         </section>
@@ -2238,7 +2229,7 @@ const Home = () => {
                 <div className="nav_main-top-wrapper">
                   <a
                     stagger-link=""
-                    href="/services"
+                    href="/Services"
                     className="menu-link w-inline-block"
                   >
                     <div className="nav_main-text-wrapper">
@@ -2302,7 +2293,7 @@ const Home = () => {
                   </a>
                   <a
                     stagger-link=""
-                    href="/about-us"
+                    href="/About"
                     className="menu-link w-inline-block"
                   >
                     <div className="nav_main-text-wrapper">
@@ -2412,14 +2403,17 @@ const Home = () => {
             ></div>
           </div>
         </div>
-        <div className="loader-logo">
+        {/* <div className="loader-logo">
           <img
             src={animationLogo}
             loading="eager"
             alt=""
             className="loader-image"
           />
-        </div>
+        </div> */}
+
+        <Loader />
+
         <div fs-cc="banner" className="cookie-banner">
           <div className="cookie__policy-inner">
             <div className="lottie-wrapper">

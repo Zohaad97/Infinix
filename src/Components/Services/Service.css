@@ -1,0 +1,24 @@
+.service-heading {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 5%;
+}
+.service-container {
+  display: flex;
+}
+.center-service {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.services-sticky .quest-text {
+  width: "100%";
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 20px;
+  color: rgba(185, 185, 185, 1);
+}
+.button-outter .service-btn {
+  display: flex;
+  background-color: red;
+  justify-content: center;
+}
