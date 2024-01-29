@@ -6616,6 +6616,37 @@ a {
   background-color: rgba(254, 107, 107, 0.27);
   border-radius: 16px;
 }
+
+.floating-button-container {
+  /* position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 5; */
+ 
+  z-index: 5;
+  position: fixed;
+  bottom: -450px; /* Initially hide the button off the screen */
+  right: 20px;
+  transition: bottom 1s ease;
+}
+
+.floating-button-container.show {
+  bottom: 50px; /* Show the button */
+}
+
+.floating-button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.home__hero-arrrow-floating  {
+  width: 100px;
+  height: 100px; 
+
+}
+
+
+
 .cookie-banner {
   z-index: 2000;
   width: 100%;
@@ -8781,7 +8812,7 @@ a {
     z-index: 4;
     width: 48px;
     height: 50px;
-    top: 27%;
+    top: 25%;
     bottom: auto;
     right: 4px;
   }

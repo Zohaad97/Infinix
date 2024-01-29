@@ -288,6 +288,9 @@ const Home = () => {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       var buttons = document.getElementsByClassName("back-to-top");
+      let showReelContainer = document.getElementsByClassName("floating-button-container");
+      let showReel = document.getElementsByClassName("floating-button");
+
       for (var i = 0; i < buttons.length; i++) {
         if (window.scrollY > 20) {
           buttons[i].style.display = "flex";
@@ -295,6 +298,14 @@ const Home = () => {
           buttons[i].style.display = "none";
         }
       }
+      if (window.scrollY > window.innerHeight) {
+        showReelContainer[0].style.bottom = "50px"
+        showReel[0].style.display = "flex"
+      } else {
+         showReelContainer[0].style.bottom = "-450px"
+        showReel[0].style.display = "none"
+      }
+
     });
 
     // Scroll to the top with a 2-second duration when any button is clicked
@@ -354,6 +365,21 @@ const Home = () => {
 
   return (
     <div className="body">
+      <div className="floating-button-container">
+
+        <button
+          href="#difference"
+          className="floating-button"
+        >
+         
+          <img
+            src={Group_3}
+            loading="lazy"
+            alt=""
+            className="home__hero-arrrow-floating"
+          />
+        </button>
+      </div>
       <div className="globals">
         <div className="w-embed"></div>
         {/* <!-- ------------------------------------------------------------------ NAVIGATION------------------------------------------------------------------ --> */}
@@ -1450,9 +1476,9 @@ const Home = () => {
                 ></div>
               </div>
               <div className="logo__single is-empty hide-on-mobile"></div>
-              
-           
-    
+
+
+
               <div className="logo__double bg-dark hide-on-mobile"></div>
               <div className="logo__single is-empty hide-on-mobile"></div>
 
@@ -1477,9 +1503,9 @@ const Home = () => {
                     className="logo__single-wrapper is-1"
                   >
                     <img src={BrandPartner} />
-        
-                    </div>
-                
+
+                  </div>
+
                 </div>
 
               </div>
