@@ -5603,9 +5603,15 @@ a {
   top: auto;
   bottom: 0;
   left: auto;
-  right: -2.7%;
+  right: -0.7%;
   overflow: hidden;
 }
+
+.home__hero-arrow-wrap .home__hero-arrrow  {
+  width: 100px;
+  height: 100px; 
+}
+
 .home__hero-arrrow {
   width: 40%;
 }
