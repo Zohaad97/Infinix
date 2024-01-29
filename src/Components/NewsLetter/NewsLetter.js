@@ -1,3 +1,4 @@
+import RightArrow from "../assets/images/right-arrow.svg"
 const NewsLetter = () => {
   return (
     <div className="blog__newsletter-wrapper is-home radius-16">
@@ -60,14 +61,14 @@ const NewsLetter = () => {
                   data-w-id="bd262f9d-3f0a-c3cc-1540-073a764f18d0"
                   loading="lazy"
                   alt=""
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e8667bfbbf04480e3205e2_Arrow-green.svg"
+                  src={RightArrow}
                   className="newsletter__arrow rel"
                 />
                 <img
                   data-w-id="f919849e-39d4-53c8-64af-1f1f3e944daf"
                   loading="lazy"
                   alt=""
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e8667bfbbf04480e3205e2_Arrow-green.svg"
+                  src={RightArrow}
                   className="newsletter__arrow ap"
                 />
               </div>
