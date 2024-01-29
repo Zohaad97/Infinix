@@ -4877,6 +4877,10 @@ a {
   width: 100%;
 }
 
+.footer-content-row .address {
+  text-decoration: underline;
+}
+
 .text-right-align {
   text-align: right;
 }
