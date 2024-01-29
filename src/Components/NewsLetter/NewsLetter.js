@@ -37,7 +37,7 @@ const NewsLetter = () => {
                 maxlength="256"
                 name="fields[email]"
                 data-name="fields[email]"
-                placeholder="Email"
+                placeholder="Email Address"
                 type="email"
                 id="fields[email]"
                 required=""

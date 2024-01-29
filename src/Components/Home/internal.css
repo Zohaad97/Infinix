@@ -66,6 +66,7 @@
     transform: translate3d(-6px, 6px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
       rotateZ(0) skew(0, 0);
     opacity: 0.16;
+    color: red;
   }
   html.w-mod-js:not(.w-mod-ix)
     [data-w-id="6a575794-c216-6f9f-0477-527f51640c02"] {

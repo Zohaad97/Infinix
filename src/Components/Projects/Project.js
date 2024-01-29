@@ -2,44 +2,27 @@ import site2 from "../assets/images/site2.png";
 import tehkom from "../assets/images/tehkom.png";
 import sitee from "../assets/images/sitee.png";
 import general from "../assets/images/general.png";
+import Arrow_5 from "../assets/images/Arrow_5.png";
 const Project = () => {
   return (
     <div className="page-spacing__large is-track-record bg--2 radius-24">
       <div className="container-small is-track-record">
         <div className="record-div bg--4">
-          <img
-            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb532cc6cfc5af6123a385_frame-top-right-outside.svg"
-            loading="lazy"
-            alt=""
-            className="cut-edge top-right-outside is-record is-hidden-on-desktop"
-          />
-          <img
-            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb532cc6cfc5af6123a385_frame-top-right-outside.svg"
-            loading="lazy"
-            alt=""
-            className="cut-edge top-right-outside is-record"
-          />
-          <img
-            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb539f0f9044a1a9b1bb8a_frame-top-left-outside.svg"
-            loading="lazy"
-            alt=""
-            className="cut-edge top-left-outside"
-          />
           <div className="record__heading-div">
             <h2 className="p-leading opacity-06">Projects</h2>
           </div>
         </div>
-        <h2 className="project-heading">
-          Elevate Your Business
-          <span className="project-span">with Actionable Technologies</span>
+        <h2 className="project-blue-text">
+          Elevate Your Business &nbsp;
+          <span className="project-heading">with Actionable Technologies</span>
         </h2>
 
-        <div className="column-50 flex-vertical is-grid is-footer-grid ">
+        <div className="column-50 flex-vertical is-grid is-footer-grid space-top">
           <a className="partner-item" href="/#">
             <img src={site2} alt="partner" />
             <h4 className="project-heading4">
               SITE <br />
-              GITEX 2023
+              <span className="project-desc">GITEX 2023</span>
             </h4>
 
             <div className="view-button">View</div>
@@ -51,7 +34,7 @@ const Project = () => {
             <h4 className="project-heading4">
               TAHAKOM
               <br />
-              GITEX 2023
+              <span className="project-desc"> GITEX 2023</span>
             </h4>
 
             <div className="view-button">View</div>
@@ -61,7 +44,7 @@ const Project = () => {
             <img src={sitee} alt="Sitee" />
             <h4 className="project-heading4">
               Site <br />
-              GITEX 2023
+              <span className="project-desc"> GITEX 2023</span>
             </h4>
 
             <div className="view-button">View</div>
@@ -72,7 +55,7 @@ const Project = () => {
             <h4 className="project-heading4">
               GE, General Electric
               <br />
-              Arab health 2023
+              <span className="project-desc"> Arab health 2023</span>
             </h4>
 
             <div className="view-button">View</div>
@@ -95,15 +78,12 @@ const Project = () => {
             alt=""
             className="cut-edge bottom-left-outside"
           />
-          <div
-            data-w-id="2f6abd90-5562-7b73-88e4-b9bcc1cdd38d"
-            className="whyus__expand is-logos"
-          >
-            <div className="whyus__vertical bg-accent"></div>
-            <div className="whyus__horizontal is-horizontal bg-accent"></div>
-          </div>
+
           <div className="p-body opacity-08 lighter line-height-1">
             View all
+          </div>
+          <div className="whyus__expand is-logos">
+            <img src={Arrow_5} alt="" />
           </div>
         </div>
       </div>

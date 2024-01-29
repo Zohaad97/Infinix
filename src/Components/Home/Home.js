@@ -14,6 +14,9 @@ import layer_1_5 from "../assets/images/Layer_1 (5).png";
 import layer_1_6 from "../assets/images/Layer_1 (6).png";
 import layer_1_7 from "../assets/images/Layer_1 (7).png";
 import layer_1_8 from "../assets/images/Layer_1 (8).png";
+import Arrow_1 from "../assets/images/Arrow_1.png";
+import infinicx_icon from "../assets/images/infinicx icon.png";
+import Group_3 from "../assets/images/Group_3.png";
 import isolationMode from "../assets/images/Isolation_Mode (1).png";
 import MaskGroup from "../assets/images/Mask-group.png";
 import { gsap, ScrollTrigger } from "gsap/all";
@@ -756,7 +759,7 @@ const Home = () => {
           >
             <div className="page-spacing__medium test">
               <div className="container-large hero-content">
-                <div className="p-body-normal text-2 opacity-04 narrower is-home-hero">
+                <div className="p-body-normal text-2 narrower is-home-hero">
                   Competitive Edge through Creativity &amp; Technology
                 </div>
                 <div className="homehero__text-wrapper">
@@ -794,7 +797,7 @@ const Home = () => {
                     <div className="home-cta_span">
                       <div className="span-element">
                         <img
-                          src={layer_1}
+                          src={infinicx_icon}
                           loading="lazy"
                           data-w-id="4fc866e3-082c-1bfd-b8a2-f1a19295f086"
                           alt=""
@@ -823,13 +826,13 @@ const Home = () => {
                 className="home__hero-arrow-wrap w-inline-block"
               >
                 <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5ea52cb1f1c2f3250e751_VerticalDarkArrow.svg"
+                  src={Group_3}
                   loading="lazy"
                   alt=""
                   className="home__hero-arrrow hide-on-mobile"
                 />
                 <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb54a1ae5e8c4c700b121b_Arrow-bottom.svg"
+                  src={Group_3}
                   loading="lazy"
                   alt=""
                   className="home__hero-arrrow hide-on-desktop"
@@ -906,12 +909,12 @@ const Home = () => {
                   <div className="spacing-container-02"></div>
                   <div
                     data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
-                    className="separator bg--1 opacity-02"
+                    className="separator bg--0"
                   ></div>
                   <div className="spacing-container-02"></div>
                   <div className="home__about-wrapper-inner">
                     <div className="column-50 flex-vertical">
-                      <div className="p-body text-2 text-lighter sticky-heading opacity-07 mobile-h2">
+                      <div className="p-body text-2 text-lighter sticky-heading mobile-h2">
                         Why we exist?
                       </div>
                     </div>
@@ -947,7 +950,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <section className="section is-service z-index-5">
+        {/* <section className="section is-service z-index-5">
           <div className="page-spacing__large">
             <div className="container-small is-service">
               <div
@@ -1012,20 +1015,8 @@ const Home = () => {
                                 data-w-id="fd334e19-8828-bb58-a856-8e50d2e6adda"
                                 className="service__single-arrow w-embed"
                               >
-                                <svg
-                                  width="0.9em"
-                                  height="0.9em"
-                                  viewBox="0 0 17 17"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M13.5858 2L1.00003 2V0L16 0C16.5523 0 17 0.447715 17 1V16L15 16V3.41421L1.90384 16.5104L0.489624 15.0962L13.5858 2Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
+                          
+                                <img src={Arrow_1} alt="" />
                               </div>
                             </a>
                           </div>
@@ -1076,20 +1067,8 @@ const Home = () => {
                                 data-w-id="fd334e19-8828-bb58-a856-8e50d2e6adda"
                                 className="service__single-arrow w-embed"
                               >
-                                <svg
-                                  width="0.9em"
-                                  height="0.9em"
-                                  viewBox="0 0 17 17"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M13.5858 2L1.00003 2V0L16 0C16.5523 0 17 0.447715 17 1V16L15 16V3.41421L1.90384 16.5104L0.489624 15.0962L13.5858 2Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
+                      
+                                <img src={Arrow_1} alt="" />
                               </div>
                             </a>
                           </div>
@@ -1141,20 +1120,8 @@ const Home = () => {
                                 data-w-id="fd334e19-8828-bb58-a856-8e50d2e6adda"
                                 className="service__single-arrow w-embed"
                               >
-                                <svg
-                                  width="0.9em"
-                                  height="0.9em"
-                                  viewBox="0 0 17 17"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M13.5858 2L1.00003 2V0L16 0C16.5523 0 17 0.447715 17 1V16L15 16V3.41421L1.90384 16.5104L0.489624 15.0962L13.5858 2Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
+                      
+                                <img src={Arrow_1} alt="" />
                               </div>
                             </a>
                           </div>
@@ -1203,20 +1170,8 @@ const Home = () => {
                                 data-w-id="fd334e19-8828-bb58-a856-8e50d2e6adda"
                                 className="service__single-arrow w-embed"
                               >
-                                <svg
-                                  width="0.9em"
-                                  height="0.9em"
-                                  viewBox="0 0 17 17"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M13.5858 2L1.00003 2V0L16 0C16.5523 0 17 0.447715 17 1V16L15 16V3.41421L1.90384 16.5104L0.489624 15.0962L13.5858 2Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
+                          
+                                <img src={Arrow_1} alt="" />
                               </div>
                             </a>
                           </div>
@@ -1228,7 +1183,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="section track__record logo-changer">
           {/* <div className="page-spacing__large is-track-record bg--2 radius-24">
