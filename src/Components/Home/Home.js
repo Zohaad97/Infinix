@@ -1,6 +1,6 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
-import layer_1 from "../assets/images/Layer_1.png";
+import BrandPartner from "../assets/images/brand_partner.svg";
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
@@ -1449,7 +1449,41 @@ const Home = () => {
                   className="logo-cover"
                 ></div>
               </div>
-              <div className="logo__single is-empty"></div>
+              <div className="logo__single is-empty hide-on-mobile"></div>
+              
+           
+    
+              <div className="logo__double bg-dark hide-on-mobile"></div>
+              <div className="logo__single is-empty hide-on-mobile"></div>
+
+              <div className="logo__heading-brand flex-row justfiy-space-between">
+
+                <h2 className="h3 opacity-05 text-3 line-height-1-1 is-logos">
+                  Brand Partner
+                </h2>
+                <div className="logo__single is-empty hide-on-mobile"></div>
+                <div className="logo__single-brand-partner bg-dark">
+                  <div
+                    style={{
+                      WebkitTransform:
+                        "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
+                      MozTransform:
+                        "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
+                      msTransform:
+                        "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
+                      transform:
+                        "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
+                    }}
+                    className="logo__single-wrapper is-1"
+                  >
+                    <img src={BrandPartner} />
+        
+                    </div>
+                
+                </div>
+
+              </div>
+
             </div>
           </div>
         </section>

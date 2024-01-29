@@ -14,7 +14,7 @@ const Footer = () => {
 
         <a href="https://www.termsfeed.com/live/92952038-c087-42ad-8648-b0d9b07d85c2" target="_blank" className="text-2 p-small text-balance spacing-top-02">Privacy Policy</a>
       </div>
-      <div className="footer-content-row">
+      <div className="footer-content-row text-right-align">
         <h4>
           <a
             className="text-3 h3 line-height-1-1 text-blue"
