@@ -342,7 +342,7 @@ const Home = () => {
     });
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -531,7 +531,7 @@ const Home = () => {
                   <div className="spacing-container-02"></div>
                   <div className="home__about-wrapper-inner">
                     <div className="column-50 flex-vertical">
-                      <div className="font-normal text-2 text-lighter sticky-heading mobile-h2">
+                      <div className="p-body-normal text-2 text-lighter sticky-heading mobile-h2">
                         Why we exist?
                       </div>
                     </div>

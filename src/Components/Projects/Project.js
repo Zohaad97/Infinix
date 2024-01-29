@@ -5,7 +5,7 @@ import general from "../assets/images/general.png";
 import Arrow_5 from "../assets/images/Arrow_5.png";
 const Project = () => {
   return (
-    <div className="page-spacing__large is-track-record bg--2 radius-24">
+    <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
       <div className="container-small is-track-record">
         <div className="record-div bg--4">
           <div className="record__heading-div">
@@ -64,19 +64,7 @@ const Project = () => {
           </a>
         </div>
         <div className="logos-expander bg--4">
-          <img
-            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb59905eb38b96ebae57ed_bottom-left-ouside.svg"
-            loading="lazy"
-            alt=""
-            className="cut-edge top-only"
-          />
-          <img
-            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb59905eb38b96ebae57ed_bottom-left-ouside.svg"
-            loading="lazy"
-            alt=""
-            className="cut-edge bottom-left-outside"
-          />
-
+  
           <div className="p-body opacity-05 lighter line-height-1">
             View all
           </div>

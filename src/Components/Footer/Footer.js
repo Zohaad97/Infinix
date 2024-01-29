@@ -7,10 +7,12 @@ const Footer = () => {
         </h3>
 
         <div className="text-2 text-balance spacing-top-04">We are social:</div>
-        <div className="text-2 text-balance text-blue">
-          Instagram / Facebook / Linkedin
-        </div>
-        <div className="text-2 text-balance spacing-top-02">Privacy Policy</div>
+       
+       <div>
+          <a className="text-2 text-balance text-blue" href="https://www.instagram.com/infinixinnovations?igsh=MXVqaHV2emVxdHRiZA%3D%3D&utm_source=qr" target="_blank">Instagram</a> <span style={{fontSize:16}} className="text-2 text-balance">&nbsp;/&nbsp;</span> <a className="text-2 text-balance text-blue" href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO" target="_blank">Facebook</a> 
+          </div>
+
+        <a href="https://www.termsfeed.com/live/92952038-c087-42ad-8648-b0d9b07d85c2" target="_blank" className="text-2 p-small text-balance spacing-top-02">Privacy Policy</a>
       </div>
       <div className="footer-content-row">
         <h4>
@@ -29,8 +31,13 @@ const Footer = () => {
             support@infinix.com
           </a>
         </h4>
-        <h4>Business Center 1,</h4>
-        <h5>M Floor, The Meydan Hotel,Nad Al Sheba, Dubai, U.A.E.</h5>
+        <h4> 
+          <a  
+        href="https://www.google.com/maps?q=LATITUDE,LONGITUDE" target="_blank">Business Center 1,</a></h4>
+        <h5>
+          <a  
+        href="https://www.google.com/maps?q=LATITUDE,LONGITUDE" target="_blank">M Floor, The Meydan Hotel,Nad Al Sheba, Dubai, U.A.E.</a>
+          </h5>
 
         <div className="text-2 spacing-top-08">
           <p>©2023 infinix technology solutions Ltd.</p>

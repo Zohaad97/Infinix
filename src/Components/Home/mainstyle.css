@@ -2640,7 +2640,7 @@ a {
   .partner-item .description {
     width: auto;
     height: 50px;
-    font-size: 16px;
+    font-size: 12px;
   }
   .partner-item h4 {
     font-size: 17px;
@@ -3425,6 +3425,12 @@ a {
   padding-top: 0;
   padding-bottom: 4em;
 }
+
+.spacing-bottom-04-px {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
 .spacing-bottom-06 {
   padding-top: 0;
   padding-bottom: 6em;
@@ -4818,6 +4824,15 @@ a {
     grid-template-columns: 1fr;
     padding-left: 2em;
     padding-right: 2em;
+  }
+
+  .spacing-bottom-04-px {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  .project-blue-text {
+    font-size: 3.458em;
   }
 }
 
@@ -6766,7 +6781,7 @@ a {
   }
   .p-body-normal,
   .p-body-normal.opacity-03.letter-spacing-0-5.is-bigger {
-    font-size: 18px;
+    font-size: 14px;
   }
   .p-body-normal.text-3.opacity-06.is-faq-answer {
     font-size: 16px;
@@ -7151,7 +7166,7 @@ a {
   }
   .p-leading.line-height-1-1.is-service-single-text {
     padding-right: 10%;
-    font-size: 24px;
+    font-size: 18px;
   }
   .p-leading.is-bigger {
     font-size: 24px;
@@ -7468,7 +7483,7 @@ a {
   }
   .humongus {
     margin-bottom: 12px;
-    font-size: 56px;
+    font-size: 26px;
   }
   .service__slider {
     grid-column-gap: 16px;
@@ -8051,7 +8066,7 @@ a {
     display: none;
   }
   .h1.is-home-hero.mobile {
-    font-size: 56px;
+    font-size: 46px;
   }
   .h1.is-more-services-heading {
     opacity: 0.3;
@@ -8242,7 +8257,7 @@ a {
     width: 100%;
   }
   .p-large.is-90percent {
-    font-size: 32px;
+    font-size: 22px;
   }
   .nav_main-arrow {
     transform: translateY(-3px);

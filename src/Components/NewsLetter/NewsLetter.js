@@ -9,8 +9,8 @@ const NewsLetter = () => {
               miss anything?
             </h2>
           </div>
-          <div className="newsletter__heading-text">
-            <div className="font-normal text-3 text-balance">
+          <div className="newsletter__heading-text spacing-top-02">
+            <div className="p-body-normal text-3 text-balance">
               Sign up for our newsletter to discover winning trends before your
               competition!
             </div>
