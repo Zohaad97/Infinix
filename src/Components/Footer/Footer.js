@@ -33,7 +33,7 @@ const Footer = () => {
         </h4>
         <h4> 
           <a  
-        href="https://www.google.com/maps?q=LATITUDE,LONGITUDE" target="_blank">Business Center 1,</a></h4>
+        href="https://maps.app.goo.gl/Pt4k5ko9j8bEnox69?g_st=ic" target="_blank">Business Center 1,</a></h4>
         <h5>
           <a  
         href="https://www.google.com/maps?q=LATITUDE,LONGITUDE" target="_blank">M Floor, The Meydan Hotel,Nad Al Sheba, Dubai, U.A.E.</a>
