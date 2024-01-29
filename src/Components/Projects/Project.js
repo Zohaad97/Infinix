@@ -14,6 +14,7 @@ const Project = () => {
         </div>
         <h2 className="project-blue-text">
           Elevate Your Business &nbsp;
+          <br />
           <span className="project-heading">with Actionable Technologies</span>
         </h2>
 
@@ -38,7 +39,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Interactive LED</div>
+            <div className="description">Holographic Invisible Screen</div>
           </a>
           <a className="partner-item" href="/#">
             <img src={sitee} alt="Sitee" />
@@ -48,7 +49,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Interactive LED</div>
+            <div className="description">Innovative Presentations</div>
           </a>
           <a className="partner-item" href="/#">
             <img src={general} alt="General" />
@@ -59,13 +60,10 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Interactive LED</div>
+            <div className="description">Immersive room</div>
           </a>
         </div>
-        <div
-          data-w-id="451fff9d-1313-535d-71de-411304f891a0"
-          className="logos-expander bg--4"
-        >
+        <div className="logos-expander bg--4">
           <img
             src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb59905eb38b96ebae57ed_bottom-left-ouside.svg"
             loading="lazy"
@@ -79,7 +77,7 @@ const Project = () => {
             className="cut-edge bottom-left-outside"
           />
 
-          <div className="p-body opacity-08 lighter line-height-1">
+          <div className="p-body opacity-05 lighter line-height-1">
             View all
           </div>
           <div className="whyus__expand is-logos">
