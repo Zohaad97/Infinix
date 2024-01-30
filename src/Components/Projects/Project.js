@@ -27,7 +27,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Interactive LED</div>
+           
           </a>
 
           <a className="partner-item" href="/#">
@@ -39,7 +39,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Holographic Invisible Screen</div>
+           
           </a>
           <a className="partner-item" href="/#">
             <img src={sitee} alt="Sitee" />
@@ -49,7 +49,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Innovative Presentations</div>
+           
           </a>
           <a className="partner-item" href="/#">
             <img src={general} alt="General" />
@@ -60,7 +60,7 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-            <div className="description">Immersive room</div>
+           
           </a>
         </div>
         <div className="logos-expander bg--4">
