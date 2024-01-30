@@ -570,7 +570,7 @@ const Home = () => {
                       <div
                         scrub-each-word=""
                         text-split=""
-                        className="p-large is-90percent"
+                        className="p-large text-balance is-90percent"
                       >
                         At Infinix Innovations, we surpass the role of
                         traditional technology providers We go beyond providing

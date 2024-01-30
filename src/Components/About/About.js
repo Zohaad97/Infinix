@@ -470,7 +470,7 @@ const About = () => {
                 </div>
                 <div
                   data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
-                  className="separator bg--1 opacity-02 line"
+                  className="separator bg--1 opacity-02 seperator-about"
                 ></div>
               </div>
               <div className="approach-left-content">
@@ -488,7 +488,7 @@ const About = () => {
                 </div>
                 <div
                   data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
-                  className="separator bg--1 opacity-02 space-top-10 line"
+                  className="separator bg--1 opacity-02 space-top-10 seperator-about"
                 ></div>
               </div>
               <div className="approach-left-content">
