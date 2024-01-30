@@ -335,7 +335,7 @@ const About = () => {
     });
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -353,7 +353,7 @@ const About = () => {
 
         <Navigation />
 
-        <Loader />
+
 
         {/* <!-- ------------------------------------------------------------------ BANNER------------------------------------------------------------------ --> */}
       </div>
@@ -368,7 +368,7 @@ const About = () => {
             className="section-about-page"
           >
             <div className="page-spacing__medium test">
-              <div className="container-large hero-content">
+              <div className="container-large about-content">
                 <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
                   <div className="about-container container-small is-track-record">
                     <div className="record-div bg--4">
@@ -415,7 +415,25 @@ const About = () => {
                       the most exciting way possible while playing immersive
                       technologies.
                     </div>
-                    <img src={group_12} alt="" />
+                    <div className="about-image">
+
+                      <img  src={group_12} alt="" />
+                      <div className="about-image-overlay">
+                        <span>
+                          <h5 className="about-value-text"> ENGINEERING</h5>
+
+                        </span>
+                        <span>
+                          <h5 className="about-value-text"> COLLABORATION</h5>
+
+                        </span>
+                        <span>
+                          <h5 className="about-value-text"> EXECUTION</h5>
+
+                        </span>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -571,106 +589,6 @@ const About = () => {
             - Market Insights
             <em>that make aDifference</em>
           </span>
-        </div>
-      </div>
-      <div
-        data-w-id="8b82cde6-841a-9fdc-1c1d-2e0f3243441e"
-        style={{
-          opacity: 0,
-        }}
-        className="page-loader"
-      >
-        <div className="loader__inner">
-          <div className="loader__content-wrapper">
-            <div className="column-50 is-home-loader">
-              <div className="loader_changing-content left">
-                <div
-                  data-w-id="da1b112b-1394-6cd9-f561-dbe42e1bd39d"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  className="h2 text-right text-3 opacity-05 line-height-1-5"
-                >
-                  we
-                </div>
-              </div>
-            </div>
-            <div className="column-50 is-home-loader">
-              <div className="loader_changing-content">
-                <div
-                  data-w-id="78bf62d3-ad4e-1ca2-a097-dfd5f0ff7a7d"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  className="loader_changing-inner"
-                >
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    analyze
-                  </div>
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    build
-                  </div>
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    grow
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loader-cut">
-            <img
-              src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650167bcb96ab5cdf6c1a8ae_Sidecut.svg"
-              loading="lazy"
-              style={{
-                WebkitTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                MozTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                msTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                transform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                width: "8em",
-                height: "8em",
-              }}
-              data-w-id="38085e0b-5756-9c0c-5b33-358fa5b5c14f"
-              alt=""
-              className="loader__image"
-            />
-            <div className="loader__numbers">
-              <div
-                data-w-id="dceac674-3e6e-12cd-713b-12e22152d84b"
-                style={{
-                  opacity: 0,
-                  WebkitTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  MozTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  msTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  transform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                }}
-                className="loader_number h3 text-left is-home"
-              >
-                99
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="globals">
@@ -940,7 +858,7 @@ const About = () => {
           </div>
         </div>
 
-        <Loader />
+
 
         <div fs-cc="banner" className="cookie-banner">
           <div className="cookie__policy-inner">
