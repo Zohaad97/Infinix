@@ -21,10 +21,8 @@ import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
 import Navigation from "../Navigation/Navigation";
-import Loader from "../Navigation/Loader/Loader";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
-import Project from "../Projects/Projects";
 import "../About/About.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -310,7 +308,7 @@ const About = () => {
     });
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -323,14 +321,11 @@ const About = () => {
   return (
     <div className="body">
       <div className="globals">
-        <div className="w-embed"></div>
-        {/* <!-- ------------------------------------------------------------------ NAVIGATION------------------------------------------------------------------ --> */}
+
 
         <Navigation />
 
-        <Loader />
 
-        {/* <!-- ------------------------------------------------------------------ BANNER------------------------------------------------------------------ --> */}
       </div>
       <main className="page__wrap">
         <div
@@ -343,7 +338,7 @@ const About = () => {
             className="section-about-page"
           >
             <div className="page-spacing__medium test">
-              <div className="container-large hero-content">
+              <div className="container-large about-content">
                 <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
                   <div className="about-container container-small is-track-record">
                     <div className="record-div bg--4">
@@ -362,43 +357,29 @@ const About = () => {
                       the most exciting way possible while playing immersive
                       technologies.
                     </div>
-                    <img src={group_12} alt="" />
+                    <div className="about-image">
+
+                      <img src={group_12} alt="" />
+                      <div className="about-image-overlay">
+                        <span>
+                          <h5 className="about-value-text"> ENGINEERING</h5>
+
+                        </span>
+                        <span>
+                          <h5 className="about-value-text"> COLLABORATION</h5>
+
+                        </span>
+                        <span>
+                          <h5 className="about-value-text"> EXECUTION</h5>
+
+                        </span>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* <div className="home-bg">
-              <div className="home__hero-bg">
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f2e2314ae531679cb2a32f_Cut-edge-white.svg"
-                  loading="lazy"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  alt=""
-                  className="cut-edge is-home-hero"
-                />
-                <a
-                  href="#difference"
-                  className="cut-edge is-home-hero home-mobile is-link w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650ad622817c9f1e05d281c4_white-side.svg"
-                    loading="lazy"
-                    alt=""
-                    className="cut-edge is-home-hero home-mobile"
-                  />
-                </a>
-              </div>
-            </div> */}
           </section>
         </div>
 
@@ -459,7 +440,7 @@ const About = () => {
         </section>
 
         <div
-          style={{ top: "-20%" }}
+          style={{ top: "-20%", position: 'absolute' }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
         >
@@ -474,7 +455,7 @@ const About = () => {
         </div>
 
         <div
-          style={{ top: "40%" }}
+          style={{ top: "40%",position: 'absolute' }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
         >
@@ -505,442 +486,6 @@ const About = () => {
           </div>
         </section>
       </main>
-      <div
-        data-w-id="25b693c8-060d-6dbd-c653-6e06b7aa6b3c"
-        className="addifico-sory"
-      >
-        <div
-          data-w-id="fdfe489e-a551-9649-4a12-07e994d853d5"
-          className="addifico-story p-body"
-        >
-          <em>Infinix </em>
-          <span className="opacity-05">
-            - Market Insights
-            <em>that make aDifference</em>
-          </span>
-        </div>
-      </div>
-      <div
-        data-w-id="8b82cde6-841a-9fdc-1c1d-2e0f3243441e"
-        style={{
-          opacity: 0,
-        }}
-        className="page-loader"
-      >
-        <div className="loader__inner">
-          <div className="loader__content-wrapper">
-            <div className="column-50 is-home-loader">
-              <div className="loader_changing-content left">
-                <div
-                  data-w-id="da1b112b-1394-6cd9-f561-dbe42e1bd39d"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  className="h2 text-right text-3 opacity-05 line-height-1-5"
-                >
-                  we
-                </div>
-              </div>
-            </div>
-            <div className="column-50 is-home-loader">
-              <div className="loader_changing-content">
-                <div
-                  data-w-id="78bf62d3-ad4e-1ca2-a097-dfd5f0ff7a7d"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 33%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  className="loader_changing-inner"
-                >
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    analyze
-                  </div>
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    build
-                  </div>
-                  <div className="h2 text-left text-3 line-height-1-5">
-                    grow
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="loader-cut">
-            <img
-              src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650167bcb96ab5cdf6c1a8ae_Sidecut.svg"
-              loading="lazy"
-              style={{
-                WebkitTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                MozTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                msTransform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                transform:
-                  "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                width: "8em",
-                height: "8em",
-              }}
-              data-w-id="38085e0b-5756-9c0c-5b33-358fa5b5c14f"
-              alt=""
-              className="loader__image"
-            />
-            <div className="loader__numbers">
-              <div
-                data-w-id="dceac674-3e6e-12cd-713b-12e22152d84b"
-                style={{
-                  opacity: 0,
-                  WebkitTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  MozTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  msTransform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  transform:
-                    "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                }}
-                className="loader_number h3 text-left is-home"
-              >
-                99
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="globals">
-        <div className="w-embed"></div>
-
-        <div fs-cc="banner" className="cookie-banner">
-          <div className="cookie__policy-inner">
-            <div className="lottie-wrapper">
-              <div
-                data-w-id="4f9d4498-162d-967f-5ef7-9caefe7eee86"
-                data-animation-type="lottie"
-                data-src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650c0b0847b5d025005f6823_Cookie.json"
-                data-loop="1"
-                data-direction="1"
-                data-autoplay="1"
-                data-is-ix2-target="0"
-                data-renderer="svg"
-                data-default-duration="20.02001920458794"
-                data-duration="0"
-              ></div>
-            </div>
-            <div className="cookie__text-wrapper">
-              <h3 className="p-body">
-                Hi! Cookies for vibes, emails by choice. Opt-in for news, ok?
-              </h3>
-              <div className="cookie__button-wrapper">
-                <a
-                  stagger-link=""
-                  href="/https://www.upwork.com/freelancers/hristodikov/"
-                  target="_blank"
-                  className="close-button-redirect w-inline-block"
-                >
-                  <div
-                    stagger-link-text="cookie"
-                    className="p-body-normal text-leave underline-link is-cookie"
-                  >
-                    Leave website
-                  </div>
-                </a>
-                <a
-                  fs-cc="close"
-                  stagger-link=""
-                  href="/#"
-                  className="close-button w-inline-block"
-                >
-                  <div
-                    stagger-link-text=""
-                    className="p-body-normal text-accent underline-link is-cookie"
-                  >
-                    Accept &amp; Close
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="globals">
-        <div className="w-embed"></div>
-        <div className="nav">
-          <div className="hidden-navigation">
-            <div className="nav__wrapper">
-              <div className="nav_top-wrapper">
-                <a
-                  stagger-link=""
-                  data-scroll="start"
-                  data-w-id="e2c41eac-496c-f159-1a57-a056f0741e2d"
-                  href="/#"
-                  className="nav_top-single-closer w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e87091a9432f998933e04b_Nav-close.svg"
-                    loading="lazy"
-                    alt=""
-                    className="image-41"
-                  />
-                  <div
-                    stagger-link-text="pale-green"
-                    className="nav-top-closer letter-spacing-0-5 line-height-1 p-body is-nav-closer"
-                  >
-                    close
-                  </div>
-                </a>
-                <div className="nav_top-single">
-                  <div className="p-body nav__top-text letter-spacing-0-5">
-                    menu
-                  </div>
-                </div>
-              </div>
-              <div className="separator-footer bg--1 opacity-01"></div>
-              <div className="nav_main-wrapper">
-                <div className="nav_main-top-wrapper">
-                  <a
-                    stagger-link=""
-                    href="/Services"
-                    className="menu-link w-inline-block"
-                  >
-                    <div className="nav_main-text-wrapper">
-                      <div
-                        stagger-link-text="white"
-                        className="h3 line-height-1"
-                      >
-                        Services
-                      </div>
-                    </div>
-                    <div className="nav_main-arrow">
-                      <div className="nav-arrow w-embed">
-                        <svg
-                          width="0.9em"
-                          height="0.9em"
-                          viewBox="0 0 15 14"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    stagger-link=""
-                    href="/resources"
-                    className="menu-link w-inline-block"
-                  >
-                    <div className="nav_main-text-wrapper">
-                      <div
-                        stagger-link-text="white"
-                        className="h3 line-height-1"
-                      >
-                        Resources
-                      </div>
-                    </div>
-                    <div className="nav_main-arrow">
-                      <div className="nav-arrow w-embed">
-                        <svg
-                          width="0.9em"
-                          height="0.9em"
-                          viewBox="0 0 15 14"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    stagger-link=""
-                    href="/About"
-                    className="menu-link w-inline-block"
-                  >
-                    <div className="nav_main-text-wrapper">
-                      <div
-                        stagger-link-text="white"
-                        className="h3 line-height-1"
-                      >
-                        About
-                      </div>
-                    </div>
-                    <div className="nav_main-arrow">
-                      <div className="nav-arrow w-embed">
-                        <svg
-                          width="0.9em"
-                          height="0.9em"
-                          viewBox="0 0 15 14"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                  <a
-                    stagger-link=""
-                    href="/contact-us"
-                    className="menu-link w-inline-block"
-                  >
-                    <div className="nav_main-text-wrapper">
-                      <div
-                        stagger-link-text="white"
-                        className="h3 line-height-1"
-                      >
-                        Contact
-                      </div>
-                    </div>
-                    <div className="nav_main-arrow">
-                      <div className="nav-arrow w-embed">
-                        <svg
-                          width="0.9em"
-                          height="0.9em"
-                          viewBox="0 0 15 14"
-                          fill="currentColor"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div className="nav_main-bottom-wrapper">
-                  <a
-                    stagger-link=""
-                    href="https://www.upwork.com/freelancers/hristodikov/"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      stagger-link-text=""
-                      className="p-body line-height-1 nav-link-bg"
-                    >
-                      UpWork
-                    </div>
-                  </a>
-                  <a
-                    stagger-link=""
-                    href="https://www.fiverr.com/dikovh"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      stagger-link-text=""
-                      className="p-body line-height-1 nav-link-bg"
-                    >
-                      Fiverr
-                    </div>
-                  </a>
-                  <a
-                    stagger-link=""
-                    href="https://www.linkedin.com/in/hristo-dikov/"
-                    className="menu-link w-inline-block"
-                  >
-                    <div
-                      stagger-link-text=""
-                      className="p-body line-height-1 nav-link-bg"
-                    >
-                      Linkedin
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              data-scroll="start"
-              data-w-id="e2c41eac-496c-f159-1a57-a056f0741e62"
-              className="nav-overlay-closer"
-            ></div>
-          </div>
-        </div>
-
-        <Loader />
-
-        <div fs-cc="banner" className="cookie-banner">
-          <div className="cookie__policy-inner">
-            <div className="lottie-wrapper">
-              <div
-                data-w-id="4f9d4498-162d-967f-5ef7-9caefe7eee86"
-                data-animation-type="lottie"
-                data-src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650c0b0847b5d025005f6823_Cookie.json"
-                data-loop="1"
-                data-direction="1"
-                data-autoplay="1"
-                data-is-ix2-target="0"
-                data-renderer="svg"
-                data-default-duration="20.02001920458794"
-                data-duration="0"
-              ></div>
-            </div>
-            <div className="cookie__text-wrapper">
-              <h3 className="p-body">
-                Hi! Cookies for vibes, emails by choice. Opt-in for news, ok?
-              </h3>
-              <div className="cookie__button-wrapper">
-                <a
-                  href="/#"
-                  stagger-link=""
-                  target="blank"
-                  className="close-button-redirect w-inline-block"
-                >
-                  <div
-                    stagger-link-text="cookie"
-                    className="p-body-normal text-leave underline-link is-cookie"
-                  >
-                    Leave website
-                  </div>
-                </a>
-                <a
-                  fs-cc="close"
-                  stagger-link=""
-                  href="/#"
-                  className="close-button w-inline-block"
-                >
-                  <div
-                    stagger-link-text=""
-                    className="p-body-normal text-accent underline-link is-cookie"
-                  >
-                    Accept &amp; Close
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
