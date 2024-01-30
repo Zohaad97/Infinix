@@ -3,8 +3,16 @@ import tehkom from "../assets/images/tehkom.png";
 import sitee from "../assets/images/sitee.png";
 import general from "../assets/images/general.png";
 import Arrow_5 from "../assets/images/Arrow_5.png";
+import Container from "../base/Container";
 
 const Project = () => {
+  return(
+    <Container title={"Projects"} renderDescription={() =>   <h2 className="project-blue-text">
+    Elevate Your Business &nbsp;
+    <br />
+    <span className="project-heading">with Actionable Technologies</span>
+  </h2>}  />
+  )
   return (
     <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
       <div className="container-small is-track-record">
