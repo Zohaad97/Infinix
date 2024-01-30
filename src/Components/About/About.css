@@ -1,18 +1,32 @@
-.project-heading {
-  color: rgba(255, 255, 255, 1);
+@font-face {
+  font-family: "Universo-bold";
+  src: url("../assets/font/Fontspring-DEMO-universo-bold.otf")
+    format("opentype");
+}
+.about-heading {
+  margin-right: 0;
+  font-family: "Universo-bold";
+  font-size: 59px;
+  font-weight: 400;
 }
 .project-span {
   color: rgba(105, 211, 219, 1);
 }
-.project-desc {
+.about-desc {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
   width: 70%;
   color: rgba(255, 255, 255, 0.83);
   margin-bottom: 10%;
+  line-height: 1.4;
+}
+.blue-text {
+  color: rgba(105, 211, 219, 1);
 }
 .approach-container {
   display: flex;
-  width: 90%;
-  justify-content: space-between;
+  margin-left: 7%;
 }
 
 .approach-right {
@@ -26,10 +40,20 @@
   overflow-y: scroll;
 }
 .approach-left-content {
-  margin-bottom: 10%;
 }
 .approach-heading {
   color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 0;
+}
+.approach-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.83);
+}
+.approach-desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.83);
 }
 .approach-left-content img {
   margin-top: 20%;
@@ -38,5 +62,6 @@
   margin-top: 5%;
 }
 .line {
-  width: 80vh;
+  width: 100vh;
+  margin-top: 10%;
 }

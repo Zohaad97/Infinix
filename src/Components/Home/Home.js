@@ -1,13 +1,13 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
-import layer_1 from "../assets/images/Layer_1.png";
+// import layer_1 from "../assets/images/layer_1.png";
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
 import background_1080 from "../assets/images/background-1080.jpg";
-import layer_1_3 from "../assets/images/Layer_1 (3).png";
-import ellipse_6_1 from "../assets/images/Ellipse 6 (1).png";
-import rectangle_9_1 from "../assets/images/Rectangle 9 (1).png";
+import layer_1_3 from "../assets/images/Vector.svg";
+import ellipse_6_1 from "../assets/images/Ellipse 6 (2).png";
+import programming from "../assets/images/Programming.png";
 import v_rentals from "../assets/images/V-Rentals.png";
 import layer_1_4 from "../assets/images/Layer_1 (4).png";
 import layer_1_5 from "../assets/images/Layer_1 (5).png";
@@ -19,6 +19,7 @@ import infinicx_icon from "../assets/images/infinicx icon.png";
 import Group_3 from "../assets/images/Group_3.png";
 import isolationMode from "../assets/images/Isolation_Mode (1).png";
 import MaskGroup from "../assets/images/Mask-group.png";
+import Interactive_Installation from "../assets/images/Interactive_Installation.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
@@ -29,7 +30,7 @@ import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
 import Navigation from "../Navigation/Navigation";
-import Loader from "../Loader/Loader";
+import Loader from "../Navigation/Loader/Loader";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Project";
@@ -342,7 +343,7 @@ const Home = () => {
     });
   }, []);
 
-  useEffect(() => { });
+  useEffect(() => {});
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -438,23 +439,30 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <a
-                href="#difference"
-                className="home__hero-arrow-wrap w-inline-block"
-              >
-                <img
-                  src={Group_3}
-                  loading="lazy"
-                  alt=""
-                  className="home__hero-arrrow hide-on-mobile"
-                />
-                <img
-                  src={Group_3}
-                  loading="lazy"
-                  alt=""
-                  className="home__hero-arrrow hide-on-desktop"
-                />
-              </a>
+
+              <div>
+                <a
+                  href="#difference"
+                  className="home__hero-arrow-wrap w-inline-block"
+                >
+                  <img
+                    src={Group_3}
+                    loading="lazy"
+                    alt=""
+                    className="home__hero-arrrow hide-on-mobile"
+                  />
+                  <img
+                    src={Group_3}
+                    loading="lazy"
+                    alt=""
+                    className="home__hero-arrrow hide-on-desktop"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="fixed-button" onclick="alert('Button Clicked!')">
+              Click Me
             </div>
             <div className="home-bg">
               <div className="home__hero-bg">
@@ -487,6 +495,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
+
             <div
               data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
               className="gradient__image-wrapper"
@@ -545,7 +554,7 @@ const Home = () => {
                         traditional technology providers We go beyond providing
                         interactive technology for events and exhibitions,
                         specializing in engineering unique products and
-                        solutions. Our dedicationlies in boosting marketing
+                        solutions. Our dedication lies in boosting marketing
                         campaigns by using experiential technology to create
                         state of the art experiences for every project.
                       </div>
@@ -603,7 +612,7 @@ const Home = () => {
                                 className="service__single-text-block"
                               >
                                 <h3 className="p-leading line-height-1-1 is-service-single-text text-balance">
-                                  Interactive Installation
+                                  Immersive Art Installation
                                 </h3>
                                 <div className="service_single-small-wrapper">
                                   <div className="p-small text-4 is-bigger is-services-tablet">
@@ -649,14 +658,17 @@ const Home = () => {
                                 data-w-id="54dc9481-d76e-7894-29d5-a73a0322b026"
                                 className="service__single-image-wrap"
                               >
-                                <img src={ellipse_6_1} alt="service" />
+                                <img
+                                  src={Interactive_Installation}
+                                  alt="service"
+                                />
                               </div>
                               <div
                                 data-w-id="6a575794-c216-6f9f-0477-527f51640c02"
                                 className="service__single-text-block"
                               >
                                 <h3 className="p-leading line-height-1-1 is-service-single-text text-balance">
-                                  Immersive Art Installation
+                                  Interactive Installation
                                 </h3>
                                 <div className="service_single-small-wrapper">
                                   <div className="p-small text-4 is-bigger is-services-tablet">
@@ -700,7 +712,7 @@ const Home = () => {
                                 data-w-id="54dc9481-d76e-7894-29d5-a73a0322b026"
                                 className="service__single-image-wrap"
                               >
-                                <img src={rectangle_9_1} alt="service" />
+                                <img src={programming} alt="service" />
                               </div>
                               <div
                                 data-w-id="6a575794-c216-6f9f-0477-527f51640c02"
@@ -799,130 +811,6 @@ const Home = () => {
         </section>
 
         <section className="section track__record logo-changer">
-          {/* <div className="page-spacing__large is-track-record bg--2 radius-24">
-            <div className="container-small is-track-record">
-              <div className="record-div bg--4">
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb532cc6cfc5af6123a385_frame-top-right-outside.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cut-edge top-right-outside is-record is-hidden-on-desktop"
-                />
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb532cc6cfc5af6123a385_frame-top-right-outside.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cut-edge top-right-outside is-record"
-                />
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb539f0f9044a1a9b1bb8a_frame-top-left-outside.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cut-edge top-left-outside"
-                />
-                <div className="record__heading-div">
-                  <h2 className="p-leading opacity-06">Projects</h2>
-                </div>
-              </div>
-              <h2 className="project-heading">
-                Elevate Your Business
-                <span className="project-span">
-                  with Actionable Technologies
-                </span>
-              </h2>
-
-              <div className="column-50 flex-vertical is-grid is-footer-grid ">
-                <a className="partner-item" href="/#">
-                  <img src={site2} alt="partner" />
-                  <h4 className="project-heading4">
-                    SITE <br />
-                    GITEX 2023
-                  </h4>
-
-                  <div className="view-button">View</div>
-                  <div className="description">Interactive LED</div>
-                </a>
-
-                <a className="partner-item" href="/#">
-                  <img src={tehkom} alt="Tehkom" />
-                  <h4 className="project-heading4">
-                    TAHAKOM
-                    <br />
-                    GITEX 2023
-                  </h4>
-
-                  <div className="view-button">View</div>
-                  <div className="description">Interactive LED</div>
-                </a>
-                <a className="partner-item" href="/#">
-                  <img src={sitee} alt="Sitee" />
-                  <h4 className="project-heading4">
-                    Site <br />
-                    GITEX 2023
-                  </h4>
-
-                  <div className="view-button">View</div>
-                  <div className="description">Interactive LED</div>
-                </a>
-                <a className="partner-item" href="/#">
-                  <img src={general} alt="General" />
-                  <h4 className="project-heading4">
-                    GE, General Electric
-                    <br />
-                    Arab health 2023
-                  </h4>
-
-                  <div className="view-button">View</div>
-                  <div className="description">Interactive LED</div>
-                </a>
-              </div>
-              <div
-                data-w-id="451fff9d-1313-535d-71de-411304f891a0"
-                className="logos-expander bg--4"
-              >
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb59905eb38b96ebae57ed_bottom-left-ouside.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cut-edge top-only"
-                />
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb59905eb38b96ebae57ed_bottom-left-ouside.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cut-edge bottom-left-outside"
-                />
-                <div
-                  data-w-id="2f6abd90-5562-7b73-88e4-b9bcc1cdd38d"
-                  className="whyus__expand is-logos"
-                >
-                  <div className="whyus__vertical bg-accent"></div>
-                  <div className="whyus__horizontal is-horizontal bg-accent"></div>
-                </div>
-                <div className="p-body opacity-08 lighter line-height-1">
-                  View all
-                </div>
-              </div>
-            </div>
-            <a
-              href="#why-us"
-              data-w-id="9f1c2ce4-4767-9e2e-207a-07f0144976af"
-              className="edge-cut__side-right is-records w-inline-block"
-            >
-              <img
-                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f5c17591e40f7e4c9e91_New-side-cut.svg"
-                loading="lazy"
-                alt=""
-                className="cut-edge records"
-              />
-              <img
-                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb54a1ae5e8c4c700b121b_Arrow-bottom.svg"
-                loading="lazy"
-                alt=""
-                className="records-arrow"
-              />
-            </a>
-          </div> */}
           <Project />
         </section>
         <section className="section is-full logo-changer is-logos">
@@ -1456,134 +1344,7 @@ const Home = () => {
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
-              {/* <div className="blog__newsletter-wrapper is-home radius-16">
-                <div className="container-small is-inner-related">
-                  <div className="newsletter__home-heading">
-                    <div className="newsletter__heading-text">
-                      <h2 className="text-3 h3 line-height-1-1">
-                        Don&#x27;t want to <br />
-                        miss anything?
-                      </h2>
-                    </div>
-                    <div className="newsletter__heading-text">
-                      <div className="p-body text-3 text-balance">
-                        Sign up for our newsletter to discover winning trends
-                        before your competition!
-                      </div>
-                    </div>
-                  </div>
-                  <div className="blog__newsletter-form">
-                    <div
-                      fs-formsubmit-enhance="true"
-                      fs-formsubmit-element="form"
-                      className="blog__newsletter-block w-form"
-                    >
-                      <form
-                        id="email-form"
-                        name="email-form"
-                        data-name="Email Form"
-                        action="https://assets.mailerlite.com/jsonp/614959/forms/100454619644167706/subscribe"
-                        method="post"
-                        className="blog__newsletter-form"
-                        data-wf-page-id="652ab251b8dc5f55fea70ec0"
-                        data-wf-element-id="bd262f9d-3f0a-c3cc-1540-073a764f18cc"
-                      >
-                        <input
-                          className="blog__newsletter-field is-home w-input"
-                          maxlength="256"
-                          name="fields[email]"
-                          data-name="fields[email]"
-                          placeholder="Email"
-                          type="email"
-                          id="fields[email]"
-                          required=""
-                        />
-                        <div className="newsletter__button-wrapper is-home">
-                          <div
-                            data-w-id="3c0b519a-a9a3-60c4-48e0-5d02c9bac54d"
-                            className="newsletter-button-text text-3"
-                          >
-                            Subscribe
-                          </div>
-                          <input
-                            type="submit"
-                            data-wait="Please wait..."
-                            data-w-id="bd262f9d-3f0a-c3cc-1540-073a764f18cf"
-                            className="newsletter__submit-button-inner line-height-1 w-button"
-                            value="Subscribe"
-                          />
-                          <img
-                            data-w-id="bd262f9d-3f0a-c3cc-1540-073a764f18d0"
-                            loading="lazy"
-                            alt=""
-                            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e8667bfbbf04480e3205e2_Arrow-green.svg"
-                            className="newsletter__arrow rel"
-                          />
-                          <img
-                            data-w-id="f919849e-39d4-53c8-64af-1f1f3e944daf"
-                            loading="lazy"
-                            alt=""
-                            src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64e8667bfbbf04480e3205e2_Arrow-green.svg"
-                            className="newsletter__arrow ap"
-                          />
-                        </div>
-                      </form>
-                      <div className="is--adifico w-form-done">
-                        <div className="z-index-5 text-3 is-bold opacity-07 newsletter">
-                          Thank you! Your have joined our newsletter!
-                          <a
-                            href="/#"
-                            fs-formsubmit-element="reset"
-                            className="newsletter-close text-3 underline-link is-ligher"
-                          >
-                            Close
-                          </a>
-                        </div>
-                        <div className="success__message-bg opacity-06"></div>
-                      </div>
-                      <div className="newsletter-error w-form-fail">
-                        <div>
-                          Oops! Something went wrong while submitting the form.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-
               <NewsLetter />
-
-              {/* <div className="footer-new">
-                <div className="footer-content-row">
-                  <h3 className="text-3 h3">
-                    Seeking Inspiration for Activations? Let's Collaborate!
-                  </h3>
-
-                  <div className="p-body text-2 text-balance spacing-top-04">
-                    We are social:
-                  </div>
-                  <div className="p-body text-2 text-balance text-blue">
-                    Instagram / Facebook / Linkedin
-                  </div>
-                  <div className="p-body text-2 text-balance spacing-top-02">
-                    Privacy Policy
-                  </div>
-                </div>
-                <div className="footer-content-row">
-                  <h4 className="text-3 h3 line-height-1-1 text-blue">
-                    +971 544437608
-                  </h4>
-                  <h4 className="text-3 h3 line-height-1-1 text-blue">
-                    support@infinix.com
-                  </h4>
-                  <h4>Business Center 1,</h4>
-                  <h5>M Floor, The Meydan Hotel,Nad Al Sheba, Dubai, U.A.E.</h5>
-
-                  <div className="p-body text-2 text-balance spacing-top-08">
-                    ©2023 infinix technology solutions Ltd.
-                  </div>
-                </div>
-              </div> */}
 
               <Footer />
             </div>
@@ -1971,14 +1732,6 @@ const Home = () => {
             ></div>
           </div>
         </div>
-        {/* <div className="loader-logo">
-          <img
-            src={animationLogo}
-            loading="eager"
-            alt=""
-            className="loader-image"
-          />
-        </div> */}
 
         <Loader />
 

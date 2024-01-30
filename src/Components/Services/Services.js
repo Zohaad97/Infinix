@@ -3,7 +3,7 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import "../Services/Service.css";
 import layer_1_3 from "../assets/images/Layer_1 (3).png";
-import ellipse_6_1 from "../assets/images/Ellipse 6 (1).png";
+import ellipse_6_1 from "../assets/images/Ellipse 6 (2).png";
 import rectangle_9_1 from "../assets/images/Rectangle 9 (1).png";
 import v_rentals from "../assets/images/V-Rentals.png";
 const Services = () => {

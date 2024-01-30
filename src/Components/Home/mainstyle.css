@@ -3120,6 +3120,13 @@ a {
   padding: 5em 1em 1em;
   position: relative;
 }
+
+.section-about-page {
+  z-index: 1;
+  padding: 5em 1em 1em;
+  position: relative;
+}
+
 .cut-edge {
   z-index: 4;
   width: 5em;
@@ -3722,6 +3729,10 @@ a {
 
 .service-item:hover a .service__single-text-block h3 {
   color: rgba(28, 73, 113, 1);
+}
+.service-item:hover .service__single-image-wrap img {
+  color: red;
+
 }
 .service_single-small-wrapper {
   flex-direction: column;
@@ -5532,6 +5543,17 @@ a {
   left: auto;
   right: -2.7%;
   overflow: hidden;
+}
+.fixed-button {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  background-color: #007bff; /* Example background color, customize as needed */
+  color: #fff; /* Example text color, customize as needed */
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
 }
 .home__hero-arrrow {
   width: 40%;
