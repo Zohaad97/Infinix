@@ -492,7 +492,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* <div
+        <div
           style={{ top: "-20%", position: 'absolute' }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
@@ -505,9 +505,9 @@ const About = () => {
             alt=""
             className="gradient__image is-home-hero-right"
           />
-        </div> */}
+        </div>
 
-        {/* <div
+        <div
           style={{ top: "40%",position: 'absolute' }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
@@ -528,7 +528,7 @@ const About = () => {
             alt=""
             className="gradient__image is-home-hero"
           />
-        </div> */}
+        </div>
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
