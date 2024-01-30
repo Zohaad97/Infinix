@@ -3,6 +3,7 @@ import tehkom from "../assets/images/tehkom.png";
 import sitee from "../assets/images/sitee.png";
 import general from "../assets/images/general.png";
 import Arrow_5 from "../assets/images/Arrow_5.png";
+
 const Project = () => {
   return (
     <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
@@ -27,7 +28,6 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-           
           </a>
 
           <a className="partner-item" href="/#">
@@ -39,7 +39,6 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-           
           </a>
           <a className="partner-item" href="/#">
             <img src={sitee} alt="Sitee" />
@@ -49,7 +48,6 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-           
           </a>
           <a className="partner-item" href="/#">
             <img src={general} alt="General" />
@@ -60,11 +58,9 @@ const Project = () => {
             </h4>
 
             <div className="view-button">View</div>
-           
           </a>
         </div>
         <div className="logos-expander bg--4">
-  
           <div className="p-body opacity-05 lighter line-height-1">
             View all
           </div>

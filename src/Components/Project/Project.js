@@ -1,16 +1,14 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
-import group_12 from "../assets/images/Group_12_1.png";
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
 import background_1080 from "../assets/images/background-1080.jpg";
-import frame_1 from "../assets/images/Frame 1.png";
-import Graphic_Elements from "../assets/images/Graphic_Elements.png";
-import Graphic_Elements_1 from "../assets/images/Graphic_Elements (1).png";
-import Circle from "../assets/images/Circle.png";
-import infinicx_icon from "../assets/images/infinicx icon.png";
-import MaskGroup from "../assets/images/Mask-group.png";
+
+import site2 from "../assets/images/emaar-project.png";
+import tehkom from "../assets/images/cop-project.png";
+import sitee from "../assets/images/site-project.png";
+import general from "../assets/images/general.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
@@ -24,12 +22,11 @@ import Navigation from "../Navigation/Navigation";
 import Loader from "../Navigation/Loader/Loader";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
-import Project from "../Projects/Projects";
 import "../About/About.css";
-
+import "../Services/Service.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const About = () => {
+const Projects = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".page__wrap",
@@ -57,6 +54,7 @@ const About = () => {
     }).set(".loader", {
       display: "none",
     });
+
     document.addEventListener("DOMContentLoaded", function () {
       // Initialize Swiper
       var swiper = new Swiper(".fiverr", {
@@ -342,135 +340,75 @@ const About = () => {
             tr-scrollflip-scrubstart="top top"
             className="section-about-page"
           >
-            <div className="page-spacing__medium test">
-              <div className="container-large hero-content">
-                <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
-                  <div className="about-container container-small is-track-record">
-                    <div className="record-div bg--4">
-                      <div className="record__heading-div">
-                        <h2 className="p-leading opacity-06">About</h2>
-                      </div>
+            <div className="container-large hero-content">
+              <div className="is-track-record bg--2 radius-24">
+                <div className="about-container container-small is-track-record">
+                  <div className="record-div bg--4">
+                    <div className="record__heading-div">
+                      <h2 className="p-leading opacity-06">Projects</h2>
                     </div>
+                  </div>
 
-                    <h1 className="about-heading">
-                      Our Winning <span className="blue-text">formula</span> is
-                    </h1>
+                  <h1 className="about-heading">
+                    Empower Your Activations with <br /> &nbsp;
+                    <span className="blue-text">Engagement Driven</span>
+                    Technology
+                  </h1>
 
-                    <div className="about-desc">
-                      We are obsessed with making the most of technology,
-                      putting it out there for people to have fun together in
-                      the most exciting way possible while playing immersive
-                      technologies.
-                    </div>
-                    <img src={group_12} alt="" />
+                  {/* ----------Projectss------------- */}
+                  <div className="column-50 flex-vertical is-grid is-footer-grid space-top">
+                    <a className="partner-item" href="/#">
+                      <img src={site2} alt="partner" />
+                      <h4 className="project-heading4">
+                        Emaar Properties <br />
+                        <span className="project-desc">
+                          Interactive LED Floor, Property Launch Event
+                        </span>
+                      </h4>
+
+                      <div className="view-button">View</div>
+                    </a>
+
+                    <a className="partner-item" href="/#">
+                      <img src={tehkom} alt="Tehkom" />
+                      <h4 className="project-heading4">
+                        COP 28
+                        <br />
+                        <span className="project-desc">
+                          Dynamic Motion Wall, Rextos Dubai Hotel
+                        </span>
+                      </h4>
+
+                      <div className="view-button">View</div>
+                    </a>
+                    <a className="partner-item" href="/#">
+                      <img src={sitee} alt="Sitee" />
+                      <h4 className="project-heading4">
+                        Site <br />
+                        <span className="project-desc">
+                          Innovative presentations, GITEX 2023
+                        </span>
+                      </h4>
+
+                      <div className="view-button">View</div>
+                    </a>
+                    <a className="partner-item" href="/#">
+                      <img src={general} alt="General" />
+                      <h4 className="project-heading4">
+                        GE Health Care
+                        <br />
+                        <span className="project-desc">
+                          Rotating Platform, Arab health 2023
+                        </span>
+                      </h4>
+
+                      <div className="view-button">View</div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* <div className="home-bg">
-              <div className="home__hero-bg">
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f2e2314ae531679cb2a32f_Cut-edge-white.svg"
-                  loading="lazy"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  alt=""
-                  className="cut-edge is-home-hero"
-                />
-                <a
-                  href="#difference"
-                  className="cut-edge is-home-hero home-mobile is-link w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650ad622817c9f1e05d281c4_white-side.svg"
-                    loading="lazy"
-                    alt=""
-                    className="cut-edge is-home-hero home-mobile"
-                  />
-                </a>
-              </div>
-            </div> */}
           </section>
-        </div>
-
-        <section className="section is-full logo-changer is-logos">
-          <div className="approach-container space-top-10">
-            <div className="approach-left">
-              <h2 className="h2 humongus approach-heading">Approach</h2>
-              <div className="approach-left-content">
-                <img src={frame_1} alt="" />
-                <h3 className="approach-title space-top-10">Our Commitment</h3>
-                <div class="text-balance approach-desc space-top-10">
-                  Dedication is at the core of our team's ethos. We strive to be
-                  trendsetters in the event technology landscape, consistently
-                  delivering moments that leave a lasting impression on your
-                  audience.
-                </div>
-                <div
-                  data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
-                  className="separator bg--1 opacity-02 seperator-about"
-                ></div>
-              </div>
-              <div className="approach-left-content">
-                <img src={Graphic_Elements} alt="" />
-                <h3 className="approach-title space-top-10">
-                  What makes us Different
-                </h3>
-                <div class="text-balance approach-desc space-top-10">
-                  Offering flexible rental plans to meet specific requirements,
-                  ensuring a customized AV solution for every event. Quality
-                  Assurance and Vendor Connections: Ensuring reliability and
-                  efficiency by partnering with top-quality vendors, we provide
-                  excellence beyond just equipment, contributing to the success
-                  of your event.
-                </div>
-                <div
-                  data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
-                  className="separator bg--1 opacity-02 space-top-10 seperator-about"
-                ></div>
-              </div>
-              <div className="approach-left-content">
-                <img src={Graphic_Elements_1} alt="" />
-                <h3 className="approach-title space-top-10">
-                  Reliable Technology
-                </h3>
-                <div class="text-balance approach-desc space-top-10">
-                  For us, technology is not just a tool; it's a reliable partner
-                  for creating exceptional event experiences. Our team ensures
-                  every technical element adds value to your event, delivering a
-                  seamless experience.
-                </div>
-              </div>
-            </div>
-
-            <div className="approach-right">
-              <img src={Circle} alt="" />
-            </div>
-          </div>
-        </section>
-
-        <div
-          style={{ top: "-20%" }}
-          data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
-          className="gradient__image-wrapper"
-        >
-          <img
-            src={background}
-            loading="eager"
-            sizes="(max-width: 479px) 100vw, 97vw"
-            srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
-            alt=""
-            className="gradient__image is-home-hero-right"
-          />
         </div>
 
         <div
@@ -944,4 +882,4 @@ const About = () => {
     </div>
   );
 };
-export default About;
+export default Projects;

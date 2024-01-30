@@ -33,7 +33,7 @@ import Navigation from "../Navigation/Navigation";
 import Loader from "../Navigation/Loader/Loader";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
-import Project from "../Projects/Project";
+import Project from "../Projects/Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
