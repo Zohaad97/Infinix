@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   return (
     <Container title={"Projects"} renderDescription={() =>  <h1 className="about-heading">
-    Empower Your Activations with <br /> &nbsp;
+    Empower Your Activations with <br />
     <span className="blue-text">Engagement Driven</span>
     Technology
   </h1> 

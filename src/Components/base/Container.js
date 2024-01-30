@@ -1,5 +1,6 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
+import "./Container.css"
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
@@ -315,44 +316,47 @@ const Container = ({ title, renderSubtitle, renderDescription, renderBody, rende
 
   return (
     <div className="body">
-    <div className="globals">
-      <Navigation />
-    </div>
-    <main className="page__wrap">
-      <div
-        id="hero"
-        tr-scrollflip-element="component"
-        className="teleport-component"
-      >
-        <section
-          tr-scrollflip-scrubstart="top top"
-          className="section-about-page"
+      <div className="globals">
+        <Navigation />
+      </div>
+      <main className="page__wrap">
+        <div
+          id="hero"
+          tr-scrollflip-element="component"
+          className="teleport-component"
         >
-          <div className="page-spacing__medium test">
-            <div className="container-large about-content">
-              <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
-                <div className="about-container container-small is-track-record">
-                  <div className="record-div bg--4">
+          <section
+            tr-scrollflip-scrubstart="top top"
+            className="section-about-page"
+          >
+            <div className="page-spacing__medium test">
+              <div className="container-large about-content">
+                <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
+                  <div className="about-container container-body is-track-record">
+                    <div className="record-div bg--4">
                       <div className="record__heading-div">
                         <h2 className="p-leading opacity-06">{title}</h2>
                       </div>
                     </div>
 
 
-                    {renderDescription()}
+                    <div className="container-spacing">
+                      {renderDescription()}
+                    </div>
+
 
                     {renderSubtitle && renderSubtitle()}
 
 
                     {/* ----------Services------------- */}
-                    {renderBody && renderBody()}
+                    {renderBody && (<div className="container-spacing">{renderBody()}</div>)}
 
                   </div>
                 </div>
               </div>
             </div>
 
-           
+
           </section>
         </div>
 

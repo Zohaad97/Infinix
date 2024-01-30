@@ -4,7 +4,11 @@
   max-width: 100em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 6em;
+  padding-right: 6em;
   position: relative;
+}
+
+.container-spacing{
+  margin-top: 2%;
 }

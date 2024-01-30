@@ -267,7 +267,7 @@ const Services = () => {
         </div>
         <div
           data-w-id="a4d4e9df-7f74-ec3b-40f4-c50318097d80"
-          className="button-outter"
+          className="button-outter services"
         >
           <a href="/contact-us" className="new-buttonn w-inline-block">
             <div className="black-background blue-background"></div>
@@ -276,9 +276,9 @@ const Services = () => {
                 <div className="text-2">Request service</div>
               </div>
 
-              <div className="circle-wrapper move-right text-2">
+              {/* <div className="circle-wrapper move-right text-2">
                 <div className="circle white-background"></div>
-              </div>
+              </div> */}
             </div>
           </a>
         </div>
