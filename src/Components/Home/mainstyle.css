@@ -601,6 +601,11 @@ textarea.w-select {
 .w-file-upload-success.w-hidden {
   display: none;
 }
+.infinix-desc {
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 1.2;
+}
 .w-file-upload-uploading-btn {
   cursor: pointer;
   background-color: #fafafa;
@@ -2226,6 +2231,10 @@ a {
   font-weight: 500;
   line-height: 1.2;
 }
+.button-text {
+  font-size: 18px;
+  font-weight: 600;
+}
 .p-leading {
   font-size: 1.33em;
   font-weight: 400;
@@ -2245,7 +2254,7 @@ a {
   line-height: 1.4;
 }
 .p-body.line-height-1.nav-link-bg {
-  color: rgba(255, 255, 255, 0.5);
+  color: red;
 }
 .p-body.line-height-1.footer-link {
   color: #a3b3a2;
@@ -2564,6 +2573,7 @@ a {
 }
 .project-heading {
   margin-top: 5%;
+  color: #fff;
 }
 .project-blue-text {
   color: rgba(65, 176, 214, 1);
@@ -2571,14 +2581,13 @@ a {
   font-size: 2.458em;
 }
 .project-desc {
-  font-size: 1em;
+  font-size: 24px;
   font-weight: 400;
 }
 .project-heading4 {
-  font-size: 1.333em;
+  font-size: 32px;
   font-weight: 600;
   margin-top: 5%;
-  line-height: 28px;
 }
 .space-top {
   margin-top: 20px;
@@ -2717,6 +2726,9 @@ a {
   padding-bottom: 10em;
   display: flex;
   position: static;
+}
+.remove-bottom_space {
+  padding-bottom: 1em;
 }
 .container-small.is-resources-grid {
   grid-column-gap: 1em;
@@ -3809,7 +3821,7 @@ a {
 }
 .record-div {
   width: 22.5%;
-  height: 4em;
+  height: 5em;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   flex-direction: column;
@@ -3819,7 +3831,7 @@ a {
   display: flex;
   position: relative;
   top: 0%;
-  bottom: auto;
+  bottom: 14px;
   left: 0%;
   right: auto;
 }
@@ -4652,7 +4664,10 @@ a {
 }
 
 .blog__newsletter-form input {
-  font-size: 0.875em;
+  font-size: 21px;
+}
+.blog__newsletter-form input {
+  font-size: 21px;
 }
 .blog__newsletter-field {
   width: 66%;
@@ -4883,21 +4898,25 @@ a {
 }
 
 .footer-content-row .address {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .text-right-align {
   text-align: right;
+  line-height: 1.1;
 }
 
 .footer-content-row .text-blue {
   color: #69d3db;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: 400;
 }
 
 /* Media query for mobile responsiveness */
 @media (max-width: 767px) {
+  .infinix-desc {
+    font-size: 24px;
+  }
   .footer-new {
     grid-template-columns: 1fr;
     padding-left: 2em;
@@ -5170,6 +5189,23 @@ a {
 }
 .nav__logo {
   margin-top: -8px;
+}
+.nav_fontsize {
+  font-size: 40px;
+  font-weight: 700;
+}
+.nav_fontsize-30 {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.45);
+}
+.nav_fontsize-34 {
+  font-size: 34px;
+  font-weight: 400;
+}
+.nav_fontsize-54 {
+  font-size: 54px;
+  font-weight: 600;
 }
 .logo-cover {
   z-index: 0;
@@ -5891,7 +5927,7 @@ a {
   display: flex;
 }
 .newsletter-button-text {
-  font-size: 1em;
+  font-size: 24px;
   font-weight: 600;
 }
 .single-process-wrap {

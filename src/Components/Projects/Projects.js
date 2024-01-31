@@ -7,7 +7,7 @@ import Arrow_5 from "../assets/images/Arrow_5.png";
 const Project = () => {
   return (
     <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
-      <div className="container-small is-track-record">
+      <div className="container-small is-track-record remove-bottom_space">
         <div className="record-div bg--4">
           <div className="record__heading-div">
             <h2 className="p-leading opacity-06">Projects</h2>
@@ -61,7 +61,7 @@ const Project = () => {
           </a>
         </div>
         <div className="logos-expander bg--4">
-          <div className="p-body opacity-05 lighter line-height-1">
+          <div className="nav_fontsize-30 opacity-05 lighter line-height-1">
             View all
           </div>
           <div className="whyus__expand is-logos">

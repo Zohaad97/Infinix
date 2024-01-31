@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import nav_arrow from "../assets/images/Arrow 7.svg";
 const Navigation = () => {
   return (
     <div className="nav">
@@ -152,10 +153,10 @@ const Navigation = () => {
               <div className="black-background"></div>
               <div className="items-wrapper">
                 <div className="text-rotaotr is-inside">
-                  <div className="nav-text text-4">Get in touch</div>
+                  <div className="button-text text-4">Get in touch</div>
                 </div>
                 <div className="text-rotaotr is-outside">
-                  <div className="nav-text text-4">Don&#x27;t be shy</div>
+                  <div className="button-text text-4">Don&#x27;t be shy</div>
                 </div>
                 <div className="circle-wrapper">
                   <div className="circle"></div>
@@ -183,7 +184,7 @@ const Navigation = () => {
               />
               <div
                 stagger-link-text="pale-green"
-                className="nav-top-closer letter-spacing-0-5 line-height-1 p-body is-nav-closer"
+                className="nav-top-closer letter-spacing-0-5 p-body is-nav-closer"
               >
                 close
               </div>
@@ -197,119 +198,79 @@ const Navigation = () => {
           <div className="separator-footer bg--1 opacity-01"></div>
           <div className="nav_main-wrapper">
             <div className="nav_main-top-wrapper">
-              <a
-                stagger-link=""
-                href="/services"
-                className="menu-link w-inline-block"
-              >
+              <Link stagger-link="" to="/" className="menu-link w-inline-block">
                 <div className="nav_main-text-wrapper">
-                  <div stagger-link-text="white" className="h3 line-height-1">
-                    Services
+                  <div stagger-link-text="white" className="nav_fontsize">
+                    Home
                   </div>
                 </div>
                 <div className="nav_main-arrow">
                   <div className="nav-arrow w-embed">
-                    <svg
-                      width="0.9em"
-                      height="0.9em"
-                      viewBox="0 0 15 14"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                    <img src={nav_arrow} alt="" />
                   </div>
                 </div>
-              </a>
-              <a
+              </Link>
+              <Link
                 stagger-link=""
-                href="/resources"
+                to="/Services"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
-                  <div stagger-link-text="white" className="h3 line-height-1">
-                    Resources
+                  <div stagger-link-text="white" className="nav_fontsize">
+                    Service
                   </div>
                 </div>
                 <div className="nav_main-arrow">
                   <div className="nav-arrow w-embed">
-                    <svg
-                      width="0.9em"
-                      height="0.9em"
-                      viewBox="0 0 15 14"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                    <img src={nav_arrow} alt="" />
                   </div>
                 </div>
-              </a>
+              </Link>
+              <Link
+                stagger-link=""
+                to="/Projects"
+                className="menu-link w-inline-block"
+              >
+                <div className="nav_main-text-wrapper">
+                  <div stagger-link-text="white" className="nav_fontsize">
+                    Projects
+                  </div>
+                </div>
+                <div className="nav_main-arrow">
+                  <div className="nav-arrow w-embed">
+                    <img src={nav_arrow} alt="" />
+                  </div>
+                </div>
+              </Link>
               <Link
                 stagger-link=""
                 to="/About"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
-                  <div stagger-link-text="white" className="h3 line-height-1">
+                  <div stagger-link-text="white" className="nav_fontsize">
                     About
                   </div>
                 </div>
                 <div className="nav_main-arrow">
                   <div className="nav-arrow w-embed">
-                    <svg
-                      width="0.9em"
-                      height="0.9em"
-                      viewBox="0 0 15 14"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                    <img src={nav_arrow} alt="" />
                   </div>
                 </div>
               </Link>
               <Link
                 stagger-link=""
-                to="/Service"
+                to="/Contact"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
-                  <div stagger-link-text="white" className="h3 line-height-1">
-                    Service
+                  <div stagger-link-text="white" className="nav_fontsize ">
+                    Contact
                   </div>
                 </div>
                 <div className="nav_main-arrow">
                   <div className="nav-arrow w-embed">
-                    <svg
-                      width="0.9em"
-                      height="0.9em"
-                      viewBox="0 0 15 14"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1.99998 0L14.166 0V12.1668H12.166V3.41432L1.70711 13.8739L0.292847 12.4597L10.7519 2L1.99998 2V0Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+                    <img src={nav_arrow} alt="" />
                   </div>
                 </div>
               </Link>
@@ -320,11 +281,8 @@ const Navigation = () => {
                 href="https://www.upwork.com/freelancers/hristodikov/"
                 className="menu-link w-inline-block"
               >
-                <div
-                  stagger-link-text=""
-                  className="p-body line-height-1 nav-link-bg"
-                >
-                  UpWork
+                <div stagger-link-text="" className="nav_fontsize-30 ">
+                  Instagram
                 </div>
               </a>
               <a
@@ -332,11 +290,8 @@ const Navigation = () => {
                 href="https://www.fiverr.com/dikovh"
                 className="menu-link w-inline-block"
               >
-                <div
-                  stagger-link-text=""
-                  className="p-body line-height-1 nav-link-bg"
-                >
-                  Fiverr
+                <div stagger-link-text="" className="nav_fontsize-30 ">
+                  Facebook
                 </div>
               </a>
               <a
@@ -344,11 +299,17 @@ const Navigation = () => {
                 href="https://www.linkedin.com/in/hristo-dikov/"
                 className="menu-link w-inline-block"
               >
-                <div
-                  stagger-link-text=""
-                  className="p-body line-height-1 nav-link-bg"
-                >
+                <div stagger-link-text="" className="nav_fontsize-30">
                   Linkedin
+                </div>
+              </a>
+              <a
+                stagger-link=""
+                href="https://www.linkedin.com/in/hristo-dikov/"
+                className="menu-link w-inline-block"
+              >
+                <div stagger-link-text="" className="nav_fontsize-30">
+                  Youtube
                 </div>
               </a>
             </div>

@@ -1,17 +1,17 @@
-import RightArrow from "../assets/images/right-arrow.svg"
+import RightArrow from "../assets/images/right-arrow.svg";
 const NewsLetter = () => {
   return (
     <div className="blog__newsletter-wrapper is-home radius-16">
       <div className="container-small is-inner-related">
         <div className="newsletter__home-heading">
           <div className="newsletter__heading-text">
-            <h2 className="text-3 h2 line-height-1-1">
+            <h2 className="text-3 nav_fontsize-54 line-height-1-1">
               Don&#x27;t want to <br />
               miss anything?
             </h2>
           </div>
           <div className="newsletter__heading-text spacing-top-02">
-            <div className="p-body-normal text-3 text-balance">
+            <div className="p-body text-3 text-balance">
               Sign up for our newsletter to discover winning trends before your
               competition!
             </div>

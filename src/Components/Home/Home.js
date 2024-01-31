@@ -6,9 +6,8 @@ import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
 import background_1080 from "../assets/images/background-1080.jpg";
 import layer_1_3 from "../assets/images/Vector.svg";
-import ellipse_6_1 from "../assets/images/Ellipse 6 (2).png";
-import programming from "../assets/images/Programming.png";
-import v_rentals from "../assets/images/V-Rentals.png";
+import programming from "../assets/images/programming.svg";
+import v_rentals from "../assets/images/V Rentals.svg";
 import layer_1_4 from "../assets/images/Layer_1 (4).png";
 import layer_1_5 from "../assets/images/Layer_1 (5).png";
 import layer_1_6 from "../assets/images/Layer_1 (6).png";
@@ -19,7 +18,7 @@ import infinicx_icon from "../assets/images/infinicx icon.png";
 import Group_3 from "../assets/images/Group_3.png";
 import isolationMode from "../assets/images/Isolation_Mode (1).png";
 import MaskGroup from "../assets/images/Mask-group.png";
-import Interactive_Installation from "../assets/images/Interactive_Installation.png";
+import Interactive_Installation from "../assets/images/Interactive_Installation.svg";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
@@ -399,7 +398,7 @@ const Home = () => {
           >
             <div className="page-spacing__medium test">
               <div className="container-large hero-content">
-                <div className="p-body-normal text-2 font-normal narrower is-home-hero">
+                <div className="p-body text-2 narrower is-home-hero">
                   Competitive Edge through Creativity &amp; Technology
                 </div>
                 <div className="homehero__text-wrapper">
@@ -570,7 +569,7 @@ const Home = () => {
                       <div
                         scrub-each-word=""
                         text-split=""
-                        className="p-large text-balance is-90percent"
+                        className="infinix-desc text-balance is-90percent"
                       >
                         At Infinix Innovations, we surpass the role of
                         traditional technology providers We go beyond providing
@@ -598,7 +597,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <section className="section is-service z-index-5">
+        {/* <section className="section is-service z-index-5">
           <div className="page-spacing__large">
             <div className="container-small is-service">
               <div
@@ -830,16 +829,16 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="section track__record logo-changer">
           <Project />
         </section>
         <section className="section is-full logo-changer is-logos">
-          <div className="logos_section radius-36">
+          <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
-                <h2 className="h3 opacity-05 text-3 line-height-1-1 is-logos">
+                <h2 className="nav_fontsize-34 opacity-05 text-3 line-height-1-1 is-logos">
                   Who trusts us?
                 </h2>
               </div>
@@ -1365,7 +1364,7 @@ const Home = () => {
               <div className="logo__single is-empty hide-on-mobile"></div>
 
               <div className="logo__heading-brand flex-row justfiy-space-between">
-                <h2 className="h3 opacity-05 text-3 line-height-1-1 is-logos">
+                <h2 className="nav_fontsize-34 opacity-05 text-3 line-height-1-1 is-logos">
                   Brand Partner
                 </h2>
                 <div className="logo__single is-empty hide-on-mobile"></div>
@@ -1572,7 +1571,8 @@ const Home = () => {
       </div>
       <div className="globals">
         <div className="w-embed"></div>
-        <div className="nav">
+
+        {/* <div className="nav">
           <div className="hidden-navigation">
             <div className="nav__wrapper">
               <div className="nav_top-wrapper">
@@ -1780,7 +1780,7 @@ const Home = () => {
               className="nav-overlay-closer"
             ></div>
           </div>
-        </div>
+        </div> */}
 
         <Loader />
 
