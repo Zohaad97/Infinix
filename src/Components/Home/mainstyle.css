@@ -4901,7 +4901,7 @@ a {
 }
 
 .footer-content-row .address {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .text-right-align {
@@ -4925,8 +4925,11 @@ a {
     padding-left: 2em;
     padding-right: 2em;
   }
+  .footer-content-row {
+    text-decoration: none !important;
+  }
   .footer-content-row .address {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   .spacing-bottom-04-px {
