@@ -7,8 +7,8 @@ import background_800 from "../assets/images/background-800.jpg";
 import background_1080 from "../assets/images/background-1080.jpg";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-import { useEffect } from "react";
 import $ from "jquery";
+import { useEffect } from "react";
 import SplitType from "split-type";
 // import Swiper JS
 import Swiper from "swiper";

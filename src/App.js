@@ -4,6 +4,7 @@ import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Projects from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
+import ServiceDesc from "./Components/ServiceDesc/ServiceDesc";
 
 // import Header from "./Components/Layout/Header";
 function App() {
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/serviceDesc">
+            <ServiceDesc />
           </Route>
 
           <Route path="/">
