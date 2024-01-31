@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 import nav_arrow from "../assets/images/Arrow 7.svg";
 const Navigation = () => {
   return (
@@ -132,12 +132,12 @@ const Navigation = () => {
               data-duration="0"
             ></div>
           </div>
-     
+
           <div
             data-w-id="a4d4e9df-7f74-ec3b-40f4-c50318097d80"
             className="button-outter"
           >
-            <a href="/contact-us" className="new-buttonn w-inline-block">
+            <Link to="/contact" className="new-buttonn w-inline-block">
               <div className="black-background"></div>
               <div className="items-wrapper">
                 <div className="text-rotaotr is-inside">
@@ -150,7 +150,7 @@ const Navigation = () => {
                   <div className="circle"></div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ const Navigation = () => {
               </Link>
               <Link
                 stagger-link=""
-                to="/Services"
+                to="/services"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
@@ -216,7 +216,7 @@ const Navigation = () => {
               </Link>
               <Link
                 stagger-link=""
-                to="/Projects"
+                to="/projects"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
@@ -232,7 +232,7 @@ const Navigation = () => {
               </Link>
               <Link
                 stagger-link=""
-                to="/About"
+                to="/about"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">
@@ -248,7 +248,7 @@ const Navigation = () => {
               </Link>
               <Link
                 stagger-link=""
-                to="/Contact"
+                to="/contact"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">

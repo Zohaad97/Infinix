@@ -31,4 +31,8 @@
     height: auto;
     flex-direction: column;
   }
+
+  .contact-heading {
+    font-size: 32px;
+  }
 }

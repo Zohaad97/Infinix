@@ -9,18 +9,18 @@ import Contact from "./Components/Contact/Contact";
 function App() {
   return (
     <>
-      <Router>
+      <Router forceRefresh={true}>
         <Switch>
-          <Route path="/About">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/Services">
+          <Route exact path="/services">
             <Services />
           </Route>
-          <Route path="/Projects">
+          <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/Contact">
+          <Route path="/contact">
             <Contact />
           </Route>
 
