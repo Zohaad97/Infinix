@@ -4,6 +4,7 @@ import sitee from "../assets/images/sitee.png";
 import general from "../assets/images/general.png";
 import Arrow_5 from "../assets/images/Arrow_5.png";
 import Container from "../base/Container";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
@@ -62,9 +63,9 @@ const Project = () => {
           </a>
         </div>
         <div className="logos-expander bg--4">
-          <div className="nav_fontsize-30 opacity-05 lighter line-height-1">
+          <Link to={"/projects"} className="nav_fontsize-30 opacity-05 lighter line-height-1">
             View all
-          </div>
+          </Link>
           <div className="whyus__expand is-logos">
             <img src={Arrow_5} alt="" />
           </div>
