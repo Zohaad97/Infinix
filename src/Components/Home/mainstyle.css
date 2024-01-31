@@ -4913,6 +4913,7 @@ a {
   color: #69d3db;
   font-size: 32px;
   font-weight: 400;
+  text-decoration: none !important;
 }
 
 /* Media query for mobile responsiveness */
