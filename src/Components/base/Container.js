@@ -349,7 +349,7 @@ const Container = ({ title, renderSubtitle, renderDescription, renderBody, rende
 
 
                     {/* ----------Services------------- */}
-                    {renderBody && (<div className="container-spacing">{renderBody()}</div>)}
+                    {renderBody && (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="container-spacing">{renderBody()}</div>)}
 
                   </div>
                 </div>

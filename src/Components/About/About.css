@@ -89,6 +89,7 @@
 .about-image {
   width: 100%;
   position: relative;
+  max-width: 1216px;
 }
 
 .about-image-overlay {
