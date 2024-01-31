@@ -1,6 +1,6 @@
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
-import "./Container.css"
+import "./Container.css";
 import background from "../assets/images/background.jpg";
 import background_500 from "../assets/images/background-500.jpg";
 import background_800 from "../assets/images/background-800.jpg";
@@ -22,7 +22,13 @@ import "../About/About.css";
 import "../Services/Service.css";
 gsap.registerPlugin(ScrollTrigger);
 
-const Container = ({ title, renderSubtitle, renderDescription, renderBody, renderExtra }) => {
+const Container = ({
+  title,
+  renderSubtitle,
+  renderDescription,
+  renderBody,
+  renderExtra,
+}) => {
   useGSAP(() => {
     gsap.fromTo(
       ".page__wrap",
@@ -304,7 +310,7 @@ const Container = ({ title, renderSubtitle, renderDescription, renderBody, rende
     });
   }, []);
 
-  useEffect(() => { });
+  useEffect(() => {});
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -339,24 +345,32 @@ const Container = ({ title, renderSubtitle, renderDescription, renderBody, rende
                       </div>
                     </div>
 
-
-                    <div className="container-spacing">
-                      {renderDescription()}
-                    </div>
-
+                    <div className="container-spacing"></div>
+                    {renderDescription && (
+                      <div className="container-spacing">
+                        {renderDescription()}
+                      </div>
+                    )}
 
                     {renderSubtitle && renderSubtitle()}
 
-
                     {/* ----------Services------------- */}
-                    {renderBody && (<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }} className="container-spacing">{renderBody()}</div>)}
-
+                    {renderBody && (
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                        className="container-spacing"
+                      >
+                        {renderBody()}
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
-
-
           </section>
         </div>
 

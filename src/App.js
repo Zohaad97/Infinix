@@ -3,6 +3,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
 import Projects from "./Components/Project/Project";
+import Contact from "./Components/Contact/Contact";
 
 // import Header from "./Components/Layout/Header";
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/Projects">
             <Projects />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
           </Route>
 
           <Route path="/">
