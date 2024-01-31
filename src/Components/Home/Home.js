@@ -288,7 +288,7 @@ const Home = () => {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       var buttons = document.getElementsByClassName("back-to-top");
-      let showReelContainer = document.getElementsByClassName(
+      let showReelFloatingContainer = document.getElementsByClassName(
         "floating-button-container"
       );
       let showReel = document.getElementsByClassName("floating-button");
@@ -301,10 +301,10 @@ const Home = () => {
         }
       }
       if (window.scrollY > window.innerHeight) {
-        showReelContainer[0].style.bottom = "50px";
+        showReelFloatingContainer[0].style.bottom = "50px";
         showReel[0].style.display = "flex";
       } else {
-        showReelContainer[0].style.bottom = "-450px";
+        showReelFloatingContainer[0].style.bottom = "-450px";
         showReel[0].style.display = "none";
       }
     });
@@ -354,7 +354,7 @@ const Home = () => {
     });
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -463,6 +463,7 @@ const Home = () => {
 
               <div>
                 <a
+                  id="show-reel"
                   href="#difference"
                   className="home__hero-arrow-wrap w-inline-block"
                 >
@@ -482,9 +483,6 @@ const Home = () => {
               </div>
             </div>
 
-            <div class="fixed-button" onclick="alert('Button Clicked!')">
-              Click Me
-            </div>
             <div className="home-bg">
               <div className="home__hero-bg">
                 <img
@@ -501,6 +499,7 @@ const Home = () => {
                       "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                   }}
                   alt=""
+                  id="cut-edge-home-hero"
                   className="cut-edge is-home-hero"
                 />
                 <a
@@ -597,7 +596,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        {/* <section className="section is-service z-index-5">
+        <section className="section is-service z-index-5">
           <div className="page-spacing__large">
             <div className="container-small is-service">
               <div
@@ -829,7 +828,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="section track__record logo-changer">
           <Project />

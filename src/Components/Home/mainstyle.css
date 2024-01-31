@@ -2573,6 +2573,8 @@ a {
 }
 .project-heading-home {
   margin-top: 5%;
+  color:white;
+  font-family:  "Universo-bold";
 }
 .project-blue-text {
   color: rgba(65, 176, 214, 1);
@@ -3239,8 +3241,8 @@ a {
   right: -2px;
 }
 .cut-edge.is-home-hero {
-  width: 5em;
-  height: 5em;
+  width: 7em;
+  height: 7em;
   perspective-origin: 100% 100%;
   transform-origin: 100% 100%;
   bottom: -1px;
@@ -6908,6 +6910,7 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
+    white-space: nowrap;
   }
   .items-wrapper {
     align-items: center;
@@ -6946,7 +6949,7 @@ a {
     border-radius: 16px;
   }
   .nav-text {
-    font-size: 18px;
+    font-size: 18spx;
   }
   .column-50.flex-vertical.is-centered.is-testimonials {
     width: 100%;
@@ -7518,8 +7521,8 @@ a {
     padding-left: 16px;
   }
   .circle-wrapper {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
   }
   .image-40 {
     width: 40%;
@@ -7527,8 +7530,8 @@ a {
     transform: none;
   }
   .circle {
-    width: 32px;
-    height: 32px;
+    width: 15px;
+    height: 15px;
   }
   .items-wrapper {
     grid-column-gap: 8px;
@@ -7612,7 +7615,7 @@ a {
     margin-left: 0;
   }
   .nav-text {
-    font-size: 18px;
+    font-size: 14px;
   }
   .gradient__image.is-3.opacity-06 {
     bottom: 3.5em;
@@ -8101,7 +8104,7 @@ a {
     top: 250px;
   }
   .button-outter {
-    display: none;
+   width: 70%;
   }
   .button-outter.services {
     width: 120px;
