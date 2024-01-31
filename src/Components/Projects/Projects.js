@@ -3,6 +3,7 @@ import tehkom from "../assets/images/tehkom.png";
 import sitee from "../assets/images/sitee.png";
 import general from "../assets/images/general.png";
 import Arrow_5 from "../assets/images/Arrow_5.png";
+import Container from "../base/Container";
 
 const Project = () => {
   return (
@@ -16,7 +17,7 @@ const Project = () => {
         <h2 className="project-blue-text">
           Elevate Your Business &nbsp;
           <br />
-          <span className="project-heading">with Actionable Technologies</span>
+          <span className="project-heading-home">with Actionable Technologies</span>
         </h2>
 
         <div className="column-50 flex-vertical is-grid is-footer-grid space-top">

@@ -1,0 +1,14 @@
+.container-body {
+  width: 100%;
+  height: 100%;
+  max-width: 100em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 6em;
+  padding-right: 6em;
+  position: relative;
+}
+
+.container-spacing{
+  margin-top: 2%;
+}
