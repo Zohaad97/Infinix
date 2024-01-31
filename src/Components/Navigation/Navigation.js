@@ -132,19 +132,7 @@ const Navigation = () => {
               data-duration="0"
             ></div>
           </div>
-          <a
-            data-scroll="stop"
-            data-w-id="a218e2b4-1c27-f9fd-6b3f-8524dad809b7"
-            href="/contact-us"
-            className="get-in-touch__mobile w-inline-block"
-          >
-            <img
-              src="https://assets-global.website-files.com/63793925c7db23ce040b0824/6507f8a7020d0150e7f0b556_Pen.svg"
-              loading="lazy"
-              alt=""
-              className="mobile__pen"
-            />
-          </a>
+     
           <div
             data-w-id="a4d4e9df-7f74-ec3b-40f4-c50318097d80"
             className="button-outter"
@@ -153,10 +141,10 @@ const Navigation = () => {
               <div className="black-background"></div>
               <div className="items-wrapper">
                 <div className="text-rotaotr is-inside">
-                  <div className="button-text text-4">Get in touch</div>
+                  <div className="nav-text text-4">Get in touch</div>
                 </div>
                 <div className="text-rotaotr is-outside">
-                  <div className="button-text text-4">Don&#x27;t be shy</div>
+                  <div className="nav-text text-4">Don&#x27;t be shy</div>
                 </div>
                 <div className="circle-wrapper">
                   <div className="circle"></div>
