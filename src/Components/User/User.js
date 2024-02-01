@@ -12,26 +12,30 @@ import { useParams } from "react-router-dom";
 import "./User.css";
 
 const User = () => {
-  const createVCard = () => {
-    const vCardData = `
-    BEGIN:VCARD
+  const handleButtonClick = () => {
+    // You can replace the following information with the actual contact details.
+    const contactInfo = {
+      name: "John Doe",
+      phone: "123-456-7890",
+      email: "john.doe@example.com",
+    };
+
+    // Construct a vCard string
+    const vCardData = `BEGIN:VCARD
     VERSION:3.0
-    FN:John Doe
-    ORG:Company
-    TEL:+123456789
-    EMAIL:john.doe@example.com
-    END:VCARD
-        `;
+    FN:${contactInfo.name}
+    TEL:${contactInfo.phone}
+    EMAIL:${contactInfo.email}
+    END:VCARD`;
 
+    // Create a Blob containing the vCard data
     const blob = new Blob([vCardData], { type: "text/vcard" });
-    const url = window.URL.createObjectURL(blob);
 
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "contact.vcf";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    // Create a download link and simulate a click to trigger the download
+    const link = document.createElement("a");
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "contact.vcf";
+    link.click();
   };
 
   let { name } = useParams();
@@ -208,7 +212,7 @@ const User = () => {
           </div>
         </div>
       </div>
-      <div onClick={createVCard} className="user-btn">
+      <div onClick={handleButtonClick} className="user-btn">
         Save Contact
       </div>
     </div>
