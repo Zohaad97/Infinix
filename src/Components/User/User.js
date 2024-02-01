@@ -12,6 +12,28 @@ import { useParams } from "react-router-dom";
 import "./User.css";
 
 const User = () => {
+  const createVCard = () => {
+    const vCardData = `
+    BEGIN:VCARD
+    VERSION:3.0
+    FN:John Doe
+    ORG:Company
+    TEL:+123456789
+    EMAIL:john.doe@example.com
+    END:VCARD
+        `;
+
+    const blob = new Blob([vCardData], { type: "text/vcard" });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "contact.vcf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   let { name } = useParams();
 
   if (name === "syedhabeeburahman") {
@@ -186,7 +208,9 @@ const User = () => {
           </div>
         </div>
       </div>
-      <div className="user-btn">Save Contact</div>
+      <div onClick={createVCard} className="user-btn">
+        Save Contact
+      </div>
     </div>
   );
 };
