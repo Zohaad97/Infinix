@@ -31,6 +31,9 @@ function App() {
           <Route path="/user">
             <User />
           </Route>
+          <Route path="/u/:name">
+            <User />
+          </Route>
 
           <Route path="/">
             <Home />

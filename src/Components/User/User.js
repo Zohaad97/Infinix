@@ -7,9 +7,15 @@ import linkedin from "../assets/images/linkedin.svg";
 import facebook from "../assets/images/facebook 1.svg";
 import tiktok from "../assets/images/tiktok.svg";
 
+import { useParams } from "react-router-dom";
+
 import "./User.css";
 
 const User = () => {
+  const { name } = useParams();
+  if (name !== "syedhabeeburahman" && name !== "syedsajjathhussain") {
+    return null;
+  }
   return (
     <div className="user-container">
       <a
@@ -128,7 +134,7 @@ const User = () => {
         className="spacing-bottom-04-px is-track-record bg--2 radius-24"
       >
         <div className="user-detail about-container is-track-record">
-          <div className="user-text">Syed Sajjath Hussain</div>
+          <div className="user-text">{name}</div>
           <div className="user-design space-top-10">Managing Director</div>
           <div
             style={{ width: "90%" }}
