@@ -12,8 +12,13 @@ import { useParams } from "react-router-dom";
 import "./User.css";
 
 const User = () => {
-  const { name } = useParams();
-  if (name !== "syedhabeeburahman" && name !== "syedsajjathhussain") {
+  let { name } = useParams();
+
+  if (name === "syedhabeeburahman") {
+    name = "Syed Habeeb u Rahman";
+  } else if (name === "syedsajjathhussain") {
+    name = "Syed Sajjath Hussain";
+  } else {
     return null;
   }
   return (
