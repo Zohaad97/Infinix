@@ -13,10 +13,10 @@ import "./User.css";
 
 const User = () => {
   const handleButtonClick = () => {
-    // You can replace the following information with the actual contact details.
+    // Replace the following information with the actual contact details.
     const contactInfo = {
       name: "John Doe",
-      phone: "123-456-7890",
+      phone: "1234567890",
       email: "john.doe@example.com",
     };
 
@@ -29,7 +29,7 @@ const User = () => {
     END:VCARD`;
 
     // Create a Blob containing the vCard data
-    const blob = new Blob([vCardData], { type: "text/vcard" });
+    const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8" });
 
     // Create a download link and simulate a click to trigger the download
     const link = document.createElement("a");
