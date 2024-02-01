@@ -23,9 +23,9 @@ const User = () => {
     // Construct a vCard string
     const vCardData = `BEGIN:VCARD
     VERSION:3.0
-    FN:${contactInfo.name}
-    TEL:${contactInfo.phone}
-    EMAIL:${contactInfo.email}
+    FN:${encodeURIComponent(contactInfo.name)}
+    TEL:${encodeURIComponent(contactInfo.phone)}
+    EMAIL:${encodeURIComponent(contactInfo.email)}
     END:VCARD`;
 
     // Create a Blob containing the vCard data
