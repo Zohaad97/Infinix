@@ -1,56 +1,28 @@
-/* .service-heading {
-  color: rgba(255, 255, 255, 1);
-  margin-top: 5%;
+.background-service {
+  background-color: rgba(44, 53, 64, 1);
 }
-.service-container {
-  display: flex;
+.service-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(105, 211, 219, 1);
 }
-.center-service {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.services-sticky .quest-text {
-  width: "100%";
-  text-align: center;
-  margin-top: 10%;
-  margin-bottom: 20px;
-  color: rgba(185, 185, 185, 1);
-}
-.button-outter .service-btn {
-  display: flex;
-  background-color: red;
-  justify-content: center;
-} */
-.audio-service {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.space-service {
-  margin-top: 4%;
-}
-.quest-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 10;
-}
-.quest-container .quest-text {
-  font-size: 2.875em;
+.service-desc {
+  font-size: 21px;
   font-weight: 400;
-  color: rgba(185, 185, 185, 1);
-  margin-bottom: 2%;
+  color: #fff;
 }
-.button-outter .blue-background {
-  background-color: rgba(65, 176, 214, 1);
+.service-title {
+  font-size: 59px;
+  font-weight: 400;
 }
-.white-background {
-  background-color: #fff;
+
+.service__single-image-wrap.service-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
-.move-right {
-  right: -2%;
+
+.service-heading-wrapper h3 {
+  padding: 20px;
 }

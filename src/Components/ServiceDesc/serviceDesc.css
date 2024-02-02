@@ -11,3 +11,18 @@
   font-weight: 400;
   color: #fff;
 }
+.service-title {
+  font-size: 59px;
+  font-weight: 400;
+}
+
+.service__single-image-wrap.service-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.service-heading-wrapper h3 {
+  padding: 20px;
+}

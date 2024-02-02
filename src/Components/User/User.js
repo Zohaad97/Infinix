@@ -4,9 +4,9 @@ import "../Home/mainstyle.css";
 import mail from "../assets/images/mail.svg";
 import globe from "../assets/images/globe.svg";
 import youtube from "../assets/images/youtube.svg";
-import linkedin from "../assets/images/linkedin.svg";
 import facebook from "../assets/images/facebook 1.svg";
-import tiktok from "../assets/images/tiktok.svg";
+import instagram from "../assets/images/instagram.svg";
+import phone from "../assets/images/phone.svg";
 
 import { useParams } from "react-router-dom";
 
@@ -207,6 +207,14 @@ const User = () => {
           <div className="social-details">
             <div className="single-social-detail">
               <div className="gray-background">
+                <img src={phone} alt="" />
+              </div>
+              <a className="social-text" target="_blank" href={`tel:`}>
+                <div>+971 567 15879</div>
+              </a>
+            </div>
+            <div className="single-social-detail">
+              <div className="gray-background">
                 <img src={mail} alt="" />
               </div>
               <a
@@ -251,6 +259,18 @@ const User = () => {
                 href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO"
               >
                 <div>infinixinnovation</div>
+              </a>
+            </div>
+            <div className="single-social-detail">
+              <div className="gray-background">
+                <img src={instagram} alt="" />
+              </div>
+              <a
+                className="social-text"
+                target="_blank"
+                href="https://www.instagram.com/infinixinnovations?igsh=MXVqaHV2emVxdHRiZA%3D%3D&utm_source=qr"
+              >
+                <div>infinixinnovations</div>
               </a>
             </div>
           </div>
