@@ -180,7 +180,7 @@ const ServiceDesc = () => {
                       </div>
                       <div
                         data-w-id="6d58321c-4791-73a4-901a-c4abbbabd421"
-                        class="single-service"
+                        className="single-service"
                       >
                         <div
                           data-scroll=""
@@ -217,7 +217,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service">
+                      <div className="single-service">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper background-service"
@@ -250,7 +250,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service">
+                      <div className="single-service">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper background-service"
@@ -284,7 +284,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service">
+                      <div className="single-service">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper background-service"
@@ -318,7 +318,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service w-condition-invisible">
+                      <div className="single-service w-condition-invisible">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper background-service w-condition-invisible"
@@ -333,7 +333,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service w-condition-invisible">
+                      <div className="single-service w-condition-invisible">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper background-service w-condition-invisible"
@@ -348,7 +348,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service w-condition-invisible">
+                      <div className="single-service w-condition-invisible">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper bg--3 w-condition-invisible"
@@ -363,7 +363,7 @@ const ServiceDesc = () => {
                           <div class="card-hider"></div>
                         </div>
                       </div>
-                      <div class="single-service w-condition-invisible">
+                      <div className="single-service w-condition-invisible">
                         <div
                           data-scroll=""
                           class="single__process-item-wrapper bg--3 w-condition-invisible"

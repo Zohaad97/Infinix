@@ -180,7 +180,6 @@
 .body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: greyscale;
-  overflow-x: hidden;
 }
 
 * {
