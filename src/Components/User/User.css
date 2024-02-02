@@ -5,7 +5,10 @@
   flex-direction: column;
   height: 100%;
   overflow: scroll;
-  margin: 5px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/src/Components/assets/images/background.jpeg");
 }
 .user-text {
   width: 100%;

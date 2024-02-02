@@ -54,16 +54,33 @@ const User = () => {
 
   if (name === "syedhabeeburahman") {
     name = "Syed Habeeb u Rahman";
-    email = "sajjath@infinix.me";
+    email = "habeeb@infinix.me";
   } else if (name === "syedsajjathhussain") {
     name = "Syed Sajjath Hussain";
-    email = "habeeb@infinix.me";
+    email = "sajjath@infinix.me";
   } else {
     return null;
   }
 
   return (
     <div className="user-container">
+      {/* <div
+        style={{
+          position: "absolute",
+          width: "100%",
+          top: 0,
+          height: "1000px",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          zIndex: 10,
+          // background-size: cover;
+          // background-position: center;
+          // background-attachment: fixed;
+          // backgroundColor: "red",
+          backgroundImage: "/src/Components/assets/images/background.jpeg",
+        }}
+      ></div> */}
       <a
         data-w-id="e2c41eac-496c-f159-1a57-a056f0741e18"
         href="/"
