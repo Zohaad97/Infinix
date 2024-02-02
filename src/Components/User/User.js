@@ -243,17 +243,36 @@ const User = () => {
         Save Contact
       </div>
       <div className="user-btn">
-        <a href="/catalogue.pdf" target="_blank">
+        <a
+          style={{
+            width: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+          }}
+          href="/catalogue.pdf"
+          target="_blank"
+        >
           {" "}
           Catalogue
         </a>
       </div>
       <div onClick={onProfileClick} className="user-btn">
-        <a href="/company-profile.pdf" target="_blank">
+        <a
+          style={{
+            width: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+            display: "flex",
+          }}
+          href="/company-profile.pdf"
+          target="_blank"
+        >
           {" "}
           Profile
         </a>
       </div>
+      <div style={{ height: 100 }}></div>
     </div>
   );
 };
