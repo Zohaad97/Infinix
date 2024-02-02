@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import "../Home/internal.css";
 import "../Home/mainstyle.css";
 import mail from "../assets/images/mail.svg";
@@ -19,7 +20,6 @@ const User = () => {
       phone: "1234567890",
       email: "john.doe@example.com",
     };
-
     // Construct a vCard string
     const vCardData = `BEGIN:VCARD
     VERSION:3.0
@@ -38,15 +38,30 @@ const User = () => {
     link.click();
   };
 
+  const onCatalougeClick = () => {
+    const pdfUrl = "catalogue.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Catalouge.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const onProfileClick = () => {};
+
   let { name } = useParams();
+  let email;
 
   if (name === "syedhabeeburahman") {
     name = "Syed Habeeb u Rahman";
+    email = "sajjath@infinix.me";
   } else if (name === "syedsajjathhussain") {
     name = "Syed Sajjath Hussain";
+    email = "habeeb@infinix.me";
   } else {
     return null;
   }
+
   return (
     <div className="user-container">
       <a
@@ -177,43 +192,67 @@ const User = () => {
               <div className="gray-background">
                 <img src={mail} alt="" />
               </div>
-              <div className="social-text">sajjath@infinix.me</div>
+              <a
+                className="social-text"
+                target="_blank"
+                href={`mailto: ${email}`}
+              >
+                <div>{email}</div>
+              </a>
             </div>
             <div className="single-social-detail">
               <div className="gray-background">
                 <img src={globe} alt="" />
               </div>
-              <div className="social-text">www.infinix.me</div>
+              <a
+                className="social-text"
+                target="_blank"
+                href="https://infinix.me/"
+              >
+                <div>www.infinix.me</div>
+              </a>
             </div>
             <div className="single-social-detail">
               <div className="gray-background">
                 <img src={youtube} alt="" />
               </div>
-              <div className="social-text">@infinixinnovation</div>
+              <a
+                className="social-text"
+                href="https://www.youtube.com/@InfinixInnovations-hp1sv"
+                target="_blank"
+              >
+                <div>@infinixinnovation</div>
+              </a>
             </div>
             <div className="single-social-detail">
               <div className="gray-background">
                 <img src={facebook} alt="" />
               </div>
-              <div className="social-text">infinixinnovation</div>
-            </div>
-            <div className="single-social-detail">
-              <div className="gray-background">
-                <img src={linkedin} alt="" />
-              </div>
-              <div className="social-text">infinixinnovation</div>
-            </div>
-            <div className="single-social-detail">
-              <div className="gray-background">
-                <img src={tiktok} alt="" />
-              </div>
-              <div className="social-text">@infinixinnovation</div>
+              <a
+                className="social-text"
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO"
+              >
+                <div>infinixinnovation</div>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div onClick={handleButtonClick} className="user-btn">
         Save Contact
+      </div>
+      <div className="user-btn">
+        <a href="/catalogue.pdf" target="_blank">
+          {" "}
+          Catalogue
+        </a>
+      </div>
+      <div onClick={onProfileClick} className="user-btn">
+        <a href="/company-profile.pdf" target="_blank">
+          {" "}
+          Profile
+        </a>
       </div>
     </div>
   );
