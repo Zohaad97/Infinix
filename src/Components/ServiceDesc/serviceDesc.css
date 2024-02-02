@@ -1,0 +1,13 @@
+.background-service {
+  background-color: rgba(44, 53, 64, 1);
+}
+.service-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(105, 211, 219, 1);
+}
+.service-desc {
+  font-size: 21px;
+  font-weight: 400;
+  color: #fff;
+}

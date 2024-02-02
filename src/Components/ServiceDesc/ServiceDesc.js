@@ -12,6 +12,7 @@ import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
 import $ from "jquery";
+import "./serviceDesc.css";
 gsap.registerPlugin(ScrollTrigger);
 const ServiceDesc = () => {
   useEffect(() => {
@@ -172,8 +173,8 @@ const ServiceDesc = () => {
                     <div class="single-process-wrap">
                       <div class="single_process-sticky-heading hide-on-desktop">
                         <h1 className="about-heading">
-                          Unique and reliable <br /> technology&nbsp;
-                          <span className="blue-text">solutions</span> assured
+                          Your biggest business <br /> challenges&nbsp;
+                          <span className="blue-text">Solved.</span>
                         </h1>
                         <div class="p-body lighter opacity-05 hide-on-mobile w-dyn-bind-empty"></div>
                       </div>
@@ -183,25 +184,34 @@ const ServiceDesc = () => {
                       >
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3"
+                          class="single__process-item-wrapper background-service"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">01</div>
                           </div>
                           <div class="single__proces-content-holder">
-                            <h3
-                              style={{ color: "red" }}
-                              class="p-leading text-3 is-bigger text-balance"
-                            >
-                              Target audience sizing
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Precision-Crafted Experiences
                             </h3>
-                            <div
-                              style={{ color: "blue" }}
-                              class="p-body-normal line-height-1-2 lighter opacity-05 text-balance"
-                            >
-                              We analyze your solution and its use cases to
-                              identify the perfect audience for your business so
-                              we can then size up the audience
+                            <div class="p-body-normal service-desc line-height-1-2 lighter text-balance">
+                              Demonstrating expertise in crafting interactive
+                              installations tailored for impactful presentations
+                              at events. These installations bring dynamic
+                              interaction options to your presentations,
+                              enhancing engagement and leaving a lasting
+                              impression.
+                            </div>
+                          </div>
+                          <div class="single__proces-content-holder">
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Cutting-edge Technology
+                            </h3>
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Leveraging advanced technologies to ensure
+                              memorable and innovative presentations. Our
+                              interactive installations provide a sophisticated
+                              platform to showcase your services and products
+                              with creativity and effectiveness.
                             </div>
                           </div>
                           <div class="card-hider"></div>
@@ -210,20 +220,31 @@ const ServiceDesc = () => {
                       <div class="single-service">
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3"
+                          class="single__process-item-wrapper background-service"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">02</div>
                           </div>
                           <div class="single__proces-content-holder">
-                            <h3 class="p-leading is-bigger text-balance">
-                              Revenue model analysis
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Innovative Hardware Focus
                             </h3>
-                            <div class="p-body-normal line-height-1-2 lighter opacity-05 text-balance">
-                              We dissect how your business generates cash from
-                              its customers. Then we connect those findings to
-                              size up the revenue potential across geographies
-                              and customer segments
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Kinetic structures and mechatronics redefine our
+                              approach to immersive art installations,
+                              introducing cutting-edge technology into the
+                              creative process.
+                            </div>
+                          </div>
+                          <div class="single__proces-content-holder">
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Thematic Design & Tech-Driven Interaction
+                            </h3>
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Tailored installations dynamically respond to
+                              event themes, incorporating state-of-the-art
+                              hardware with sensor-responsive elements for a
+                              captivating and immersive experience.
                             </div>
                           </div>
                           <div class="card-hider"></div>
@@ -232,20 +253,32 @@ const ServiceDesc = () => {
                       <div class="single-service">
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3"
+                          class="single__process-item-wrapper background-service"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">03</div>
                           </div>
                           <div class="single__proces-content-holder">
-                            <h3 class="p-leading is-bigger text-balance">
-                              Competitive analysis
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Engaging Experience
                             </h3>
-                            <div class="p-body-normal line-height-1-2 lighter opacity-05 text-balance">
-                              Understanding the competitiveness in your niche
-                              and all entry barriers is crucial when calculating
-                              the obtainable market share (and SOM) of your
-                              business.
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Delivering technically robust gaming activations
+                              and applications tailored for events and
+                              exhibitions, captivating audiences with immersive
+                              and interactive content.
+                            </div>
+                          </div>
+                          <div class="single__proces-content-holder">
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Multi-platform Innovation
+                            </h3>
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Offering cost-effective solutions that go beyond
+                              conventional websites and mobile apps, our
+                              applications and games are designed for diverse
+                              platforms, ensuring a tailored and impactful
+                              experience in event and exhibition settings.
                             </div>
                           </div>
                           <div class="card-hider"></div>
@@ -254,19 +287,32 @@ const ServiceDesc = () => {
                       <div class="single-service">
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3"
+                          class="single__process-item-wrapper background-service"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">04</div>
                           </div>
                           <div class="single__proces-content-holder">
-                            <h3 class="p-leading is-bigger text-balance">
-                              Growth projections
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Technically Superior Solution
                             </h3>
-                            <div class="p-body-normal line-height-1-2 lighter opacity-05 text-balance">
-                              In the end, we analyze the industry’s projected
-                              growth rate and forecast your TAM, SAM, SOM, and
-                              obtainable market share over the next 5 years.
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Delivering top-notch audio-visual equipment for an
+                              unparalleled event experience.
+                            </div>
+                          </div>
+                          <div class="single__proces-content-holder">
+                            <h3 class="p-leading service-heading is-bigger text-balance">
+                              Tailored Options
+                            </h3>
+                            <div class="p-body-normal line-height-1-2 lighter service-desc text-balance">
+                              Offering flexible rental plans to meet specific
+                              requirements, ensuring a customized AV solution
+                              for every event. Quality Assurance and Vendor
+                              Connections: Ensuring reliability and efficiency
+                              by partnering with top-quality vendors, we provide
+                              excellence beyond just equipment, contributing to
+                              the success of your event.
                             </div>
                           </div>
                           <div class="card-hider"></div>
@@ -275,7 +321,7 @@ const ServiceDesc = () => {
                       <div class="single-service w-condition-invisible">
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3 w-condition-invisible"
+                          class="single__process-item-wrapper background-service w-condition-invisible"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">05</div>
@@ -290,7 +336,7 @@ const ServiceDesc = () => {
                       <div class="single-service w-condition-invisible">
                         <div
                           data-scroll=""
-                          class="single__process-item-wrapper bg--3 w-condition-invisible"
+                          class="single__process-item-wrapper background-service w-condition-invisible"
                         >
                           <div class="single__process-number-wrap text-accent">
                             <div class="h3">06</div>
