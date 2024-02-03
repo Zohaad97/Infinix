@@ -6,6 +6,7 @@ import Projects from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 import ServiceDesc from "./Components/ServiceDesc/ServiceDesc";
 import User from "./Components/User/User";
+import Projectdesc from "./Components/Project-Desc/Projectdesc";
 
 // import Header from "./Components/Layout/Header";
 function App() {
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/user">
             <User />
+          </Route>
+          <Route path="/projectdesc">
+            <Projectdesc />
           </Route>
           <Route path="/u/:name">
             <User />
