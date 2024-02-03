@@ -29,7 +29,6 @@ const Project = () => {
               <span className="project-desc">GITEX 2023</span>
             </h4>
 
-            <div className="view-button">View</div>
           </a>
 
           <a className="partner-item" href="/#">
@@ -40,7 +39,6 @@ const Project = () => {
               <span className="project-desc"> GITEX 2023</span>
             </h4>
 
-            <div className="view-button">View</div>
           </a>
           <a className="partner-item" href="/#">
             <img src={sitee} alt="Sitee" />
@@ -49,7 +47,6 @@ const Project = () => {
               <span className="project-desc"> GITEX 2023</span>
             </h4>
 
-            <div className="view-button">View</div>
           </a>
           <a className="partner-item" href="/#">
             <img src={general} alt="General" />
@@ -58,8 +55,6 @@ const Project = () => {
               <br />
               <span className="project-desc"> Arab health 2023</span>
             </h4>
-
-            <div className="view-button">View</div>
           </a>
         </div>
         <div className="logos-expander bg--4">

@@ -336,7 +336,7 @@ const Container = ({
             className="section-about-page"
           >
             <div className="page-spacing__medium test">
-              <div className="container-large about-content">
+              <div className="container-large">
                 <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
                   <div className="about-container container-body is-track-record">
                     <div className="record-div bg--4">

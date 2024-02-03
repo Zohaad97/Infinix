@@ -49,7 +49,7 @@ const Projectdesc = () => {
         <h1 className="about-heading">Zain - CityScape KSA</h1>
       )}
       renderBody={() => (
-        <div style={{ display: "block" }}>
+        <div>
           <a className="partner-item" href="/#">
             <img src={zaincityscape} alt="partner" />
             <div className="descr">
