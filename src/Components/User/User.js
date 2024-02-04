@@ -22,7 +22,7 @@ const contacts = {
   syedsajjathhussain: {
     name: "Syed Sajjath Hussain",
     email: "sajjath@infinix.me",
-    phone: "+971 567 15879",
+    phone: "+971 567 15 8879",
     title: "Managing Director"
   }
 
@@ -39,7 +39,7 @@ const User = () => {
 
   const handleButtonClick = () => {
     // create a vcard file
-    var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:"+contact.phone+"\nEMAIL:"+contact.email+"\nEND:VCARD";
+    var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:"+contact.phone+"\nTITLE:"+contact.title+"\nEMAIL:"+contact.email+"\nEND:VCARD";
     var blob = new Blob([vcard], { type: "text/vcard" });
     var url = URL.createObjectURL(blob);
 
