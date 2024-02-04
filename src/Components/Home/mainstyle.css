@@ -2013,7 +2013,7 @@ a {
   width: 100%;
   background-color: #1e252e;
   position: relative;
-  overflow: visible;
+  overflow: clip;
   transform: translateY(0.3em);
 }
 .section {
