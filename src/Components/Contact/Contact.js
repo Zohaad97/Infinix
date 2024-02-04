@@ -12,18 +12,6 @@ const Contact = () => {
   return (
     <Container
       title={"Contact Us"}
-      //   renderSubtitle={() => (
-      //     <div className="contact-desc">
-      //       Feel free to reach out! We're eager to hear your feedback, questions,
-      //       and ideas. Get in touch via email, social media, or the form below.
-      //     </div>
-      //   )}
-      //   renderDescription={() => (
-      //     <h1 className="contact-heading">
-      //       We thought you’d never ask{" "}
-      //       <span className="blue-text"> Let’s talk</span>
-      //     </h1>
-      //   )}
       renderBody={() => (
         <div className="contact-container">
           <div className="contact-left">
@@ -32,9 +20,7 @@ const Contact = () => {
               <span className="blue-text">Let’s talk</span>
             </h1>
             <div className="about-desc">
-              We are obsessed with making the most of technology, putting it out
-              there for people to have fun together in the most exciting way
-              possible while playing immersive technologies.
+              Feel free to reach out! We're eager to hear your feedback, questions, and ideas. Get in touch via email, social media, or the form below.
             </div>
           </div>
 
