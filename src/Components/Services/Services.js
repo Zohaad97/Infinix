@@ -21,9 +21,9 @@ const Services = () => {
               <div class="column-50 flex-vertical is-single-process">
                 <div className="single_process-sticky-heading">
                   <h1 style={{ lineHeight: "1.1" }} className="about-heading">
-                    Unique and reliable, technology solutions
+                    Your biggest business challenges.
                     <br />
-                    <span className="blue-text">assured.</span>
+                    <span className="blue-text">Solved.</span>
                   </h1>
                   <div class="p-body lighter opacity-05 w-dyn-bind-empty"></div>
                 </div>

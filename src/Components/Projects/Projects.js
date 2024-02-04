@@ -66,6 +66,24 @@ const Project = () => {
           </div>
         </div>
       </div>
+      <a
+        href="#why-us"
+        data-w-id="9f1c2ce4-4767-9e2e-207a-07f0144976af"
+        className="edge-cut__side-right is-records w-inline-block"
+      >
+        <img
+          src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f5c17591e40f7e4c9e91_New-side-cut.svg"
+          loading="lazy"
+          alt=""
+          className="cut-edge records"
+        />
+        <img
+          src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64eb54a1ae5e8c4c700b121b_Arrow-bottom.svg"
+          loading="lazy"
+          alt=""
+          className="records-arrow"
+        />
+      </a>
     </div>
   );
 };

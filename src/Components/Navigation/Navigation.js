@@ -282,10 +282,18 @@ const Navigation = () => {
                   Facebook
                 </div>
               </a>
-             
               <a
                 stagger-link=""
-                href="https://youtube.com/@InfinixInnovations-hp1sv?si=5lHA0_yxThH9b08t"
+                href="https://www.linkedin.com/in/hristo-dikov/"
+                className="menu-link w-inline-block"
+              >
+                <div stagger-link-text="" className="nav_fontsize-30">
+                  Linkedin
+                </div>
+              </a>
+              <a
+                stagger-link=""
+                href="https://www.linkedin.com/in/hristo-dikov/"
                 className="menu-link w-inline-block"
               >
                 <div stagger-link-text="" className="nav_fontsize-30">

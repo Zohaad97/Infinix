@@ -2,7 +2,7 @@ import RightArrow from "../assets/images/right-arrow.svg";
 const NewsLetter = () => {
   return (
     <div className="blog__newsletter-wrapper is-home radius-16">
-      <div className="container-medium">
+      <div className="container-small is-inner-related">
         <div className="newsletter__home-heading">
           <div className="newsletter__heading-text">
             <h2 className="text-3 nav_fontsize-54 line-height-1-1">
