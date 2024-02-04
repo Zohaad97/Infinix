@@ -2015,6 +2015,7 @@ a {
   position: relative;
   overflow: visible;
   transform: translateY(0.3em);
+  overflow-x: clip;
 }
 .section {
   z-index: 1;

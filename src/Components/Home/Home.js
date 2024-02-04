@@ -90,38 +90,6 @@ const Home = () => {
     animateText(".move-text-1", ".target-div-1");
     animateText(".move-text-2", ".target-div-2");
     document.addEventListener("DOMContentLoaded", function () {
-      // Initialize Swiper
-      var swiper = new Swiper(".fiverr", {
-        effect: "cards",
-        grabCursor: true,
-        keyboard: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: $(this).find(".swiper-next")[0],
-          prevEl: $(this).find(".swiper-prev")[0],
-          disabledClass: "is-disabled",
-        },
-      });
-      // Initialize Swiper
-      var swiper = new Swiper(".upwork", {
-        effect: "cards",
-        grabCursor: true,
-        keyboard: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: $(this).find(".upwork-next")[0],
-          prevEl: $(this).find(".upwork-prev")[0],
-          disabledClass: "is-disabled",
-        },
-      });
       // Append elements
       $(".span-wrapper").each(function (index) {
         let relatedEl = $(".span-element").eq(index);
@@ -136,27 +104,21 @@ const Home = () => {
     });
   });
 
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
+  // useEffect(() => {
+  //   window.onbeforeunload = function () {
+  //     window.scrollTo(0, 0);
+  //   };
 
-    window.onpageshow = function (event) {
-      if (event.persisted) {
-        window.scrollTo(0, 0);
-        window.location.reload(true);
-      }
-    };
-  }, []);
+  //   window.onpageshow = function (event) {
+  //     if (event.persisted) {
+  //       window.scrollTo(0, 0);
+  //       window.location.reload(true);
+  //     }
+  //   };
+  // }, []);
 
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", function () {
-      // create svg elements
-      $(".svg-code").each(function (index) {
-        let svgCode = $(this).text();
-        $(svgCode).insertAfter($(this));
-      });
-
       const logoChangers = document.querySelectorAll(".logo-changer");
 
       // Loop through each .logo-changer element and create a ScrollTrigger for it
@@ -172,11 +134,7 @@ const Home = () => {
         });
       });
 
-      // Split text into spans
-      let typeSplit = new SplitType("[text-split]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
+      
 
       // Link timelines to scroll position
       function createScrollTrigger(triggerElement, timeline) {
