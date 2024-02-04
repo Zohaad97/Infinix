@@ -18,6 +18,7 @@ import "./ProjectPage.css";
 import Container from "../base/Container";
 import Modal from "../Modal/Modal";
 import { useLocation, useParams } from "react-router-dom";
+import ImageSlider from "../ImageSlider";
 
 const slideImages = [
   { id: 1, url: slide_1, alt: "Slide 1" },
@@ -39,7 +40,9 @@ const ProjectPage = () => {
     dots: true,
 
     speed: 500,
-    // slidesPerRow: 1,
+    slidesPerRow: 1,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     // slidesToShow: 3, // Show 3 images at a time
     // slidesToScroll: 3,
   };
@@ -91,12 +94,13 @@ const ProjectPage = () => {
             />
           </a>
           <div>
-            <Slider className="slider-container" {...settings}>
+            <ImageSlider images={projectToRender.images} />
+            {/* <Slider className="slider-container" {...settings}>
               {projectImages.map((images, index) => (
-                <div className="slider-item" key={`${index}`}>
+                <div className="slider-item" key={`${index}/a`}>
                   {images.map((image, index) => (
                     <div
-                      key={`${index}`}
+                      key={`${index}/b`}
                       onClick={() => handleImageClick(image)}
                     >
                       <img src={image} alt={name} />
@@ -104,7 +108,7 @@ const ProjectPage = () => {
                   ))}
                 </div>
               ))}
-            </Slider>
+            </Slider> */}
             {clickedImage && (
               <Modal
                 imageUrl={clickedImage.url}

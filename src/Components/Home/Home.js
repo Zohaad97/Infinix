@@ -240,7 +240,10 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", function () {
+    
+    window.addEventListener("scroll", handleScroll);
+
+    function handleScroll() {
       var buttons = document.getElementsByClassName("back-to-top");
       let showReelFloatingContainer = document.getElementsByClassName(
         "floating-button-container"
@@ -248,20 +251,25 @@ const Home = () => {
       let showReel = document.getElementsByClassName("floating-button");
 
       for (var i = 0; i < buttons.length; i++) {
-        if (window.scrollY > 20) {
-          buttons[i].style.display = "flex";
-        } else {
-          buttons[i].style.display = "none";
+        if (buttons[i].style) {
+          if (window.scrollY > 20) {
+            buttons[i].style.display = "flex";
+          } else {
+            buttons[i].style.display = "none";
+          }
         }
       }
-      if (window.scrollY > window.innerHeight) {
-        showReelFloatingContainer[0].style.bottom = "50px";
-        showReel[0].style.display = "flex";
-      } else {
-        showReelFloatingContainer[0].style.bottom = "-450px";
-        showReel[0].style.display = "none";
+
+      if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
+        if (window.scrollY > window.innerHeight) {
+          showReelFloatingContainer[0].style.bottom = "50px";
+          showReel[0].style.display = "flex";
+        } else {
+          showReelFloatingContainer[0].style.bottom = "-450px";
+          showReel[0].style.display = "none";
+        }
       }
-    });
+    }
 
     // Scroll to the top with a 2-second duration when any button is clicked
     var buttons = document.getElementsByClassName("back-to-top");
@@ -306,9 +314,13 @@ const Home = () => {
         innerDiv.setAttribute("stagger-link-text", "orange");
       }
     });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -569,7 +581,7 @@ const Home = () => {
                           >
                             <a
                               data-w-id="52d8cbef-9526-9dca-e171-165f7a27a1cc"
-                              href="/services/market-trends-analysis"
+                              href="/services"
                               className="single-service-wrapper bg--3 radius-16 radius-24 w-inline-block"
                             >
                               <div
@@ -622,7 +634,7 @@ const Home = () => {
                           >
                             <a
                               data-w-id="52d8cbef-9526-9dca-e171-165f7a27a1cc"
-                              href="/services/customer-research"
+                              href="/services"
                               className="single-service-wrapper bg--3 radius-16 radius-24 w-inline-block"
                             >
                               <div
@@ -676,7 +688,7 @@ const Home = () => {
                           >
                             <a
                               data-w-id="52d8cbef-9526-9dca-e171-165f7a27a1cc"
-                              href="/services/market-sizing-and-forecasting"
+                              href="/services"
                               className="single-service-wrapper bg--3 radius-16 radius-24 w-inline-block"
                             >
                               <div
@@ -728,7 +740,7 @@ const Home = () => {
                           >
                             <a
                               data-w-id="52d8cbef-9526-9dca-e171-165f7a27a1cc"
-                              href="/services/market-sizing-and-forecasting"
+                              href="/services"
                               className="single-service-wrapper bg--3 radius-16 radius-24 w-inline-block"
                             >
                               <div

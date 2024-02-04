@@ -8,11 +8,26 @@ import ServiceDesc from "./Components/ServiceDesc/ServiceDesc";
 import User from "./Components/User/User";
 import ProjectPage from "./Components/ProjectPage/ProjectPage";
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to the top when the component is mounted or when the route changes
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null; // This component doesn't render anything
+};
+
 // import Header from "./Components/Layout/Header";
 function App() {
   return (
     <>
-      <Router forceRefresh={true}>
+      <Router >
+        <ScrollToTop />
         <Switch>
           <Route path="/about">
             <About />
@@ -32,7 +47,7 @@ function App() {
           <Route path="/user">
             <User />
           </Route>
-          <Route path="/project-page">
+          <Route exact path="/project-page">
             <ProjectPage />
           </Route>
           <Route path="/projectlist">
@@ -42,7 +57,7 @@ function App() {
             <User />
           </Route>
 
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>

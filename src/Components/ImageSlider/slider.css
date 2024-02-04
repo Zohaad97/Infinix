@@ -1,0 +1,39 @@
+.image-slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.image-slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth scrolling transition */
+}
+
+.image-slide {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust the margin between slides as needed */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
