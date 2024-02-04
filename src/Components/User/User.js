@@ -17,13 +17,17 @@ const contacts = {
     name: "Syed Habeeb u Rahman",
     email: "habeeb@infinix.me",
     phone: "+971 55 483 5569",
-    title: "Technical Director"
+    title: "Technical Director",
+    firstName: "Syed Habeeb u",
+    lastName: "Rahman"
   },
   syedsajjathhussain: {
     name: "Syed Sajjath Hussain",
     email: "sajjath@infinix.me",
     phone: "+971 567 15 8879",
-    title: "Managing Director"
+    title: "Managing Director",
+    firstName: "Syed Sajjath",
+    lastName: "Hussain"
   }
 
 }
@@ -39,7 +43,7 @@ const User = () => {
 
   const handleButtonClick = () => {
     // create a vcard file
-    var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:"+contact.phone+"\nTITLE:"+contact.title+"\nEMAIL:"+contact.email+"\nEND:VCARD";
+    var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nTITLE:" + contact.title + "\nEMAIL:" + contact.email + "\nN:"+contact.lastName+";"+contact.firstName+";;\nEND:VCARD";
     var blob = new Blob([vcard], { type: "text/vcard" });
     var url = URL.createObjectURL(blob);
 
@@ -50,7 +54,7 @@ const User = () => {
 
     newLink.click();
   };
-  if(!contact) return null
+  if (!contact) return null
   return (
     <div className="user-container">
       <a
