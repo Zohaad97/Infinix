@@ -784,7 +784,7 @@ const Home = () => {
         <section className="section track__record logo-changer">
           <Project />
         </section>
-        {/* <section className="section is-full logo-changer is-logos">
+        <section className="section is-full logo-changer is-logos">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
@@ -1338,7 +1338,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
