@@ -596,7 +596,7 @@ const Home = () => {
             </div>
           </section>
         </div>
-        <section className="section is-service z-index-5">
+        {/* <section className="section is-service z-index-5">
           <div className="page-spacing__large">
             <div className="container-small is-service">
               <div
@@ -828,7 +828,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="section track__record logo-changer">
           <Project />
