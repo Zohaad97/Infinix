@@ -1,0 +1,23 @@
+[
+  {
+    "mainImage": "/projects/zain-city-scape-ksa/main.png",
+    "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth and a sliding screen for Shomoul, both executed with precision within demanding timelines. ",
+    "images": [
+      "/projects/zain-city-scape-ksa/1.png",
+      "/projects/zain-city-scape-ksa/2.png"
+    ],
+    "title": "Zain - CityScape KSA"
+  },
+  {
+    "mainImage": "",
+    "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth and a sliding screen for Shomoul, both executed with precision within demanding timelines. ",
+    "images": [""],
+    "title": ""
+  },
+  {
+    "mainImage": "",
+    "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth and a sliding screen for Shomoul, both executed with precision within demanding timelines. ",
+    "images": [""],
+    "title": ""
+  }
+]

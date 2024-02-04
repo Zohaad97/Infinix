@@ -14,12 +14,14 @@ import slide_8 from "../assets/images/slide_8.svg";
 import slide_9 from "../assets/images/slide_9.svg";
 import slide_10 from "../assets/images/slide_10.svg";
 import Slider from "react-slick";
+import projectJson from "../../projects.json"
 
 import zaincityscape from "../assets/images/zaincityscape.svg";
 
-import "./Projectdesc.css";
+import "./ProjectPage.css";
 import Container from "../base/Container";
 import Modal from "../Modal/Modal";
+import { useLocation, useParams } from "react-router-dom";
 
 const slideImages = [
   { id: 1, url: slide_1, alt: "Slide 1" },
@@ -29,11 +31,16 @@ const slideImages = [
   { id: 5, url: slide_5, alt: "Slide 5" },
   { id: 6, url: slide_6, alt: "Slide 6" },
 ];
-const Projectdesc = () => {
+const ProjectPage = () => {
   const [clickedImage, setClickedImage] = useState(null);
+
+  const location = useLocation();
+  const name = new URLSearchParams(location.search).get('name');
+
+
+
   const settings = {
     focusOnSelect: true,
-    slidesPerRow: 3,
   };
   const handleImageClick = (image) => {
     setClickedImage(image);
@@ -42,6 +49,12 @@ const Projectdesc = () => {
   const handleCloseModal = () => {
     setClickedImage(null);
   };
+
+
+  const projectToRender = projectJson.find(item => item.title.replace(/ /g, "-").toLowerCase() === name)
+  //const projectToRender = projectJson.find(item => item.title === "Zain - CityScape KSA")
+  console.log(projectToRender)
+
   return (
     <Container
       title={"Interactive Installation"}
@@ -49,32 +62,22 @@ const Projectdesc = () => {
         <h1 className="about-heading">Zain - CityScape KSA</h1>
       )}
       renderBody={() => (
+
         <div>
-          <a className="partner-item" href="/#">
-            <img src={zaincityscape} alt="partner" />
-            <div className="descr">
-              At Cityscape in Saudi Arabia, our emphasis on innovative
-              presentation solutions was evident. The rotating product showcase,
-              featuring an interactive tablet interface and a sleek transparent
-              OLED, allowed users to effortlessly select products displayed on a
-              rotating platform
-            </div>
-            <div className="descr">
-              This engaging experience, complemented by captivating digital
-              holographic visuals, showcased detailed product information,
-              enhancing the overall presentation. Our commitment to innovation
-              also extended to practical solutions, including hanging LED cubes
-              for the Zain booth and a sliding screen for Shomoul, both executed
-              with precision within demanding timelines.
-            </div>
+          <a className="project-page-item" href="/#">
+            <img src={projectToRender.mainImage} className="main" alt="partner" />
+            <div className="descr" dangerouslySetInnerHTML={{ __html: projectToRender.description.replace(/\n/g, "<br/>") }} />
           </a>
           <div>
-            <Slider className="slider-container" {...settings}>
-              {slideImages.map((image) => (
+            <Slider className="slider-container" rows={1}  {...settings}>
+              {projectToRender.images.map((image, index) => (<div key={`${index}`} onClick={() => handleImageClick(image)}>
+                <img src={image} alt={name} />
+              </div>))}
+              {/* {slideImages.map((image) => (
                 <div key={image.id} onClick={() => handleImageClick(image)}>
                   <img src={image.url} alt={image.alt} />
                 </div>
-              ))}
+              ))} */}
             </Slider>
             {clickedImage && (
               <Modal
@@ -85,8 +88,9 @@ const Projectdesc = () => {
             )}
           </div>
         </div>
+
       )}
     />
   );
 };
-export default Projectdesc;
+export default ProjectPage;

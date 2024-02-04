@@ -2,11 +2,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
-import Projects from "./Components/Project/Project";
+import ProjectList from "./Components/ProjectList/ProjectList";
 import Contact from "./Components/Contact/Contact";
 import ServiceDesc from "./Components/ServiceDesc/ServiceDesc";
 import User from "./Components/User/User";
-import Projectdesc from "./Components/Project-Desc/Projectdesc";
+import ProjectPage from "./Components/ProjectPage/ProjectPage";
 
 // import Header from "./Components/Layout/Header";
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Services />
           </Route>
           <Route path="/projects">
-            <Projects />
+            <ProjectList />
           </Route>
           <Route path="/contact">
             <Contact />
@@ -32,8 +32,8 @@ function App() {
           <Route path="/user">
             <User />
           </Route>
-          <Route path="/projectdesc">
-            <Projectdesc />
+          <Route path="/project-page">
+            <ProjectPage />
           </Route>
           <Route path="/u/:name">
             <User />
