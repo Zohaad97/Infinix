@@ -83,11 +83,6 @@ const ProjectPage = () => {
                   <img src={image} alt={name} />
                 </div>
               ))}
-              {/* {slideImages.map((image) => (
-                <div key={image.id} onClick={() => handleImageClick(image)}>
-                  <img src={image.url} alt={image.alt} />
-                </div>
-              ))} */}
             </Slider>
             {clickedImage && (
               <Modal

@@ -15,9 +15,9 @@
     "title": "SITE - GITEX 2023"
   },
   {
-    "mainImage": "",
-    "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth and a sliding screen for Shomoul, both executed with precision within demanding timelines. ",
-    "images": [""],
-    "title": ""
+    "mainImage": "/projects/ge-healthcare-arab-health-2023/main.png",
+    "description": "Rotating Platform GE Healthcare at the Arab Health 2023.  We developed a grand rotating platform to enhance the product reveal of the GE Healthcare at the Arab Health Exhibition 2023. The reveal moment demanded attention in the exhibition, becoming the focal point and an impactful event experience  ",
+    "images": ["/projects/ge-healthcare-arab-health-2023/1.png","/projects/ge-healthcare-arab-health-2023/2.png","/projects/ge-healthcare-arab-health-2023/3.png"],
+    "title": "GE Healthcare - Arab Health 2023"
   }
 ]
