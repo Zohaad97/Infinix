@@ -31,16 +31,20 @@ const Projects = () => {
         <div className="column-50 flex-vertical is-grid is-footer-grid space-top">
           {Projectjson.map((item) => {
             return (
-              <a className="partner-item" href="/#">
-                <Link to={projectUrl}>
-                  <img src={item.mainImage} alt="partner" />
-                </Link>
+              <Link
+                to={`/project-page?name=${item.title
+                  .replace(/ /g, "-")
+                  .toLowerCase()}`}
+                className="partner-item"
+              >
+                <img src={item.mainImage} alt="partner" />
+
                 <h4 className="project-heading4">
                   {item.title}
                   {setUrl(item.title)} <br />
                   {/* <span className="project-desc">{item.description}</span> */}
                 </h4>
-              </a>
+              </Link>
             );
           })}
         </div>

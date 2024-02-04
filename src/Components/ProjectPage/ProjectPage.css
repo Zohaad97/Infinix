@@ -4,8 +4,14 @@
   margin-top: 3%;
 }
 
-
-
 .project-page-item .main {
   width: 100%;
+}
+.slider-container {
+  margin-top: 5%;
+  margin: 10px;
+}
+.slider-container img {
+  border-radius: 22px;
+  padding: 10px;
 }

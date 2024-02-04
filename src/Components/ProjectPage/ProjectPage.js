@@ -9,10 +9,6 @@ import slide_3 from "../assets/images/slide_3.svg";
 import slide_4 from "../assets/images/slide_4.svg";
 import slide_5 from "../assets/images/slide_5.svg";
 import slide_6 from "../assets/images/slide_6.svg";
-import slide_7 from "../assets/images/slide_7.svg";
-import slide_8 from "../assets/images/slide_8.svg";
-import slide_9 from "../assets/images/slide_9.svg";
-import slide_10 from "../assets/images/slide_10.svg";
 import Slider from "react-slick";
 import projectJson from "../../projects.json";
 
@@ -40,6 +36,12 @@ const ProjectPage = () => {
 
   const settings = {
     focusOnSelect: true,
+    dots: true,
+
+    speed: 500,
+    // slidesPerRow: 1,
+    // slidesToShow: 3, // Show 3 images at a time
+    // slidesToScroll: 3,
   };
   const handleImageClick = (image) => {
     setClickedImage(image);
@@ -54,7 +56,19 @@ const ProjectPage = () => {
   );
   //const projectToRender = projectJson.find(item => item.title === "Zain - CityScape KSA")
   console.log(projectToRender);
+  function chunkArray(mainArray, chunkSize) {
+    const result = [];
 
+    for (let i = 0; i < mainArray.length; i += chunkSize) {
+      const chunk = mainArray.slice(i, i + chunkSize);
+      result.push(chunk);
+    }
+
+    return result;
+  }
+
+  const projectImages = chunkArray(projectToRender.images, 2);
+  console.log({ projectImages });
   return (
     <Container
       title={"Interactive Installation"}
@@ -77,10 +91,17 @@ const ProjectPage = () => {
             />
           </a>
           <div>
-            <Slider className="slider-container" rows={1} {...settings}>
-              {projectToRender.images.map((image, index) => (
-                <div key={`${index}`} onClick={() => handleImageClick(image)}>
-                  <img src={image} alt={name} />
+            <Slider className="slider-container" {...settings}>
+              {projectImages.map((images, index) => (
+                <div className="slider-item" key={`${index}`}>
+                  {images.map((image, index) => (
+                    <div
+                      key={`${index}`}
+                      onClick={() => handleImageClick(image)}
+                    >
+                      <img src={image} alt={name} />
+                    </div>
+                  ))}
                 </div>
               ))}
             </Slider>
