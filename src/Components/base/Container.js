@@ -28,6 +28,7 @@ const Container = ({
   renderDescription,
   renderBody,
   renderExtra,
+  hideBackground = false
 }) => {
   useGSAP(() => {
     gsap.fromTo(
@@ -310,7 +311,7 @@ const Container = ({
     });
   }, []);
 
-  useEffect(() => {});
+  useEffect(() => { });
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -367,7 +368,7 @@ const Container = ({
 
         {renderExtra && renderExtra()}
 
-        <div
+        {/* {!hideBackground && (<div
           style={{ top: "40%" }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
@@ -388,7 +389,8 @@ const Container = ({
             alt=""
             className="gradient__image is-home-hero"
           />
-        </div>
+        </div>)} */}
+
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">

@@ -1,6 +1,13 @@
+import YoutubeIcon from "../assets/images/footer-youtube.svg"
+import InstaIcon from "../assets/images/footer-instagram.svg"
+import FacebookIcon from "../assets/images/footer-facebook.svg"
+import YoutubeIconHover from "../assets/images/footer-youtube-hover.svg"
+import InstaIconHover from "../assets/images/footer-instagram-hover.svg"
+import FacebookIconHover from "../assets/images/footer-facebook-hover.svg"
+import "./Footer.css"
 const Footer = () => {
   return (
-    <div className="footer-new">
+    <div className="footer-new container-medium">
       <div className="footer-content-row">
         <h3 className="text-3 nav_fontsize-54">
           Seeking Inspiration <br />
@@ -8,10 +15,35 @@ const Footer = () => {
           <br /> Let's Collaborate!
         </h3>
 
-        <div className="text-2 text-balance spacing-top-04">We are social:</div>
-
-        <div>
+        <div className="social-icons-wrapper">
           <a
+            className="text-2 text-balance text-blue"
+            href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO"
+            target="_blank"
+          >
+            <div className="footer-social-icon">
+              <img src={FacebookIcon} />
+            </div>
+          </a>
+          <a
+            className="text-2 text-balance text-blue"
+            href="https://www.instagram.com/infinixinnovations?igsh=MXVqaHV2emVxdHRiZA%3D%3D&utm_source=qr"
+            target="_blank"
+          >
+            <div className="footer-social-icon">
+              <img src={InstaIcon} />
+            </div>
+          </a>
+          <a
+            className="text-2 text-balance text-blue"
+            href="https://youtube.com/@InfinixInnovations-hp1sv?si=5lHA0_yxThH9b08t"
+            target="_blank"
+          >
+            <div className="footer-social-icon">
+              <img src={YoutubeIcon} />
+            </div>
+          </a>
+          {/* <a
             className="text-2 text-balance text-blue"
             href="https://www.instagram.com/infinixinnovations?igsh=MXVqaHV2emVxdHRiZA%3D%3D&utm_source=qr"
             target="_blank"
@@ -27,7 +59,7 @@ const Footer = () => {
             target="_blank"
           >
             Facebook
-          </a>
+          </a> */}
         </div>
 
         <a
@@ -43,7 +75,7 @@ const Footer = () => {
           <a
             className="text-3 h3 line-height-1-1 text-blue"
             href="tel:971 567158879"
-            style={{whiteSpace:'nowrap'}}
+            style={{ whiteSpace: 'nowrap' }}
           >
             +971 56 715 8879
           </a>
@@ -56,7 +88,7 @@ const Footer = () => {
             info@infinix.me
           </a>
         </h4>
-        <h3>
+        <h4>
           <a
             className="address"
             href="https://maps.app.goo.gl/Pt4k5ko9j8bEnox69?g_st=ic"
@@ -64,7 +96,7 @@ const Footer = () => {
           >
             Business Center 1,
           </a>
-        </h3>
+        </h4>
         <h5>
           <a
             className="p-body address"

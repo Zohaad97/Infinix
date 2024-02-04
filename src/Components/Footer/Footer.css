@@ -1,0 +1,20 @@
+.footer-social-icon {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 10px;
+}
+.footer-social-icon:hover{
+  background: rgba(51, 144, 151, 1);
+  border: 1px solid rgba(51, 144, 151, 1);
+}
+
+.social-icons-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
