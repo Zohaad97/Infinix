@@ -34,7 +34,7 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Projects";
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   useGSAP(() => {
@@ -117,91 +117,93 @@ const Home = () => {
   //   };
   // }, []);
 
-  useEffect(() => {
-    document.addEventListener("DOMContentLoaded", function () {
-      const logoChangers = document.querySelectorAll(".logo-changer");
+  // useEffect(() => {
 
-      // Loop through each .logo-changer element and create a ScrollTrigger for it
-      logoChangers.forEach((logoChanger) => {
-        ScrollTrigger.create({
-          trigger: logoChanger,
-          start: "top 3%",
-          end: "bottom 10%",
-          toggleClass: {
-            targets: ".nav__logo-wrapper",
-            className: "changed-logo",
-          },
-        });
+  // }, []);
+
+  useGSAP(() => {
+
+    const logoChangers = document.querySelectorAll(".logo-changer");
+
+    // Loop through each .logo-changer element and create a ScrollTrigger for it
+    logoChangers.forEach((logoChanger) => {
+      ScrollTrigger.create({
+        trigger: logoChanger,
+        start: "top 3%",
+        end: "bottom 10%",
+        toggleClass: {
+          targets: ".nav__logo-wrapper",
+          className: "changed-logo",
+        },
       });
-      let typeSplit = new SplitType("[text-split]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
-
-      
-
-      // Link timelines to scroll position
-      function createScrollTrigger(triggerElement, timeline) {
-        // Reset tl when scroll out of view past bottom of screen
-        ScrollTrigger.create({
-          trigger: triggerElement,
-          start: "top bottom",
-          onLeaveBack: () => {
-            timeline.progress(0);
-            timeline.pause();
-          },
-        });
-
-        // Play tl when scrolled into view (60% from top of screen)
-        ScrollTrigger.create({
-          trigger: triggerElement,
-          start: "top bottom",
-          onEnter: () => timeline.play(),
-        });
-      }
-      $("[scrub-each-word]").each(function (index) {
-        let tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: $(this),
-            start: "top 70%",
-            end: "top 20%",
-            scrub: 0.5,
-          },
-        });
-        tl.from($(this).find(".char"), {
-          opacity: 0.15,
-          duration: 0.3,
-          ease: "power1.out",
-          stagger: { each: 0.4 },
-        });
-      });
-
-      $("[letters-slide-up]").each(function (index) {
-        let tl = gsap.timeline({ paused: true });
-        tl.from($(this).find(".word"), {
-          yPercent: 130,
-          duration: 0.9,
-          ease: "power4.out",
-          stagger: { amount: 0.3 },
-        });
-        createScrollTrigger($(this), tl);
-      });
-
-      // Avoid flash of unstyled content
-      gsap.set("[text-split]", { opacity: 1 });
-
-      // Copy footer mail
-      window.withJquery = function () {
-        console.time("time1");
-        var temp = $("<input>");
-        $("body").append(temp);
-        temp.val($(".is-mail-to-copy").text()).select();
-        document.execCommand("copy");
-        temp.remove();
-        console.timeEnd("time1");
-      };
     });
-  }, []);
+    let typeSplit = new SplitType("[text-split]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
+
+    // Link timelines to scroll position
+    function createScrollTrigger(triggerElement, timeline) {
+      // Reset tl when scroll out of view past bottom of screen
+      ScrollTrigger.create({
+        trigger: triggerElement,
+        start: "top bottom",
+        onLeaveBack: () => {
+          timeline.progress(0);
+          timeline.pause();
+        },
+      });
+
+      // Play tl when scrolled into view (60% from top of screen)
+      ScrollTrigger.create({
+        trigger: triggerElement,
+        start: "top bottom",
+        onEnter: () => timeline.play(),
+      });
+    }
+    $("[scrub-each-word]").each(function (index) {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: $(this),
+          start: "top 70%",
+          end: "top 20%",
+          scrub: 0.5,
+        },
+      });
+      tl.from($(this).find(".char"), {
+        opacity: 0.15,
+        duration: 0.3,
+        ease: "power1.out",
+        stagger: { each: 0.4 },
+      });
+    });
+
+    $("[letters-slide-up]").each(function (index) {
+      let tl = gsap.timeline({ paused: true });
+      tl.from($(this).find(".word"), {
+        yPercent: 130,
+        duration: 0.9,
+        ease: "power4.out",
+        stagger: { amount: 0.3 },
+      });
+      createScrollTrigger($(this), tl);
+    });
+
+    // Avoid flash of unstyled content
+    gsap.set("[text-split]", { opacity: 1 });
+
+    // Copy footer mail
+    window.withJquery = function () {
+      console.time("time1");
+      var temp = $("<input>");
+      $("body").append(temp);
+      temp.val($(".is-mail-to-copy").text()).select();
+      document.execCommand("copy");
+      temp.remove();
+      console.timeEnd("time1");
+    };
+
+  })
 
   useEffect(() => {
     let splitText;
@@ -478,7 +480,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* <div
+            <div
               data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
               className="gradient__image-wrapper"
             >
@@ -498,7 +500,7 @@ const Home = () => {
                 alt=""
                 className="gradient__image is-home-hero"
               />
-            </div> */}
+            </div>
           </section>
           <section
             tr-scrollflip-scrubend="40% center"
@@ -545,7 +547,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* <div
+            <div
               data-w-id="739117db-c5ef-61c8-e2f2-1eaf84c45ea8"
               className="gradient__image-wrapper"
             >
@@ -555,10 +557,10 @@ const Home = () => {
                 alt=""
                 className="gradient__image is-4 opacity-06"
               />
-            </div> */}
+            </div>
           </section>
         </div>
-        {/* <section className="section is-service z-index-5">
+        <section className="section is-service z-index-5">
           <div className="page-spacing__large">
             <div className="container-small is-service">
               <div
@@ -790,7 +792,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         <section className="section track__record logo-changer">
           <Project />
@@ -1533,7 +1535,7 @@ const Home = () => {
       <div className="globals">
         <div className="w-embed"></div>
 
-        
+
 
         <Loader />
 
