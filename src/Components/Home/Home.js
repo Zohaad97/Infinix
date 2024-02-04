@@ -4,10 +4,7 @@ import BrandPartner from "../assets/images/brand_partner.svg";
 import Interactive_Installation from "../assets/images/Interactive_Installation.svg";
 import programming from "../assets/images/programming.svg";
 import layer_1_3 from "../assets/images/Vector.svg";
-import background from "../assets/images/background.jpg";
-import background_500 from "../assets/images/background-500.jpg";
-import background_800 from "../assets/images/background-800.jpg";
-import background_1080 from "../assets/images/background-1080.jpg";
+import background from "../assets/images/background-500.jpg";
 import v_rentals from "../assets/images/V Rentals.svg";
 import layer_1_4 from "../assets/images/Layer_1 (4).png";
 import layer_1_5 from "../assets/images/Layer_1 (5).png";
@@ -24,9 +21,6 @@ import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
 import $ from "jquery";
 import SplitType from "split-type";
-// import Swiper JS
-import Swiper from "swiper";
-// import Swiper styles
 import "swiper/css";
 import Navigation from "../Navigation/Navigation";
 import Loader from "../Navigation/Loader/Loader";
@@ -34,9 +28,10 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Projects";
 
-// gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = () => {
+  gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.fromTo(
       ".page__wrap",
@@ -117,93 +112,90 @@ const Home = () => {
   //   };
   // }, []);
 
-  // useEffect(() => {
+  useEffect(() => {
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const logoChangers = document.querySelectorAll(".logo-changer");
 
-  // }, []);
-
-  useGSAP(() => {
-
-    const logoChangers = document.querySelectorAll(".logo-changer");
-
-    // Loop through each .logo-changer element and create a ScrollTrigger for it
-    logoChangers.forEach((logoChanger) => {
-      ScrollTrigger.create({
-        trigger: logoChanger,
-        start: "top 3%",
-        end: "bottom 10%",
-        toggleClass: {
-          targets: ".nav__logo-wrapper",
-          className: "changed-logo",
-        },
+      // Loop through each .logo-changer element and create a ScrollTrigger for it
+      logoChangers.forEach((logoChanger) => {
+        ScrollTrigger.create({
+          trigger: logoChanger,
+          start: "top 3%",
+          end: "bottom 10%",
+          toggleClass: {
+            targets: ".nav__logo-wrapper",
+            className: "changed-logo",
+          },
+        });
       });
-    });
-    let typeSplit = new SplitType("[text-split]", {
+let typeSplit = new SplitType("[text-split]", {
       types: "lines, words, chars",
       tagName: "span",
     });
 
-    // Link timelines to scroll position
-    function createScrollTrigger(triggerElement, timeline) {
-      // Reset tl when scroll out of view past bottom of screen
-      ScrollTrigger.create({
-        trigger: triggerElement,
-        start: "top bottom",
-        onLeaveBack: () => {
-          timeline.progress(0);
-          timeline.pause();
-        },
+      // Link timelines to scroll position
+      function createScrollTrigger(triggerElement, timeline) {
+        // Reset tl when scroll out of view past bottom of screen
+        ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top bottom",
+          onLeaveBack: () => {
+            timeline.progress(0);
+            timeline.pause();
+          },
+        });
+
+        // Play tl when scrolled into view (60% from top of screen)
+        ScrollTrigger.create({
+          trigger: triggerElement,
+          start: "top bottom",
+          onEnter: () => timeline.play(),
+        });
+      }
+      $("[scrub-each-word]").each(function (index) {
+        let tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: $(this),
+            start: "top 70%",
+            end: "top 20%",
+            scrub: 0.5,
+          },
+        });
+        tl.from($(this).find(".char"), {
+          opacity: 0.15,
+          duration: 0.3,
+          ease: "power1.out",
+          stagger: { each: 0.4 },
+        });
       });
 
-      // Play tl when scrolled into view (60% from top of screen)
-      ScrollTrigger.create({
-        trigger: triggerElement,
-        start: "top bottom",
-        onEnter: () => timeline.play(),
+      $("[letters-slide-up]").each(function (index) {
+        let tl = gsap.timeline({ paused: true });
+        tl.from($(this).find(".word"), {
+          yPercent: 130,
+          duration: 0.9,
+          ease: "power4.out",
+          stagger: { amount: 0.3 },
+        });
+        createScrollTrigger($(this), tl);
       });
-    }
-    $("[scrub-each-word]").each(function (index) {
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: $(this),
-          start: "top 70%",
-          end: "top 20%",
-          scrub: 0.5,
-        },
-      });
-      tl.from($(this).find(".char"), {
-        opacity: 0.15,
-        duration: 0.3,
-        ease: "power1.out",
-        stagger: { each: 0.4 },
-      });
+
+      // Avoid flash of unstyled content
+      gsap.set("[text-split]", { opacity: 1 });
+
+      // Copy footer mail
+      window.withJquery = function () {
+        console.time("time1");
+        var temp = $("<input>");
+        $("body").append(temp);
+        temp.val($(".is-mail-to-copy").text()).select();
+        document.execCommand("copy");
+        temp.remove();
+        console.timeEnd("time1");
+      };
     });
-
-    $("[letters-slide-up]").each(function (index) {
-      let tl = gsap.timeline({ paused: true });
-      tl.from($(this).find(".word"), {
-        yPercent: 130,
-        duration: 0.9,
-        ease: "power4.out",
-        stagger: { amount: 0.3 },
-      });
-      createScrollTrigger($(this), tl);
-    });
-
-    // Avoid flash of unstyled content
-    gsap.set("[text-split]", { opacity: 1 });
-
-    // Copy footer mail
-    window.withJquery = function () {
-      console.time("time1");
-      var temp = $("<input>");
-      $("body").append(temp);
-      temp.val($(".is-mail-to-copy").text()).select();
-      document.execCommand("copy");
-      temp.remove();
-      console.timeEnd("time1");
-    };
-
-  })
+  }, []);
 
   useEffect(() => {
     let splitText;
@@ -416,7 +408,6 @@ const Home = () => {
                           data-w-id="53e6f3bd-abed-3d64-d7c3-502192f03ad0"
                           sizes="100vw"
                           alt=""
-                          srcset="images/Mask group.png"
                           className="home-span-image"
                         />
                       </div>
@@ -488,7 +479,6 @@ const Home = () => {
                 src={background}
                 loading="eager"
                 sizes="(max-width: 479px) 100vw, 97vw"
-                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
                 className="gradient__image is-home-hero-right"
               />
@@ -496,7 +486,6 @@ const Home = () => {
                 src={background}
                 loading="eager"
                 sizes="100vw"
-                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
                 className="gradient__image is-home-hero"
               />
@@ -1535,7 +1524,7 @@ const Home = () => {
       <div className="globals">
         <div className="w-embed"></div>
 
-
+        
 
         <Loader />
 
