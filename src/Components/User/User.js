@@ -70,14 +70,34 @@ const User = () => {
     // link.download = "contact.vcf";
     // link.click();
 
-    const card = createVCard({ firstName: name, title: 'Technical Director', phone: '+971 55 483 5569',url:'infinix.com' })
+    // const card = createVCard({ firstName: name, title: 'Technical Director', phone: '+971 55 483 5569',url:'infinix.com' })
 
-    const element = document.createElement("a");
-    const file = new Blob([card], { type: "text/plain;charset=utf-8" });
-    element.href = URL.createObjectURL(file);
-    element.download = "contact.vcf";
-    document.body.appendChild(element);
-    element.click();
+    // const element = document.createElement("a");
+    // const file = new Blob([card], { type: "text/plain;charset=utf-8" });
+    // element.href = URL.createObjectURL(file);
+    // element.download = "contact.vcf";
+    // document.body.appendChild(element);
+    // element.click();
+
+
+
+
+    var contact = {
+      name: "John Smith",
+      phone: "555-555-5555",
+      email: "john@example.com"
+    };
+    // create a vcard file
+    var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + name + "\nTEL;TYPE=work,voice:+971 55 483 5569\nEMAIL:zohaad92@gmail.com\nEND:VCARD";
+    var blob = new Blob([vcard], { type: "text/vcard" });
+    var url = URL.createObjectURL(blob);
+    
+    const newLink = document.createElement('a');
+    newLink.download = contact.name + ".vcf";
+    newLink.textContent = contact.name;
+    newLink.href = url;
+    
+    newLink.click();
   };
 
   return (
