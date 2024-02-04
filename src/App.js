@@ -35,6 +35,9 @@ function App() {
           <Route path="/project-page">
             <ProjectPage />
           </Route>
+          <Route path="/projectlist">
+            <ProjectList />
+          </Route>
           <Route path="/u/:name">
             <User />
           </Route>

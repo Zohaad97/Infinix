@@ -216,7 +216,7 @@ const Navigation = () => {
               </Link>
               <Link
                 stagger-link=""
-                to="/projects"
+                to="/projectlist"
                 className="menu-link w-inline-block"
               >
                 <div className="nav_main-text-wrapper">

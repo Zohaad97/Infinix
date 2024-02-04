@@ -19,5 +19,35 @@
     "description": "Rotating Platform GE Healthcare at the Arab Health 2023.  We developed a grand rotating platform to enhance the product reveal of the GE Healthcare at the Arab Health Exhibition 2023. The reveal moment demanded attention in the exhibition, becoming the focal point and an impactful event experience  ",
     "images": ["/projects/ge-healthcare-arab-health-2023/1.png","/projects/ge-healthcare-arab-health-2023/2.png","/projects/ge-healthcare-arab-health-2023/3.png"],
     "title": "GE Healthcare - Arab Health 2023"
+  },
+  {
+    "mainImage": "/projects/jotun-paints/main.png",
+    "description": "Introducing an interactive floor at the Jotun Paints event, we aimed to captivate attendees by allowingthem to walk on a virtual desert, leavingdistinctive footprints. Our technology simplifies the connection between brands and their audience, enhancing your event ambiance  ",
+    "images": ["/projects/jotun-paints/1.png","/projects/jotun-paints/2.png"],
+    "title": "Jotun Paints"
+  },
+  {
+    "mainImage": "/projects/emaar-properties/main.png",
+    "description": "At Emaar Properties' property launch, we transformed the atmosphere into a natural oasis. Water-themed floor content synchronized with nature visuals on the walls, creating a mesmerizing synergy. The vivid content displayed on the 3.9 mm pitch floor LED adds a striking visual dimension to events between brands and their audience. ",
+    "images": ["/projects/emaar-properties/1.png","/projects/emaar-properties/2.png"],
+    "title": "Emaar Properties"
+  },
+  {
+    "mainImage": "/projects/tahakom-gitex-2023/main.png",
+    "description": "At Gitex Global 2023, Tahakom Stand ambience and design was advanced with the  Kinetic Wall—a dynamic display of LED tiles protruding to form captivating patterns, featuring Tahakom Branded animations. This eye-catching centerpiece became a focal point, drawing in intrigued visitors. \n\n High-definition facades further enriched the ambiance, showcasing compelling content for a visually captivating experience. To foster engagement, we introduced custom-programmed interactive screens and sliding displays, seamlessly presenting Tahakom's services and products. \n\n The synergy of advanced hardware and innovative programming delivered a distinct and immersive experience, positioning Tahakom at the forefront of the technology exhibition. ",
+    "images": ["/projects/tahakom-gitex-2023/1.png","/projects/tahakom-gitex-2023/2.png","/projects/tahakom-gitex-2023/3.png"],
+    "title": "TAHAKOM - GITEX 2023"
+  },
+  {
+    "mainImage": "/projects/dxb-live-power-interactive-cop28-event/main.png",
+    "description": "For the COP 28 conference, we undertook the challenge of delivering a visually pleasing and engaging art installation with informative content. Focusing on the power of kinetics, we conceptualized and developed the Dynamic Motion Wall from scratch within a constrained timeframe. Successfully deploying this installation not only met the event's prestige but also showcased our industry-leading engineering skills, reinforcing our commitment to delivering innovative solutions.",
+    "images": ["/projects/dxb-live-power-interactive-cop28-event/1.png","/projects/dxb-live-power-interactive-cop28-event/2.png"],
+    "title": "DXB Live - Power Interactive - COP28 Event"
+  },
+  {
+    "mainImage": "/projects/sirar-by-stc-blackhat-mea/main.png",
+    "description": "A range of solutions were provided at the Sirar by STC booth at BlackHat MEA. We aimed to deliver custom application integrated touch screens to enable the client for a seamless presentation of services and information. A Transparent OLED interface was used for Touch and throw where the users could simply select a topic from a carousel of topics and swipe up to play content on LED Screens.",
+    "images": ["/projects/sirar-by-stc-blackhat-mea/1.png","/projects/sirar-by-stc-blackhat-mea/2.png","/projects/sirar-by-stc-blackhat-mea/3.png"],
+    "title": "Sirar by STC - BlackHat MEA"
   }
 ]
