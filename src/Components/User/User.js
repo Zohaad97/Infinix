@@ -7,36 +7,20 @@ import youtube from "../assets/images/youtube.svg";
 import facebook from "../assets/images/facebook 1.svg";
 import instagram from "../assets/images/instagram.svg";
 import phone from "../assets/images/phone.svg";
+import VCard from 'vcard-creator'
 
 import { useParams } from "react-router-dom";
 
 import "./User.css";
+const createVCard = ({ firstName, phone, title, url }) => {
 
+  //create a new vCard
+  const vCard = new VCard();
+  vCard.addJobtitle(title).addCompany("Infinix").addName(firstName).addPhoneNumber(phone)
+  return vCard.toString();
+};
 const User = () => {
-  const handleButtonClick = () => {
-    // Replace the following information with the actual contact details.
-    const contactInfo = {
-      name: "John Doe",
-      phone: "1234567890",
-      email: "john.doe@example.com",
-    };
-    // Construct a vCard string
-    const vCardData = `BEGIN:VCARD
-    VERSION:3.0
-    FN:${encodeURIComponent(contactInfo.name)}
-    TEL:${encodeURIComponent(contactInfo.phone)}
-    EMAIL:${encodeURIComponent(contactInfo.email)}
-    END:VCARD`;
 
-    // Create a Blob containing the vCard data
-    const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8" });
-
-    // Create a download link and simulate a click to trigger the download
-    const link = document.createElement("a");
-    link.href = window.URL.createObjectURL(blob);
-    link.download = "contact.vcf";
-    link.click();
-  };
 
   const onCatalougeClick = () => {
     const pdfUrl = "catalogue.pdf";
@@ -47,7 +31,7 @@ const User = () => {
     link.click();
     document.body.removeChild(link);
   };
-  const onProfileClick = () => {};
+  const onProfileClick = () => { };
 
   let { name } = useParams();
   let email;
@@ -62,25 +46,42 @@ const User = () => {
     return null;
   }
 
+  const handleButtonClick = () => {
+    // // Replace the following information with the actual contact details.
+    // const contactInfo = {
+    //   name: "John Doe",
+    //   phone: "1234567890",
+    //   email: "john.doe@example.com",
+    // };
+    // // Construct a vCard string
+    // const vCardData = `BEGIN:VCARD
+    // VERSION:3.0
+    // FN:${encodeURIComponent(contactInfo.name)}
+    // TEL:${encodeURIComponent(contactInfo.phone)}
+    // EMAIL:${encodeURIComponent(contactInfo.email)}
+    // END:VCARD`;
+
+    // // Create a Blob containing the vCard data
+    // const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8" });
+
+    // // Create a download link and simulate a click to trigger the download
+    // const link = document.createElement("a");
+    // link.href = window.URL.createObjectURL(blob);
+    // link.download = "contact.vcf";
+    // link.click();
+
+    const card = createVCard({ firstName: name, title: 'Technical Director', phone: '+971 55 483 5569',url:'infinix.com' })
+
+    const element = document.createElement("a");
+    const file = new Blob([card], { type: "text/plain;charset=utf-8" });
+    element.href = URL.createObjectURL(file);
+    element.download = "contact.vcf";
+    document.body.appendChild(element);
+    element.click();
+  };
+
   return (
     <div className="user-container">
-      {/* <div
-        style={{
-          position: "absolute",
-          width: "100%",
-          top: 0,
-          height: "1000px",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          zIndex: 10,
-          // background-size: cover;
-          // background-position: center;
-          // background-attachment: fixed;
-          // backgroundColor: "red",
-          backgroundImage: "/src/Components/assets/images/background.jpeg",
-        }}
-      ></div> */}
       <a
         data-w-id="e2c41eac-496c-f159-1a57-a056f0741e18"
         href="/"
