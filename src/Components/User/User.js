@@ -7,99 +7,50 @@ import youtube from "../assets/images/youtube.svg";
 import facebook from "../assets/images/facebook 1.svg";
 import instagram from "../assets/images/instagram.svg";
 import phone from "../assets/images/phone.svg";
-import VCard from 'vcard-creator'
 
 import { useParams } from "react-router-dom";
 
 import "./User.css";
-const createVCard = ({ firstName, phone, title, url }) => {
 
-  //create a new vCard
-  const vCard = new VCard();
-  vCard.addJobtitle(title).addCompany("Infinix").addName(firstName).addPhoneNumber(phone)
-  return vCard.toString();
-};
+const contacts = {
+  syedhabeeburahman: {
+    name: "Syed Habeeb u Rahman",
+    email: "habeeb@infinix.me",
+    phone: "+971 55 483 5569",
+    title: "Technical Director"
+  },
+  syedsajjathhussain: {
+    name: "Syed Sajjath Hussain",
+    email: "sajjath@infinix.me",
+    phone: "+971 567 15879",
+    title: "Managing Director"
+  }
+
+}
+
 const User = () => {
 
 
-  const onCatalougeClick = () => {
-    const pdfUrl = "catalogue.pdf";
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Catalouge.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-  const onProfileClick = () => { };
+
 
   let { name } = useParams();
-  let email;
 
-  if (name === "syedhabeeburahman") {
-    name = "Syed Habeeb u Rahman";
-    email = "habeeb@infinix.me";
-  } else if (name === "syedsajjathhussain") {
-    name = "Syed Sajjath Hussain";
-    email = "sajjath@infinix.me";
-  } else {
-    return null;
-  }
+  const contact = contacts[name]
 
   const handleButtonClick = () => {
-    // // Replace the following information with the actual contact details.
-    // const contactInfo = {
-    //   name: "John Doe",
-    //   phone: "1234567890",
-    //   email: "john.doe@example.com",
-    // };
-    // // Construct a vCard string
-    // const vCardData = `BEGIN:VCARD
-    // VERSION:3.0
-    // FN:${encodeURIComponent(contactInfo.name)}
-    // TEL:${encodeURIComponent(contactInfo.phone)}
-    // EMAIL:${encodeURIComponent(contactInfo.email)}
-    // END:VCARD`;
-
-    // // Create a Blob containing the vCard data
-    // const blob = new Blob([vCardData], { type: "text/vcard;charset=utf-8" });
-
-    // // Create a download link and simulate a click to trigger the download
-    // const link = document.createElement("a");
-    // link.href = window.URL.createObjectURL(blob);
-    // link.download = "contact.vcf";
-    // link.click();
-
-    // const card = createVCard({ firstName: name, title: 'Technical Director', phone: '+971 55 483 5569',url:'infinix.com' })
-
-    // const element = document.createElement("a");
-    // const file = new Blob([card], { type: "text/plain;charset=utf-8" });
-    // element.href = URL.createObjectURL(file);
-    // element.download = "contact.vcf";
-    // document.body.appendChild(element);
-    // element.click();
-
-
-
-
-    var contact = {
-      name: "John Smith",
-      phone: "555-555-5555",
-      email: "john@example.com"
-    };
     // create a vcard file
-    var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + name + "\nTEL;TYPE=work,voice:+971 55 483 5569\nEMAIL:zohaad92@gmail.com\nEND:VCARD";
+    var vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:"+contact.phone+"\nEMAIL:"+contact.email+"\nEND:VCARD";
     var blob = new Blob([vcard], { type: "text/vcard" });
     var url = URL.createObjectURL(blob);
-    
+
     const newLink = document.createElement('a');
     newLink.download = contact.name + ".vcf";
     newLink.textContent = contact.name;
     newLink.href = url;
-    
+
     newLink.click();
   };
-
+  if(!contact) return null
   return (
     <div className="user-container">
       <a
@@ -219,7 +170,7 @@ const User = () => {
       >
         <div className="user-detail about-container is-track-record">
           <div className="user-text">{name}</div>
-          <div className="user-design space-top-10">Managing Director</div>
+          <div className="user-design space-top-10">{contact.title}</div>
           <div
             style={{ width: "90%" }}
             className="separator bg--1 space-top-10  opacity-02"
@@ -230,8 +181,8 @@ const User = () => {
               <div className="gray-background">
                 <img src={phone} alt="" />
               </div>
-              <a className="social-text" target="_blank" href={`tel:`}>
-                <div>+971 567 15879</div>
+              <a className="social-text" target="_blank" href={`tel:${contact.phone}`}>
+                <div>{contact.phone}</div>
               </a>
             </div>
             <div className="single-social-detail">
@@ -241,9 +192,9 @@ const User = () => {
               <a
                 className="social-text"
                 target="_blank"
-                href={`mailto: ${email}`}
+                href={`mailto: ${contact.email}`}
               >
-                <div>{email}</div>
+                <div>{contact.email}</div>
               </a>
             </div>
             <div className="single-social-detail">
@@ -315,7 +266,7 @@ const User = () => {
           Catalogue
         </a>
       </div>
-      <div onClick={onProfileClick} className="user-btn">
+      <div className="user-btn">
         <a
           style={{
             width: "100%",
