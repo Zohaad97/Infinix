@@ -9,10 +9,10 @@
     "title": "Zain - CityScape KSA"
   },
   {
-    "mainImage": "",
-    "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth and a sliding screen for Shomoul, both executed with precision within demanding timelines. ",
-    "images": [""],
-    "title": ""
+    "mainImage": "/projects/site-gitex/main.png",
+    "description": "At GITEX 2023, SITE experienced innovation with the Interactive Dynamic Wheel—an intuitive solution where users could effortlessly select topics by moving the wheel, triggering LED Screens to display relevant information. In addition, we introduced interactive screens with custom programming, facilitating the seamless presentation of SITE's services. ",
+    "images": ["projects/site-gitex/1.png","projects/site-gitex/2.png"],
+    "title": "SITE - GITEX 2023"
   },
   {
     "mainImage": "",

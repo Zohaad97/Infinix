@@ -14,7 +14,7 @@ import slide_8 from "../assets/images/slide_8.svg";
 import slide_9 from "../assets/images/slide_9.svg";
 import slide_10 from "../assets/images/slide_10.svg";
 import Slider from "react-slick";
-import projectJson from "../../projects.json"
+import projectJson from "../../projects.json";
 
 import zaincityscape from "../assets/images/zaincityscape.svg";
 
@@ -35,9 +35,8 @@ const ProjectPage = () => {
   const [clickedImage, setClickedImage] = useState(null);
 
   const location = useLocation();
-  const name = new URLSearchParams(location.search).get('name');
-
-
+  const name = new URLSearchParams(location.search).get("name");
+  console.log("Name", name);
 
   const settings = {
     focusOnSelect: true,
@@ -50,29 +49,40 @@ const ProjectPage = () => {
     setClickedImage(null);
   };
 
-
-  const projectToRender = projectJson.find(item => item.title.replace(/ /g, "-").toLowerCase() === name)
+  const projectToRender = projectJson.find(
+    (item) => item.title.replace(/ /g, "-").toLowerCase() === name
+  );
   //const projectToRender = projectJson.find(item => item.title === "Zain - CityScape KSA")
-  console.log(projectToRender)
+  console.log(projectToRender);
 
   return (
     <Container
       title={"Interactive Installation"}
       renderDescription={() => (
-        <h1 className="about-heading">Zain - CityScape KSA</h1>
+        <h1 className="about-heading">{projectToRender.title}</h1>
       )}
       renderBody={() => (
-
         <div>
           <a className="project-page-item" href="/#">
-            <img src={projectToRender.mainImage} className="main" alt="partner" />
-            <div className="descr" dangerouslySetInnerHTML={{ __html: projectToRender.description.replace(/\n/g, "<br/>") }} />
+            <img
+              src={projectToRender.mainImage}
+              className="main"
+              alt="partner"
+            />
+            <div
+              className="descr"
+              dangerouslySetInnerHTML={{
+                __html: projectToRender.description.replace(/\n/g, "<br/>"),
+              }}
+            />
           </a>
           <div>
-            <Slider className="slider-container" rows={1}  {...settings}>
-              {projectToRender.images.map((image, index) => (<div key={`${index}`} onClick={() => handleImageClick(image)}>
-                <img src={image} alt={name} />
-              </div>))}
+            <Slider className="slider-container" rows={1} {...settings}>
+              {projectToRender.images.map((image, index) => (
+                <div key={`${index}`} onClick={() => handleImageClick(image)}>
+                  <img src={image} alt={name} />
+                </div>
+              ))}
               {/* {slideImages.map((image) => (
                 <div key={image.id} onClick={() => handleImageClick(image)}>
                   <img src={image.url} alt={image.alt} />
@@ -88,7 +98,6 @@ const ProjectPage = () => {
             )}
           </div>
         </div>
-
       )}
     />
   );
