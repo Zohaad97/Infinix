@@ -41,22 +41,24 @@ const About = () => {
       Our Winning <span className="blue-text">formula</span> is
     </h1>}
 
-      renderBody={() => <div className="about-image">
+      renderBody={() => <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="about-image">
 
-        <img src={group_12} alt="" />
-        <div className="about-image-overlay">
-          <span>
-            <h5 className="about-value-text"> ENGINEERING</h5>
+          <img src={group_12} alt="" />
+          <div className="about-image-overlay">
+            <span>
+              <h5 className="about-value-text"> ENGINEERING</h5>
 
-          </span>
-          <span>
-            <h5 className="about-value-text"> COLLABORATION</h5>
+            </span>
+            <span>
+              <h5 className="about-value-text"> COLLABORATION</h5>
 
-          </span>
-          <span>
-            <h5 className="about-value-text"> EXECUTION</h5>
+            </span>
+            <span>
+              <h5 className="about-value-text"> EXECUTION</h5>
 
-          </span>
+            </span>
+          </div>
         </div>
       </div>}
 
