@@ -4,10 +4,7 @@ import BrandPartner from "../assets/images/brand_partner.svg";
 import Interactive_Installation from "../assets/images/Interactive_Installation.svg";
 import programming from "../assets/images/programming.svg";
 import layer_1_3 from "../assets/images/Vector.svg";
-import background from "../assets/images/background.jpg";
-import background_500 from "../assets/images/background-500.jpg";
-import background_800 from "../assets/images/background-800.jpg";
-import background_1080 from "../assets/images/background-1080.jpg";
+import background from "../assets/images/background-500.jpg";
 import v_rentals from "../assets/images/V Rentals.svg";
 import layer_1_4 from "../assets/images/Layer_1 (4).png";
 import layer_1_5 from "../assets/images/Layer_1 (5).png";
@@ -24,9 +21,6 @@ import { useGSAP } from "@gsap/react";
 import { useEffect } from "react";
 import $ from "jquery";
 import SplitType from "split-type";
-// import Swiper JS
-import Swiper from "swiper";
-// import Swiper styles
 import "swiper/css";
 import Navigation from "../Navigation/Navigation";
 import Loader from "../Navigation/Loader/Loader";
@@ -136,27 +130,22 @@ const Home = () => {
     });
   });
 
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
+  // useEffect(() => {
+  //   window.onbeforeunload = function () {
+  //     window.scrollTo(0, 0);
+  //   };
 
-    window.onpageshow = function (event) {
-      if (event.persisted) {
-        window.scrollTo(0, 0);
-        window.location.reload(true);
-      }
-    };
-  }, []);
+  //   window.onpageshow = function (event) {
+  //     if (event.persisted) {
+  //       window.scrollTo(0, 0);
+  //       window.location.reload(true);
+  //     }
+  //   };
+  // }, []);
 
   useEffect(() => {
+    
     document.addEventListener("DOMContentLoaded", function () {
-      // create svg elements
-      $(".svg-code").each(function (index) {
-        let svgCode = $(this).text();
-        $(svgCode).insertAfter($(this));
-      });
-
       const logoChangers = document.querySelectorAll(".logo-changer");
 
       // Loop through each .logo-changer element and create a ScrollTrigger for it
@@ -171,12 +160,10 @@ const Home = () => {
           },
         });
       });
-
-      // Split text into spans
-      let typeSplit = new SplitType("[text-split]", {
-        types: "lines, words, chars",
-        tagName: "span",
-      });
+let typeSplit = new SplitType("[text-split]", {
+      types: "lines, words, chars",
+      tagName: "span",
+    });
 
       // Link timelines to scroll position
       function createScrollTrigger(triggerElement, timeline) {
@@ -452,7 +439,6 @@ const Home = () => {
                           data-w-id="53e6f3bd-abed-3d64-d7c3-502192f03ad0"
                           sizes="100vw"
                           alt=""
-                          srcset="images/Mask group.png"
                           className="home-span-image"
                         />
                       </div>
@@ -524,7 +510,6 @@ const Home = () => {
                 src={background}
                 loading="eager"
                 sizes="(max-width: 479px) 100vw, 97vw"
-                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
                 className="gradient__image is-home-hero-right"
               />
@@ -532,7 +517,6 @@ const Home = () => {
                 src={background}
                 loading="eager"
                 sizes="100vw"
-                srcSet={`${background_500} 500w, ${background_800} 800w, ${background_1080} 1080w, ${background} 1200w`}
                 alt=""
                 className="gradient__image is-home-hero"
               />
@@ -833,7 +817,7 @@ const Home = () => {
         <section className="section track__record logo-changer">
           <Project />
         </section>
-        <section className="section is-full logo-changer is-logos">
+        {/* <section className="section is-full logo-changer is-logos">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
@@ -1387,7 +1371,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
