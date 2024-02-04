@@ -84,38 +84,6 @@ const Home = () => {
     animateText(".move-text-1", ".target-div-1");
     animateText(".move-text-2", ".target-div-2");
     document.addEventListener("DOMContentLoaded", function () {
-      // Initialize Swiper
-      var swiper = new Swiper(".fiverr", {
-        effect: "cards",
-        grabCursor: true,
-        keyboard: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: $(this).find(".swiper-next")[0],
-          prevEl: $(this).find(".swiper-prev")[0],
-          disabledClass: "is-disabled",
-        },
-      });
-      // Initialize Swiper
-      var swiper = new Swiper(".upwork", {
-        effect: "cards",
-        grabCursor: true,
-        keyboard: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
-        },
-        navigation: {
-          nextEl: $(this).find(".upwork-next")[0],
-          prevEl: $(this).find(".upwork-prev")[0],
-          disabledClass: "is-disabled",
-        },
-      });
       // Append elements
       $(".span-wrapper").each(function (index) {
         let relatedEl = $(".span-element").eq(index);
@@ -144,7 +112,6 @@ const Home = () => {
   // }, []);
 
   useEffect(() => {
-    
     document.addEventListener("DOMContentLoaded", function () {
       const logoChangers = document.querySelectorAll(".logo-changer");
 
@@ -160,10 +127,10 @@ const Home = () => {
           },
         });
       });
-let typeSplit = new SplitType("[text-split]", {
-      types: "lines, words, chars",
-      tagName: "span",
-    });
+      let typeSplit = new SplitType("[text-split]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
 
       // Link timelines to scroll position
       function createScrollTrigger(triggerElement, timeline) {
@@ -341,7 +308,7 @@ let typeSplit = new SplitType("[text-split]", {
     });
   }, []);
 
-  useEffect(() => { });
+  useEffect(() => {});
 
   useEffect(() => {
     window.Webflow && window.Webflow.destroy();
@@ -1554,8 +1521,6 @@ let typeSplit = new SplitType("[text-split]", {
       </div>
       <div className="globals">
         <div className="w-embed"></div>
-
-        
 
         <Loader />
 
