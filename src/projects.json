@@ -49,5 +49,23 @@
     "description": "A range of solutions were provided at the Sirar by STC booth at BlackHat MEA. We aimed to deliver custom application integrated touch screens to enable the client for a seamless presentation of services and information. A Transparent OLED interface was used for Touch and throw where the users could simply select a topic from a carousel of topics and swipe up to play content on LED Screens.",
     "images": ["/projects/sirar-by-stc-blackhat-mea/1.png","/projects/sirar-by-stc-blackhat-mea/2.png","/projects/sirar-by-stc-blackhat-mea/3.png"],
     "title": "Sirar by STC - BlackHat MEA"
+  },
+  {
+    "mainImage": "/projects/shomul-at-cityscape/main.png",
+    "description": "We successfully implemented a cutting-edge interactive concept, the Automated Sliding Screen, at the Shomoul Stand during Cityscape 2023. Despite a tight timeline, our team delivered a comprehensive solution that creatively showcased various Shomoul’s  establishments. Through a tablet interface, users could select topics, triggering the sliding screen to dynamically display pertinent information about Shomoul's hotels in an engaging manner. ",
+    "images": ["/projects/shomul-at-cityscape/1.png","/projects/shomul-at-cityscape/2.png"],
+    "title": "SHOMUL AT CITYSCAPE"
+  },
+  {
+    "mainImage": "/projects/saudi-downtown-company-cityscape-global-event/main.png",
+    "description": "At Cityscape Global 2023, we successfully implemented an immersive LED cube for Saudi Downtown booth, enhancing the visitor experience with an immersive installation. Tasked with presenting various upcoming projects of SDC in a unique way, the cube, shaped like a room, featured LED panels both inside and outside, displaying branded content. This strategic setup immersed visitors and called for attention of many more. The cube served as an impactful platform, influencing decisions and effectively showcasing the transformative potential of Saudi Downtown projects.",
+    "images": ["/projects/saudi-downtown-company-cityscape-global-event/1.png","/projects/saudi-downtown-company-cityscape-global-event/2.png"],
+    "title": "Saudi Downtown Company - Cityscape Global  event "
+  },
+  {
+    "mainImage": "/projects/site-blackhat/main.png",
+    "description": "At GITEX 2023, SITE experienced innovation with the Interactive Dynamic Wheel—an intuitive solution where users could effortlessly select topics by moving the wheel, triggering LED Screens to display relevant information. In addition, we introduced interactive screens with custom programming, facilitating the seamless presentation of SITE's services. ",
+    "images": ["/projects/site-blackhat/1.png","/projects/site-blackhat/2.png","/projects/site-blackhat/3.png"],
+    "title": "SITE - blackhat"
   }
 ]

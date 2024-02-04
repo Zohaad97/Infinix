@@ -43,36 +43,6 @@ const Projects = () => {
               </a>
             );
           })}
-
-          {/* <a className="partner-item" href="/#">
-            <img src={tehkom} alt="Tehkom" />
-            <h4 className="project-heading4">
-              COP 28
-              <br />
-              <span className="project-desc">
-                Dynamic Motion Wall, Rextos Dubai Hotel
-              </span>
-            </h4>
-          </a>
-          <a className="partner-item" href="/#">
-            <img src={sitee} alt="Sitee" />
-            <h4 className="project-heading4">
-              Site <br />
-              <span className="project-desc">
-                Innovative presentations, GITEX 2023
-              </span>
-            </h4>
-          </a>
-          <a className="partner-item" href="/#">
-            <img src={general} alt="General" />
-            <h4 className="project-heading4">
-              GE Health Care
-              <br />
-              <span className="project-desc">
-                Rotating Platform, Arab health 2023
-              </span>
-            </h4>
-          </a> */}
         </div>
       )}
     />
