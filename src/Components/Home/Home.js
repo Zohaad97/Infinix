@@ -28,10 +28,9 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Projects";
 
-
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.fromTo(
       ".page__wrap",
@@ -786,7 +785,7 @@ let typeSplit = new SplitType("[text-split]", {
         <section className="section track__record logo-changer">
           <Project />
         </section>
-        <section className="section is-full logo-changer is-logos">
+        {/* <section className="section is-full logo-changer is-logos">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
@@ -1340,7 +1339,7 @@ let typeSplit = new SplitType("[text-split]", {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="section is-full logo-changer in-home is-8">
           <div className="related_section radius-36">
             <div className="page-spacing__medium is-related-articles">
