@@ -133,6 +133,10 @@ const Home = () => {
           },
         });
       });
+      let typeSplit = new SplitType("[text-split]", {
+        types: "lines, words, chars",
+        tagName: "span",
+      });
 
       
 
@@ -474,7 +478,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div
+            {/* <div
               data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
               className="gradient__image-wrapper"
             >
@@ -494,7 +498,7 @@ const Home = () => {
                 alt=""
                 className="gradient__image is-home-hero"
               />
-            </div>
+            </div> */}
           </section>
           <section
             tr-scrollflip-scrubend="40% center"
@@ -541,7 +545,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               data-w-id="739117db-c5ef-61c8-e2f2-1eaf84c45ea8"
               className="gradient__image-wrapper"
             >
@@ -551,7 +555,7 @@ const Home = () => {
                 alt=""
                 className="gradient__image is-4 opacity-06"
               />
-            </div>
+            </div> */}
           </section>
         </div>
         {/* <section className="section is-service z-index-5">
