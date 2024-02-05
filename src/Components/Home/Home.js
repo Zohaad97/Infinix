@@ -245,10 +245,6 @@ const Home = () => {
 
     function handleScroll() {
       var buttons = document.getElementsByClassName("back-to-top");
-      let showReelFloatingContainer = document.getElementsByClassName(
-        "floating-button-container"
-      );
-      let showReel = document.getElementsByClassName("floating-button");
 
       for (var i = 0; i < buttons.length; i++) {
         if (buttons[i].style) {
@@ -260,15 +256,20 @@ const Home = () => {
         }
       }
 
-      if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
-        if (window.scrollY > window.innerHeight) {
-          showReelFloatingContainer[0].style.bottom = "50px";
-          showReel[0].style.display = "flex";
-        } else {
-          showReelFloatingContainer[0].style.bottom = "-450px";
-          showReel[0].style.display = "none";
-        }
-      }
+      // let showReelFloatingContainer = document.getElementsByClassName(
+      //   "floating-button-container"
+      // );
+      // let showReel = document.getElementsByClassName("floating-button");
+
+      // if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
+      //   if (window.scrollY > window.innerHeight) {
+      //     showReelFloatingContainer[0].style.bottom = "50px";
+      //     showReel[0].style.display = "flex";
+      //   } else {
+      //     showReelFloatingContainer[0].style.bottom = "-450px";
+      //     showReel[0].style.display = "none";
+      //   }
+      // }
     }
 
     // Scroll to the top with a 2-second duration when any button is clicked

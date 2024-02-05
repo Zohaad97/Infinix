@@ -6699,10 +6699,14 @@ a {
   bottom: -450px; /* Initially hide the button off the screen */
   right: 20px;
   transition: bottom 1s ease;
+
+  display: none;
 }
 
 .floating-button-container.show {
   bottom: 50px; /* Show the button */
+
+  display: none;
 }
 
 .floating-button {

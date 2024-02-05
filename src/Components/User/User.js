@@ -223,7 +223,7 @@ const User = () => {
                 href="https://www.youtube.com/@InfinixInnovations-hp1sv"
                 target="_blank"
               >
-                <div>@infinixinnovation</div>
+                <div>infinixinnovation</div>
               </a>
             </div>
             <div className="single-social-detail">
