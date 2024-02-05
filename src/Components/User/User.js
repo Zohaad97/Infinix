@@ -19,8 +19,8 @@ const contacts = {
     email: "habeeb@infinix.me",
     phone: "+971 55 483 5569",
     title: "Technical Director",
-    firstName: "Syed Habeebu",
-    lastName: "Rahman"
+    firstName: "Syed Habeeburahman",
+    lastName: ""
   },
   syedsajjathhussain: {
     name: "Syed Sajjath Hussain",
