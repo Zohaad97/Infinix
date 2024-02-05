@@ -15,11 +15,11 @@ import "./User.css";
 
 const contacts = {
   syedhabeeburahman: {
-    name: "Syed Habeeb u Rahman",
+    name: "Syed Habeeburahman",
     email: "habeeb@infinix.me",
     phone: "+971 55 483 5569",
     title: "Technical Director",
-    firstName: "Syed Habeeb u",
+    firstName: "Syed Habeebu",
     lastName: "Rahman"
   },
   syedsajjathhussain: {
