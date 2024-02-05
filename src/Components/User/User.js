@@ -5,7 +5,8 @@ import mail from "../assets/images/mail.svg";
 import globe from "../assets/images/globe.svg";
 import youtube from "../assets/images/youtube.svg";
 import facebook from "../assets/images/facebook 1.svg";
-import instagram from "../assets/images/instagram.svg";
+// import instagram from "../assets/images/instagram.svg";
+import instagram from "../assets/images/footer-instagram.svg";
 import phone from "../assets/images/phone.svg";
 
 import { useParams } from "react-router-dom";
@@ -173,7 +174,7 @@ const User = () => {
         className="spacing-bottom-04-px is-track-record bg--2 radius-24"
       >
         <div className="user-detail about-container is-track-record">
-          <div className="user-text">{name}</div>
+          <div className="user-text">{contact.name}</div>
           <div className="user-design space-top-10">{contact.title}</div>
           <div
             style={{ width: "90%" }}

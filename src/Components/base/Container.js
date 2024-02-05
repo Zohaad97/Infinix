@@ -342,7 +342,7 @@ const Container = ({
                   <div className="about-container container-body is-track-record">
                     <div className="record-div bg--4">
                       <div className="record__heading-div">
-                        <h2 className="p-leading opacity-06">{title}</h2>
+                        <h2 style={{textAlign:'center'}} className="p-leading opacity-06">{title}</h2>
                       </div>
                     </div>
 

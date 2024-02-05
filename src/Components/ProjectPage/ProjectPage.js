@@ -74,9 +74,9 @@ const ProjectPage = () => {
   console.log({ projectImages });
   return (
     <Container
-      title={"Interactive Installation"}
+      title={projectToRender.title.split("-")[0]?.toUpperCase()}
       renderDescription={() => (
-        <h1 className="about-heading">{projectToRender.title}</h1>
+        <h1 className="about-heading">{projectToRender.title.toUpperCase()}</h1>
       )}
       renderBody={() => (
         <div>
@@ -93,7 +93,7 @@ const ProjectPage = () => {
               }}
             />
           </a>
-          <div>
+          <div style={{marginTop:50}}>
             <ImageSlider images={projectToRender.images} />
             {/* <Slider className="slider-container" {...settings}>
               {projectImages.map((images, index) => (
