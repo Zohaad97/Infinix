@@ -161,7 +161,6 @@ const Navigation = () => {
               stagger-link=""
               data-scroll="start"
               data-w-id="e2c41eac-496c-f159-1a57-a056f0741e2d"
-              href="/#"
               className="nav_top-single-closer w-inline-block"
             >
               <img
