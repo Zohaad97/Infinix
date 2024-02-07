@@ -20,6 +20,7 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import "../About/About.css";
 import "../Services/Service.css";
+import { FooterMain } from "../Footer/FooterMain";
 gsap.registerPlugin(ScrollTrigger);
 
 const Container = ({
@@ -333,35 +334,40 @@ const Container = ({
           className="teleport-component"
         >
           <section
+            style={{ paddingTop: 130 }}
             tr-scrollflip-scrubstart="top top"
-            className="section-about-page"
+            className="section track__record logo-changer container-small"
           >
-            <div className="page-spacing__medium test">
-              <div className="container-large">
-                <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
-                  <div className="about-container container-body is-track-record">
-                    <div className="record-div bg--4">
-                      <div className="record__heading-div">
-                        <h2 style={{textAlign:'center'}} className="p-leading opacity-06">{title}</h2>
-                      </div>
-                    </div>
 
-                    <div className="container-spacing"></div>
-                    {renderDescription && (
-                      <div className="container-spacing">
-                        {renderDescription()}
-                      </div>
-                    )}
+            <div className="spacing-bottom-04-px is-track-record bg--2 radius-24">
+              <div className="container-small is-track-record remove-bottom_space">
 
-                    {renderSubtitle && renderSubtitle()}
-
-                    {/* ----------Services------------- */}
-                    {renderBody && (
-                      <div className="container-spacing">{renderBody()}</div>
-                    )}
+                <div className="record-div bg--4">
+                  <div className="record__heading-div">
+                    <h2 style={{ textAlign: 'center' }} className="p-leading opacity-06">{title}</h2>
                   </div>
                 </div>
+
+
+                <div className="container-spacing"></div>
+
+                {renderDescription && (
+                  <div className="container-spacing">
+                    {renderDescription()}
+                  </div>
+                )}
+
+                {renderSubtitle && renderSubtitle()}
+
+                <div className="container-spacing"></div>
+
+                {/* ----------Services------------- */}
+                {renderBody && (
+                  <div className="container-spacing">{renderBody()}</div>
+                )}
               </div>
+
+
             </div>
           </section>
         </div>
@@ -391,15 +397,7 @@ const Container = ({
           />
         </div>)} */}
 
-        <section className="section is-full logo-changer in-home is-8">
-          <div className="related_section radius-36">
-            <div className="page-spacing__medium is-related-articles">
-              <NewsLetter />
-
-              <Footer />
-            </div>
-          </div>
-        </section>
+        <FooterMain />
       </main>
       <div
         data-w-id="25b693c8-060d-6dbd-c653-6e06b7aa6b3c"

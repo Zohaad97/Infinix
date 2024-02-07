@@ -12,7 +12,7 @@ const Project = () => {
             <h2 className="p-leading opacity-06">Projects</h2>
           </div>
         </div>
-        <h2 className="project-blue-text">
+        <h2 style={{whiteSpace:'nowrap'}} className="project-blue-text">
           Elevate Your Business &nbsp;
           <br />
           <span className="project-heading-home">with Actionable Technologies</span>

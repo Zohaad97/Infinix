@@ -21,9 +21,9 @@ const Projects = () => {
     <Container
       title={"Projects"}
       renderDescription={() => (
-        <h1 className="about-heading">
+        <h1 style={{ whiteSpace: 'nowrap', lineHeight: 1.2 }} className="about-heading">
           Empower Your Activations with <br />
-          <span className="blue-text">Engagement Driven</span>
+          <span className="blue-text">Engagement Driven </span>
           Technology
         </h1>
       )}

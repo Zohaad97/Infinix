@@ -27,6 +27,7 @@ import Loader from "../Navigation/Loader/Loader";
 import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Projects";
+import { FooterMain } from "../Footer/FooterMain";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -71,7 +72,7 @@ const Home = () => {
         gsap.to(textToMove, {
           x: endX - startX,
           y: finalY - startY,
-          fontSize:"67px",
+          fontSize: "67px",
           scrollTrigger: {
             trigger: ".teleport-component",
             start: "2% top",
@@ -241,7 +242,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    
+
     window.addEventListener("scroll", handleScroll);
 
     function handleScroll() {
@@ -428,7 +429,7 @@ const Home = () => {
                 </div>
               </div>
 
-           
+
             </div>
 
             <div className="home-bg">
@@ -1306,15 +1307,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="section is-full logo-changer in-home is-8 container-small">
-          <div className="radius-36">
-            <div className="is-related-articles">
-              <NewsLetter />
-
-              <Footer />
-            </div>
-          </div>
-        </section>
+        <FooterMain />
       </main>
       <div
         data-w-id="25b693c8-060d-6dbd-c653-6e06b7aa6b3c"
