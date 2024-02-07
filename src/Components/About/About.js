@@ -9,20 +9,9 @@ import frame_1 from "../assets/images/Frame 1.png";
 import Graphic_Elements from "../assets/images/Graphic_Elements.png";
 import Graphic_Elements_1 from "../assets/images/Graphic_Elements (1).png";
 import Circle from "../assets/images/Circle.png";
-import infinicx_icon from "../assets/images/infinicx icon.png";
-import MaskGroup from "../assets/images/Mask-group.png";
 import { gsap, ScrollTrigger } from "gsap/all";
-import { useGSAP } from "@gsap/react";
-import { useEffect } from "react";
-import $ from "jquery";
-import SplitType from "split-type";
-// import Swiper JS
-import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
-import Navigation from "../Navigation/Navigation";
-import NewsLetter from "../NewsLetter/NewsLetter";
-import Footer from "../Footer/Footer";
 import "../About/About.css";
 import Container from "../base/Container";
 
@@ -62,7 +51,7 @@ const About = () => {
         </div>
       </div>}
 
-      renderExtra={() => <> <section style={{ zIndex: 2 }} className="container-medium">
+      renderExtra={() => <> <section style={{ zIndex: 2 }} className="container-medium single__wrapper ">
         <div className="approach-container space-top-10">
           <div className="approach-left">
             <h2 className="h2 humongus approach-heading">Approach</h2>
@@ -112,8 +101,10 @@ const About = () => {
             </div>
           </div>
 
-          <div className="approach-right">
-            <img src={Circle} alt="" />
+          <div className="approach-right is-single-process">
+            <div className="single_process-sticky-heading">
+              <img src={Circle} alt="" />
+            </div>
           </div>
         </div>
       </section>
