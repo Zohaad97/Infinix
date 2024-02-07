@@ -427,47 +427,11 @@ const Home = () => {
                 </div>
               </div>
 
-              <div>
-                <a
-                  id="show-reel"
-                  href="#difference"
-                  className="home__hero-arrow-wrap w-inline-block"
-                >
-                  <img
-                    src={Group_3}
-                    loading="lazy"
-                    alt=""
-                    className="home__hero-arrrow hide-on-mobile"
-                  />
-                  <img
-                    src={Group_3}
-                    loading="lazy"
-                    alt=""
-                    className="home__hero-arrrow hide-on-desktop"
-                  />
-                </a>
-              </div>
+           
             </div>
 
             <div className="home-bg">
               <div className="home__hero-bg">
-                <img
-                  src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f2e2314ae531679cb2a32f_Cut-edge-white.svg"
-                  loading="lazy"
-                  style={{
-                    WebkitTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    MozTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    msTransform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                    transform:
-                      "translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
-                  }}
-                  alt=""
-                  id="cut-edge-home-hero"
-                  className="cut-edge is-home-hero"
-                />
                 <a
                   href="#difference"
                   className="cut-edge is-home-hero home-mobile is-link w-inline-block"
