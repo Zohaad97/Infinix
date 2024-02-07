@@ -26,7 +26,7 @@ const Projects = () => {
         </h1>
       )}
       renderBody={() => (
-        <div className="column-50 flex-vertical is-grid is-footer-grid space-top">
+        <div className="space-top">
 
           <ul class="project-images-list">
 
