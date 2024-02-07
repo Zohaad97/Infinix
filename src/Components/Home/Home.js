@@ -1496,39 +1496,6 @@ const Home = () => {
                 data-duration="0"
               ></div>
             </div>
-            <div className="cookie__text-wrapper">
-              <h3 className="p-body">
-                Hi! Cookies for vibes, emails by choice. Opt-in for news, ok?
-              </h3>
-              <div className="cookie__button-wrapper">
-                <a
-                  stagger-link=""
-                  href="/https://www.upwork.com/freelancers/hristodikov/"
-                  target="_blank"
-                  className="close-button-redirect w-inline-block"
-                >
-                  <div
-                    stagger-link-text="cookie"
-                    className="p-body-normal text-leave underline-link is-cookie"
-                  >
-                    Leave website
-                  </div>
-                </a>
-                <a
-                  fs-cc="close"
-                  stagger-link=""
-                  href="/#"
-                  className="close-button w-inline-block"
-                >
-                  <div
-                    stagger-link-text=""
-                    className="p-body-normal text-accent underline-link is-cookie"
-                  >
-                    Accept &amp; Close
-                  </div>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1552,39 +1519,6 @@ const Home = () => {
                 data-default-duration="20.02001920458794"
                 data-duration="0"
               ></div>
-            </div>
-            <div className="cookie__text-wrapper">
-              <h3 className="p-body">
-                Hi! Cookies for vibes, emails by choice. Opt-in for news, ok?
-              </h3>
-              <div className="cookie__button-wrapper">
-                <a
-                  href="/#"
-                  stagger-link=""
-                  target="blank"
-                  className="close-button-redirect w-inline-block"
-                >
-                  <div
-                    stagger-link-text="cookie"
-                    className="p-body-normal text-leave underline-link is-cookie"
-                  >
-                    Leave website
-                  </div>
-                </a>
-                <a
-                  fs-cc="close"
-                  stagger-link=""
-                  href="/#"
-                  className="close-button w-inline-block"
-                >
-                  <div
-                    stagger-link-text=""
-                    className="p-body-normal text-accent underline-link is-cookie"
-                  >
-                    Accept &amp; Close
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
