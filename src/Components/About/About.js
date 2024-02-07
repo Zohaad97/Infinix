@@ -102,7 +102,7 @@ const About = () => {
           </div>
 
           <div className="approach-right is-single-process">
-            <div className="single_process-sticky-heading">
+            <div style={{top:'20vh'}} className="single_process-sticky-heading">
               <img src={Circle} alt="" />
             </div>
           </div>
