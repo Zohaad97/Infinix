@@ -433,17 +433,6 @@ const Home = () => {
 
             <div className="home-bg">
               <div className="home__hero-bg">
-                <a
-                  href="#difference"
-                  className="cut-edge is-home-hero home-mobile is-link w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650ad622817c9f1e05d281c4_white-side.svg"
-                    loading="lazy"
-                    alt=""
-                    className="cut-edge is-home-hero home-mobile"
-                  />
-                </a>
               </div>
             </div>
 
