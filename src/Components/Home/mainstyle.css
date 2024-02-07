@@ -5214,7 +5214,7 @@ a {
   display: flex;
 }
 .nav__logo {
-  margin-top: -8px;
+  margin-top: 8px;
 }
 .nav_fontsize {
   font-size: 40px;
@@ -8023,7 +8023,7 @@ a {
     height: 48px;
   }
   .nav__logo {
-    margin-top: -4px;
+    margin-top: 4px;
   }
   .form-block {
     margin-top: -170px;
