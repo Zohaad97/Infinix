@@ -776,7 +776,7 @@ const Home = () => {
         <section className="section track__record logo-changer container-small">
           <Project />
         </section>
-        <section className="section is-full logo-changer is-logos container-small page-spacing__large">
+        <section className="section is-full logo-changer container-small page-spacing__large">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">

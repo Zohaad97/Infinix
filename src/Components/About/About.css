@@ -161,6 +161,7 @@
   .about-heading {
     font-size: 32px;
     margin-top: 20px;
+    white-space: unset;
   }
 
   .about-desc {

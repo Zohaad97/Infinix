@@ -3,20 +3,18 @@ import "../Home/internal.css";
 import "../Home/mainstyle.css";
 import { Link } from "react-router-dom";
 
-import site2 from "../assets/images/emaar-project.png";
-import tehkom from "../assets/images/cop-project.png";
-import sitee from "../assets/images/site-project.png";
-import general from "../assets/images/general.png";
+import "../ImageSlider/slider.css"
 
 import "../About/About.css";
 import "../Services/Service.css";
 import Container from "../base/Container";
 import Projectjson from "../../projects.json";
+import { sliceArrayIntoPairs } from "../ImageSlider";
 
 const Projects = () => {
   const [url, setUrl] = useState();
   const projectUrl = "/project-page?name=ge-healthcare---arab-health-2023";
-
+  const slicedProjects = sliceArrayIntoPairs(Projectjson);
   return (
     <Container
       title={"Projects"}
@@ -29,24 +27,39 @@ const Projects = () => {
       )}
       renderBody={() => (
         <div className="column-50 flex-vertical is-grid is-footer-grid space-top">
-          {Projectjson.map((item) => {
-            return (
-              <Link
-                to={`/project-page?name=${item.title
+
+          <ul class="project-images-list">
+
+            {slicedProjects.map((projects, index) => (
+              <li key={index} className="project-images-list-item">
+                <div>
+                  <Link to={`/project-page?name=${projects[0].title
+                    .replace(/ /g, "-")
+                    .toLowerCase()}`}
+                  >
+                    <img className="image" src={projects[0].mainImage} alt={`Slide ${index}`} />
+                    <h4 className="project-heading4">
+                      {projects[0].title}
+                      {setUrl(projects[0].title)} <br />
+                    </h4>
+                  </Link>
+                </div>
+
+                {projects[1] && <div>   <Link to={`/project-page?name=${projects[1].title
                   .replace(/ /g, "-")
                   .toLowerCase()}`}
-                className="partner-item"
-              >
-                <img src={item.mainImage} alt="partner" />
+                > <img className="image" src={projects[1].mainImage} alt={`Slide ${index}`} />
+                  <h4 className="project-heading4">
+                    {projects[1].title}
+                    {setUrl(projects[1].title)} <br />
+                  </h4>
+                </Link>
+                </div>}
 
-                <h4 className="project-heading4">
-                  {item.title}
-                  {setUrl(item.title)} <br />
-                  {/* <span className="project-desc">{item.description}</span> */}
-                </h4>
-              </Link>
-            );
-          })}
+              </li>
+            ))}
+          </ul>
+          
         </div>
       )}
     />
