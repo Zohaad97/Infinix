@@ -88,8 +88,9 @@ const Footer = () => {
             info@infinix.me
           </a>
         </h4>
-        <h4>
+        <h4 style={{ marginTop: 10 }}>
           <a
+            style={{ whiteSpace: 'nowrap' }}
             className="address"
             href="https://maps.app.goo.gl/Pt4k5ko9j8bEnox69?g_st=ic"
             target="_blank"
@@ -97,13 +98,25 @@ const Footer = () => {
             Business Center 1,
           </a>
         </h4>
-        <h5>
+        <h5 style={{ marginTop: 5 }}>
           <a
+            style={{ whiteSpace: 'nowrap' }}
             className="p-body address"
             href="https://www.google.com/maps?q=LATITUDE,LONGITUDE"
             target="_blank"
           >
-            M Floor, The Meydan Hotel,Nad Al Sheba, Dubai, U.A.E.
+            M Floor, The Meydan Hotel,
+          </a>
+
+        </h5>
+        <h5>
+          <a
+            style={{ whiteSpace: 'nowrap' }}
+            className="p-body address"
+            href="https://www.google.com/maps?q=LATITUDE,LONGITUDE"
+            target="_blank"
+          >
+            Nad Al Sheba, Dubai, U.A.E.
           </a>
         </h5>
 

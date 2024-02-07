@@ -71,6 +71,7 @@ const Home = () => {
         gsap.to(textToMove, {
           x: endX - startX,
           y: finalY - startY,
+          fontSize:"67px",
           scrollTrigger: {
             trigger: ".teleport-component",
             start: "2% top",
@@ -758,10 +759,10 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section track__record logo-changer">
+        <section className="section track__record logo-changer container-small">
           <Project />
         </section>
-        <section className="section is-full logo-changer is-logos">
+        <section className="section is-full logo-changer is-logos container-small">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
@@ -1316,9 +1317,9 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="section is-full logo-changer in-home is-8">
-          <div className="related_section radius-36">
-            <div className="page-spacing__medium is-related-articles">
+        <section className="section is-full logo-changer in-home is-8 container-small">
+          <div className="radius-36">
+            <div className="is-related-articles">
               <NewsLetter />
 
               <Footer />
