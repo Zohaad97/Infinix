@@ -59,6 +59,30 @@ const Home = () => {
     }).set(".loader", {
       display: "none",
     });
+
+    const fontSizeBreakpoints = {
+      small: 27,
+      medium: 47,
+      large: 67,
+      // Define additional breakpoints as needed
+    };
+
+    function getFontSize() {
+      // Update font size based on screen width and breakpoints
+      const screenWidth = window.innerWidth;
+      let calculatedSize = fontSizeBreakpoints.medium; // Default font size
+
+      if (screenWidth < 600) {
+        calculatedSize = fontSizeBreakpoints.small;
+      } else if (screenWidth >= 600 && screenWidth < 1024) {
+        calculatedSize = fontSizeBreakpoints.medium;
+      } else {
+        calculatedSize = fontSizeBreakpoints.large;
+      }
+
+      return calculatedSize
+    }
+
     function animateText(textClass, targetClass) {
       let textElements = document.querySelectorAll(textClass);
       let targetDiv = document.querySelector(targetClass);
@@ -72,7 +96,7 @@ const Home = () => {
         gsap.to(textToMove, {
           x: endX - startX,
           y: finalY - startY,
-          fontSize: "67px",
+          fontSize: getFontSize()+"px",
           scrollTrigger: {
             trigger: ".teleport-component",
             start: "2% top",
@@ -752,7 +776,7 @@ const Home = () => {
         <section className="section track__record logo-changer container-small">
           <Project />
         </section>
-        <section className="section is-full logo-changer is-logos container-small">
+        <section className="section is-full logo-changer is-logos container-small page-spacing__large">
           <div className="space-top radius-36">
             <div className="logos__inner-wrapper">
               <div className="logo__heading">
