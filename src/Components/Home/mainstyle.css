@@ -7841,6 +7841,11 @@ a {
     height: 120px;
   }
 
+  .logo__double {
+    width: 66%;
+    height: 120px;
+  }
+
   .logo__single-brand-partner {
     width: 50.6%;
     height: 100%;

@@ -18,7 +18,7 @@ import isolationMode from "../assets/images/Isolation_Mode (1).png";
 import MaskGroup from "../assets/images/Mask-group.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import $ from "jquery";
 import SplitType from "split-type";
 import "swiper/css";
@@ -32,6 +32,11 @@ import { FooterMain } from "../Footer/FooterMain";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+
+  const moveText1 = useRef()
+  const moveText2 = useRef()
+  const targetDiv1 = useRef()
+  const targetDiv2 = useRef()
 
 
   // useEffect(() => {
@@ -112,9 +117,8 @@ const Home = () => {
         path.setAttribute("fill", "currentColor");
       });
 
-      function animateText(textClass, targetClass, offset = 0) {
-        let textElements = document.querySelectorAll(textClass);
-        let targetDiv = document.querySelector(targetClass);
+      function animateText(textElements, targetDiv, offset = 0) {
+        console.log({textElements, targetDiv,})
         let endX = targetDiv.getBoundingClientRect().left;
         let endY =
           targetDiv.getBoundingClientRect().top + targetDiv.offsetHeight / 2;
@@ -137,8 +141,17 @@ const Home = () => {
         });
       }
       // Just call these once
-      animateText(".move-text-1", ".target-div-1", -30);
-      animateText(".move-text-2", ".target-div-2", 85);
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 600) {
+        animateText([moveText1.current], targetDiv1.current);
+        animateText([moveText2.current], targetDiv2.current);
+      }else{
+        animateText([moveText1.current], targetDiv1.current, -30);
+        animateText([moveText2.current], targetDiv2.current, 85);
+      }
+
+    
     });
   }, [])
 
@@ -433,6 +446,7 @@ const Home = () => {
                     <span className="home-cta_span2 span-wrapper"> </span>
                     <span className="text-accent"> </span>that &nbsp;
                     <span
+                      ref={moveText1}
                       tr-scrollflip-element="origin"
                       className="move-text-1 text-accent"
                     >
@@ -441,6 +455,7 @@ const Home = () => {
                     </span>
                     <br />
                     <span
+                      ref={moveText2}
                       tr-scrollflip-element="origin"
                       className="move-text-2 text-accent"
                     >
@@ -519,9 +534,9 @@ const Home = () => {
                   <div className="spacing-container-03"></div>
                   <div id="difference" className="spacing-container-03"></div>
                   <div className="wrapper__teleport">
-                    <div className="target-div-1 z-index-5"></div>
+                    <div ref={targetDiv1} className="target-div-1 z-index-5"></div>
                     <div className="spacing-container-04 hide-on-desktop"></div>
-                    <div className="target-div-2 z-index-5"></div>
+                    <div ref={targetDiv2} className="target-div-2 z-index-5"></div>
                   </div>
                   <div className="spacing-container-02"></div>
                   <div
@@ -1769,6 +1784,10 @@ const Home = () => {
                   className="logo-cover"
                 ></div>
               </div>
+              <div
+                data-w-id="d028ce38-b804-de18-8480-4aa4e1dcf3b5"
+                className="logo__single hide-on-desktop bg-dark"
+              ></div>
               <div className="logo__single is-empty hide-on-mobile"></div>
 
               <div className="logo__heading-brand flex-row justfiy-space-between">
