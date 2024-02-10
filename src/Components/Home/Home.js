@@ -137,7 +137,7 @@ const Home = () => {
         });
       }
       // Just call these once
-      animateText(".move-text-1", ".target-div-1",-30);
+      animateText(".move-text-1", ".target-div-1", -30);
       animateText(".move-text-2", ".target-div-2", 85);
     });
   }, [])
@@ -414,7 +414,7 @@ const Home = () => {
           >
             <div className="page-spacing__medium test">
               <div className="container-large hero-content">
-                <div className="p-body text-2 narrower is-home-hero" style={{marginBottom:20}}>
+                <div className="p-body text-2 narrower is-home-hero" style={{ marginBottom: 20 }}>
                   Competitive Edge through Creativity &amp; Technology
                 </div>
                 <div className="homehero__text-wrapper">
@@ -539,10 +539,10 @@ const Home = () => {
                         At Infinix Innovations, we surpass the role of
                         traditional technology providers We go beyond providing
                         interactive technology for events and exhibitions,
-                        specializing in engineering unique products and
-                        solutions. Our dedication lies in boosting marketing
-                        campaigns by using experiential technology to create
-                        state of the art experiences for every project.
+                        specializing in <span text-split="" style={{ color: '#69D3DB' }}>engineering unique products </span>and
+                        <span text-split="" style={{ color: '#69D3DB' }}>solutions.</span> Our dedication lies in boosting <span text-split="" style={{ color: '#69D3DB' }}>marketing
+                          campaigns</span> by using   <span text-split="" style={{ color: '#69D3DB' }}>experiential technology</span> to create
+                        <span text-split="" style={{ color: '#69D3DB' }}>state of the art experiences</span> for every project.
                       </div>
                     </div>
                   </div>
