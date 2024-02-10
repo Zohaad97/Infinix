@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer-new container-medium">
       <div className="footer-content-row" >
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+        <div className="footer-item" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <h3 className="text-3 nav_fontsize-54">
             Seeking Inspiration <br />
             for Activations?
@@ -47,7 +47,7 @@ const Footer = () => {
 
         </div>
 
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', justifyContent: 'center' }}>
+        <div  className="address footer-item" style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
 
 
           <h4>
@@ -100,19 +100,19 @@ const Footer = () => {
           </h5>
         </div>
       </div>
-      <div style={{ flex: 1, flexDirection: 'row' }} className="footer-content-row text-right-align" >
+      <div  style={{ flex: 1 }} className="footer-content-row text-right-align" >
         <a
           style={{
             flex: 1, justifyContent: 'flex-start', display: 'flex', alignItems: 'center'
           }}
           href="https://www.termsfeed.com/live/92952038-c087-42ad-8648-b0d9b07d85c2"
           target="_blank"
-          className="text-2 p-small text-balance"
+          className="text-2 p-small text-balance footer-item"
         >
           Privacy Policy
         </a>
 
-        <div style={{ flex: 1, justifyContent: 'flex-end', display: 'flex', alignItems: 'center' }} className="text-2">
+        <div  className="text-2 address footer-item" style={{ flex: 1, justifyContent: 'flex-end', display: 'flex', alignItems: 'center' }}>
           <p>©2024 infinix innovations L.L.C-FZ</p>
         </div>
 

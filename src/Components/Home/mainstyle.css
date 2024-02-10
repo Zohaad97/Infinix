@@ -4925,6 +4925,11 @@ a {
 }
 
 .footer-content-row .address {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.footer-content-row .address {
   text-decoration: none !important;
 }
 
@@ -4942,6 +4947,14 @@ a {
 
 /* Media query for mobile responsiveness */
 @media (max-width: 767px) {
+  .footer-content-row {
+    flex-direction: column;
+  }
+  .footer-content-row .footer-item {
+   margin-bottom: 10px;
+   align-items: flex-start;
+   justify-content: flex-start;
+  }
   .partner-item img {
     height: 150px;
   }
