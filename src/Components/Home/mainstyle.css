@@ -4942,6 +4942,9 @@ a {
 
 /* Media query for mobile responsiveness */
 @media (max-width: 767px) {
+  .partner-item img {
+    height: 150px;
+  }
   .footer-new {
    padding: 0 !important;
   }
@@ -6806,6 +6809,9 @@ a {
 
 /* Medium Devices (Laptops) */
 @media (min-width: 769px) and (max-width: 992px) {
+  .partner-item img {
+    height: 260px;
+  }
   .infinix-desc {
     font-size: 20px;
   }
@@ -6816,12 +6822,18 @@ a {
   .infinix-desc {
     font-size: 24px;
   }
+  .partner-item img {
+    height: 320px;
+  }
 }
 
 /* Extra Large Devices (Large Desktops) */
 @media (min-width: 1201px) {
   .infinix-desc {
     font-size: 32px;
+  }
+  .partner-item img {
+    height: 420px;
   }
 }
 
