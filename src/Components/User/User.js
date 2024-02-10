@@ -4,9 +4,8 @@ import "../Home/mainstyle.css";
 import mail from "../assets/images/mail.svg";
 import globe from "../assets/images/globe.svg";
 import youtube from "../assets/images/youtube.svg";
-import facebook from "../assets/images/facebook 1.svg";
-// import instagram from "../assets/images/instagram.svg";
-import instagram from "../assets/images/footer-instagram.svg";
+import facebook from "../assets/images/footer-facebook.png";
+import instagram from "../assets/images/footer-instagram.png";
 import phone from "../assets/images/phone.svg";
 
 import { useParams } from "react-router-dom";
@@ -44,7 +43,7 @@ const User = () => {
 
   const handleButtonClick = () => {
     // create a vcard file
-    var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nTITLE:" + contact.title + "\nEMAIL:" + contact.email + "\nN:"+contact.lastName+";"+contact.firstName+";;\nEND:VCARD";
+    var vcard = "BEGIN:VCARD\nVERSION:3.0\nFN:" + contact.name + "\nTEL;TYPE=work,voice:" + contact.phone + "\nTITLE:" + contact.title + "\nEMAIL:" + contact.email + "\nN:" + contact.lastName + ";" + contact.firstName + ";;\nEND:VCARD";
     var blob = new Blob([vcard], { type: "text/vcard" });
     var url = URL.createObjectURL(blob);
 
@@ -228,7 +227,7 @@ const User = () => {
             </div>
             <div className="single-social-detail">
               <div className="gray-background">
-                <img src={facebook} alt="" />
+                <img src={facebook} alt="" style={{ width: 17, height: 30 }} />
               </div>
               <a
                 className="social-text"
@@ -240,7 +239,7 @@ const User = () => {
             </div>
             <div className="single-social-detail">
               <div className="gray-background">
-                <img src={instagram} alt="" />
+                <img src={instagram} alt="" style={{ width: 30, height: 30 }} />
               </div>
               <a
                 className="social-text"

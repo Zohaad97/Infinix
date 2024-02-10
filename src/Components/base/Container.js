@@ -343,6 +343,7 @@ const Container = ({
               <div className="container-small is-track-record remove-bottom_space">
 
                 <div className="record-div bg--4">
+                 
                   <div className="record__heading-div">
                     <h2 style={{ textAlign: 'center' }} className="p-leading opacity-06">{title}</h2>
                   </div>

@@ -2,15 +2,15 @@ import RightArrow from "../assets/images/right-arrow.svg";
 const NewsLetter = () => {
   return (
     <div className="blog__newsletter-wrapper is-home radius-16">
-      <div className="container-medium">
-        <div className="newsletter__home-heading">
+      <div className="container-medium" style={{ justifyContent: 'space-around', alignItems: 'center', display: 'flex', flexDirection: 'column', height: '100%' }}>
+        <div className="newsletter__home-heading" style={{ width: '100%' }}>
           <div className="newsletter__heading-text">
             <h2 className="text-3 nav_fontsize-54 line-height-1-1">
               Don&#x27;t want to <br />
               miss anything?
             </h2>
           </div>
-          <div className="newsletter__heading-text spacing-top-02">
+          <div className="newsletter__heading-text">
             <div className="p-body text-3 text-balance">
               Sign up for our newsletter to discover winning trends before your
               competition!
@@ -34,6 +34,7 @@ const NewsLetter = () => {
               data-wf-element-id="bd262f9d-3f0a-c3cc-1540-073a764f18cc"
             >
               <input
+
                 className="blog__newsletter-field is-home w-input"
                 maxlength="256"
                 name="fields[email]"

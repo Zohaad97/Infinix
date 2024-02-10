@@ -8,6 +8,7 @@
   display: flex;
   margin-right: 10px;
 }
+
 .footer-social-icon:hover{
   background: rgba(51, 144, 151, 1);
   border: 1px solid rgba(51, 144, 151, 1);

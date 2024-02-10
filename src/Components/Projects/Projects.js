@@ -1,6 +1,8 @@
 import Arrow_5 from "../assets/images/Arrow_5.png";
+import CurveLeft from "../assets/images/heading-curve-left.svg";
 import { Link } from "react-router-dom";
 import projectrender from "../../projects.json";
+import { ProjectName } from "../ProjectList/ProjectList";
 
 const Project = () => {
   const firstFourItems = projectrender.slice(0, 4);
@@ -25,7 +27,7 @@ const Project = () => {
               .toLowerCase()}`} className="partner-item" >
               <img src={item.mainImage} alt="partner" />
               <h4 className="project-heading4">
-                {item.title} <br />
+                {ProjectName(item.title)} <br />
                 {/* <span className="project-desc">GITEX 2023</span> */}
               </h4>
 

@@ -10,7 +10,14 @@ import "../Services/Service.css";
 import Container from "../base/Container";
 import Projectjson from "../../projects.json";
 import { sliceArrayIntoPairs } from "../ImageSlider";
-
+export function ProjectName(name) {
+  try{
+    return name.split("-")[0].toUpperCase()
+  }catch(e){
+    return name?.toUpperCase()
+  }
+ 
+}
 const Projects = () => {
   const [url, setUrl] = useState();
   const projectUrl = "/project-page?name=ge-healthcare---arab-health-2023";
@@ -39,7 +46,7 @@ const Projects = () => {
                   >
                     <img className="image" src={projects[0].mainImage} alt={`Slide ${index}`} />
                     <h4 className="project-heading4">
-                      {projects[0].title}
+                      {ProjectName(projects[0].title)}
                       {setUrl(projects[0].title)} <br />
                     </h4>
                   </Link>
@@ -50,7 +57,7 @@ const Projects = () => {
                   .toLowerCase()}`}
                 > <img className="image" src={projects[1].mainImage} alt={`Slide ${index}`} />
                   <h4 className="project-heading4">
-                    {projects[1].title}
+                    {ProjectName(projects[1].title)}
                     {setUrl(projects[1].title)} <br />
                   </h4>
                 </Link>
