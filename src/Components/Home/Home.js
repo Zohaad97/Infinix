@@ -544,7 +544,7 @@ const Home = () => {
                         At Infinix Innovations, we surpass the role of
                         traditional technology providers We go beyond providing
                         interactive technology for events and exhibitions,
-                        specializing in <span text-split-blue="" className="word" text-split="" style={{ color: '#69D3DB' }}>engineering</span>  unique products and
+                        specializing in <span text-split-blue="" className="word" text-split="" style={{ color: '#69D3DB' }}>engineering</span> &nbsp;  unique products and
                         <span className="word" text-split="" style={{ color: '#69D3DB' }}>solutions.</span> Our dedication lies in boosting <span className="word" text-split="" style={{ color: '#69D3DB' }}>marketing
                           campaigns</span> by using   <span className="word" text-split="" style={{ color: '#69D3DB' }}>experiential technology</span> to create
                         <span className="word" text-split="" style={{ color: '#69D3DB' }}>state of the art experiences</span> for every project.
