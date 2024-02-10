@@ -117,8 +117,9 @@ const Home = () => {
         path.setAttribute("fill", "currentColor");
       });
 
-      function animateText(textElements, targetDiv, offset = 0) {
-        console.log({textElements, targetDiv,})
+      function animateText(textClass, targetClass, offset = 0) {
+        let textElements = document.querySelectorAll(textClass);
+        let targetDiv = document.querySelector(targetClass);
         let endX = targetDiv.getBoundingClientRect().left;
         let endY =
           targetDiv.getBoundingClientRect().top + targetDiv.offsetHeight / 2;
@@ -144,11 +145,11 @@ const Home = () => {
       const screenWidth = window.innerWidth;
 
       if (screenWidth < 600) {
-        animateText([moveText1.current], targetDiv1.current);
-        animateText([moveText2.current], targetDiv2.current);
+        animateText(".move-text-1", ".target-div-1");
+        animateText(".move-text-2", ".target-div-2");
       }else{
-        animateText([moveText1.current], targetDiv1.current, -30);
-        animateText([moveText2.current], targetDiv2.current, 85);
+        animateText(".move-text-1", ".target-div-1", -30);
+        animateText(".move-text-2", ".target-div-2", 85);
       }
 
     
