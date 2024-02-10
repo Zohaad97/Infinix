@@ -32,7 +32,22 @@ import { FooterMain } from "../Footer/FooterMain";
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
-  useGSAP(() => {
+
+
+  // useEffect(() => {
+  //   window.onbeforeunload = function () {
+  //     window.scrollTo(0, 0);
+  //   };
+
+  //   window.onpageshow = function (event) {
+  //     if (event.persisted) {
+  //       window.scrollTo(0, 0);
+  //       window.location.reload(true);
+  //     }
+  //   };
+  // }, []);
+
+  useEffect(() => {
     gsap.fromTo(
       ".page__wrap",
       { y: "0.3em" },
@@ -83,32 +98,7 @@ const Home = () => {
       return calculatedSize
     }
 
-    function animateText(textClass, targetClass) {
-      let textElements = document.querySelectorAll(textClass);
-      let targetDiv = document.querySelector(targetClass);
-      let endX = targetDiv.getBoundingClientRect().left;
-      let endY =
-        targetDiv.getBoundingClientRect().top + targetDiv.offsetHeight / 2;
-      textElements.forEach((textToMove) => {
-        let startX = textToMove.getBoundingClientRect().left;
-        let startY = textToMove.getBoundingClientRect().top;
-        let finalY = endY - textToMove.offsetHeight / 2;
-        gsap.to(textToMove, {
-          x: endX - startX,
-          y: finalY - startY,
-          fontSize: getFontSize() + "px",
-          scrollTrigger: {
-            trigger: ".teleport-component",
-            start: "2% top",
-            end: "center top",
-            scrub: 0.5,
-          },
-        });
-      });
-    }
-    // Just call these once
-    animateText(".move-text-1", ".target-div-1");
-    animateText(".move-text-2", ".target-div-2");
+
     document.addEventListener("DOMContentLoaded", function () {
       // Append elements
       $(".span-wrapper").each(function (index) {
@@ -121,21 +111,38 @@ const Home = () => {
         path.style.setProperty("--original-color", originalColor);
         path.setAttribute("fill", "currentColor");
       });
+
+      function animateText(textClass, targetClass, offset = 0) {
+        let textElements = document.querySelectorAll(textClass);
+        let targetDiv = document.querySelector(targetClass);
+        let endX = targetDiv.getBoundingClientRect().left;
+        let endY =
+          targetDiv.getBoundingClientRect().top + targetDiv.offsetHeight / 2;
+        textElements.forEach((textToMove, index) => {
+          let startX = textToMove.getBoundingClientRect().left;
+          let startY = textToMove.getBoundingClientRect().top;
+          let finalY = endY - textToMove.offsetHeight / 2;
+          console.log({ startX, endX, index })
+          gsap.to(textToMove, {
+            x: endX - startX + offset,
+            y: finalY - startY,
+            fontSize: getFontSize() + "px",
+            scrollTrigger: {
+              trigger: ".teleport-component",
+              start: "2% top",
+              end: "center top",
+              scrub: 0.5,
+            },
+          });
+        });
+      }
+      // Just call these once
+      animateText(".move-text-1", ".target-div-1");
+      animateText(".move-text-2", ".target-div-2", 120);
     });
-  });
+  }, [])
 
-  // useEffect(() => {
-  //   window.onbeforeunload = function () {
-  //     window.scrollTo(0, 0);
-  //   };
 
-  //   window.onpageshow = function (event) {
-  //     if (event.persisted) {
-  //       window.scrollTo(0, 0);
-  //       window.location.reload(true);
-  //     }
-  //   };
-  // }, []);
 
   useEffect(() => {
     document.addEventListener("DOMContentLoaded", function () {
@@ -1542,7 +1549,7 @@ const Home = () => {
               >
                 <div
                   style={{
-                    width:'16em',
+                    width: '16em',
                     WebkitTransform:
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     MozTransform:
@@ -1553,7 +1560,7 @@ const Home = () => {
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     opacity: 0,
                   }}
-                  
+
                   className="logos-change-wrapper"
                 >
                   <div
@@ -1621,7 +1628,7 @@ const Home = () => {
                   </div>
                   <div
                     style={{
-                    
+
                       WebkitTransform:
                         "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                       MozTransform:
@@ -1653,7 +1660,7 @@ const Home = () => {
               >
                 <div
                   style={{
-                    width:'16em',
+                    width: '16em',
                     WebkitTransform:
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     MozTransform:
@@ -1664,7 +1671,7 @@ const Home = () => {
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     opacity: 0,
                   }}
-                  
+
                   className="logos-change-wrapper"
                 >
                   <div
@@ -1732,7 +1739,7 @@ const Home = () => {
                   </div>
                   <div
                     style={{
-                    
+
                       WebkitTransform:
                         "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                       MozTransform:
@@ -1760,7 +1767,7 @@ const Home = () => {
               <div className="logo__single is-empty hide-on-mobile"></div>
 
               <div className="logo__heading-brand flex-row justfiy-space-between">
-                <h2 style={{color:'#69D3DB'}} className="nav_fontsize-34 text-3 line-height-1-1 is-logos">
+                <h2 style={{ color: '#69D3DB' }} className="nav_fontsize-34 text-3 line-height-1-1 is-logos">
                   Brand Partner
                 </h2>
                 <div className="logo__single is-empty hide-on-mobile"></div>
@@ -1907,48 +1914,12 @@ const Home = () => {
       <div className="globals">
         <div className="w-embed"></div>
 
-        <div fs-cc="banner" className="cookie-banner">
-          <div className="cookie__policy-inner">
-            <div className="lottie-wrapper">
-              <div
-                data-w-id="4f9d4498-162d-967f-5ef7-9caefe7eee86"
-                data-animation-type="lottie"
-                data-src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650c0b0847b5d025005f6823_Cookie.json"
-                data-loop="1"
-                data-direction="1"
-                data-autoplay="1"
-                data-is-ix2-target="0"
-                data-renderer="svg"
-                data-default-duration="20.02001920458794"
-                data-duration="0"
-              ></div>
-            </div>
-          </div>
-        </div>
       </div>
       <div className="globals">
         <div className="w-embed"></div>
 
         <Loader />
 
-        <div fs-cc="banner" className="cookie-banner">
-          <div className="cookie__policy-inner">
-            <div className="lottie-wrapper">
-              <div
-                data-w-id="4f9d4498-162d-967f-5ef7-9caefe7eee86"
-                data-animation-type="lottie"
-                data-src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650c0b0847b5d025005f6823_Cookie.json"
-                data-loop="1"
-                data-direction="1"
-                data-autoplay="1"
-                data-is-ix2-target="0"
-                data-renderer="svg"
-                data-default-duration="20.02001920458794"
-                data-duration="0"
-              ></div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
