@@ -4,6 +4,23 @@ import { Link } from "react-router-dom";
 import projectrender from "../../projects.json";
 import { ProjectName } from "../ProjectList/ProjectList";
 
+export const ProjectList = ({ items }) => (<div sty className="column-50 flex-vertical is-grid is-footer-grid space-top">
+  {items.map(item => (
+    <Link to={`/project-page?name=${item.title
+      .replace(/ /g, "-")
+      .toLowerCase()}`} className="partner-item" >
+      <div>
+        <img src={item.mainImage} alt="partner" />
+        <h4 className="project-heading4">
+          {ProjectName(item.title)} <br />
+          {/* <span className="project-desc">GITEX 2023</span> */}
+        </h4>
+      </div>
+
+    </Link>
+  ))}
+</div>)
+
 const Project = () => {
   const firstFourItems = projectrender.slice(0, 4);
   return (
@@ -20,22 +37,7 @@ const Project = () => {
           <span className="project-heading-home">with Actionable Technologies</span>
         </h2>
 
-        <div sty className="column-50 flex-vertical is-grid is-footer-grid space-top">
-          {firstFourItems.map(item => (
-            <Link to={`/project-page?name=${item.title
-              .replace(/ /g, "-")
-              .toLowerCase()}`} className="partner-item" >
-              <div>
-                <img src={item.mainImage} alt="partner" />
-                <h4 className="project-heading4">
-                  {ProjectName(item.title)} <br />
-                  {/* <span className="project-desc">GITEX 2023</span> */}
-                </h4>
-              </div>
-
-            </Link>
-          ))}
-        </div>
+        <ProjectList items={firstFourItems} />
         <div className="logos-expander bg--4">
           <Link to={"/projects"} className="nav_fontsize-30 opacity-05 lighter line-height-1">
             View all
