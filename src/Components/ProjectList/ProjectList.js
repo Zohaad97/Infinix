@@ -10,6 +10,7 @@ import "../Services/Service.css";
 import Container from "../base/Container";
 import Projectjson from "../../projects.json";
 import { sliceArrayIntoPairs } from "../ImageSlider";
+import Project from "../Projects/Projects";
 export function ProjectName(name) {
   try{
     return name.split("-")[0].toUpperCase()
@@ -32,43 +33,44 @@ const Projects = () => {
           Technology
         </h1>
       )}
-      renderBody={() => (
-        <div className="space-top">
+      renderBody={() => <Project />}
+      // renderBody={() => (
+      //   <div className="space-top">
 
-          <ul class="project-images-list">
+      //     <ul class="project-images-list">
 
-            {slicedProjects.map((projects, index) => (
-              <li key={index} className="project-images-list-item">
-                <div>
-                  <Link to={`/project-page?name=${projects[0].title
-                    .replace(/ /g, "-")
-                    .toLowerCase()}`}
-                  >
-                    <img className="image" src={projects[0].mainImage} alt={`Slide ${index}`} />
-                    <h4 className="project-heading4">
-                      {ProjectName(projects[0].title)}
-                      {setUrl(projects[0].title)} <br />
-                    </h4>
-                  </Link>
-                </div>
+      //       {slicedProjects.map((projects, index) => (
+      //         <li key={index} className="project-images-list-item">
+      //           <div>
+      //             <Link to={`/project-page?name=${projects[0].title
+      //               .replace(/ /g, "-")
+      //               .toLowerCase()}`}
+      //             >
+      //               <img className="image" src={projects[0].mainImage} alt={`Slide ${index}`} />
+      //               <h4 className="project-heading4">
+      //                 {ProjectName(projects[0].title)}
+      //                 {setUrl(projects[0].title)} <br />
+      //               </h4>
+      //             </Link>
+      //           </div>
 
-                {projects[1] && <div>   <Link to={`/project-page?name=${projects[1].title
-                  .replace(/ /g, "-")
-                  .toLowerCase()}`}
-                > <img className="image" src={projects[1].mainImage} alt={`Slide ${index}`} />
-                  <h4 className="project-heading4">
-                    {ProjectName(projects[1].title)}
-                    {setUrl(projects[1].title)} <br />
-                  </h4>
-                </Link>
-                </div>}
+      //           {projects[1] && <div>   <Link to={`/project-page?name=${projects[1].title
+      //             .replace(/ /g, "-")
+      //             .toLowerCase()}`}
+      //           > <img className="image" src={projects[1].mainImage} alt={`Slide ${index}`} />
+      //             <h4 className="project-heading4">
+      //               {ProjectName(projects[1].title)}
+      //               {setUrl(projects[1].title)} <br />
+      //             </h4>
+      //           </Link>
+      //           </div>}
 
-              </li>
-            ))}
-          </ul>
+      //         </li>
+      //       ))}
+      //     </ul>
           
-        </div>
-      )}
+      //   </div>
+      // )}
     />
   );
 };

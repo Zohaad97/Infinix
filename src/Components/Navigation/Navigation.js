@@ -123,7 +123,7 @@ const Navigation = () => {
               data-is-ix2-target="1"
               className="scroll-lottie opacity-05"
               data-animation-type="lottie"
-              data-src="https://assets-global.website-files.com/63793925c7db23ce040b0824/6501972589575cb2d75c754d_Scroll.json"
+              data-src="/scroll.json"
               data-loop="0"
               data-direction="1"
               data-autoplay="0"

@@ -137,8 +137,8 @@ const Home = () => {
         });
       }
       // Just call these once
-      animateText(".move-text-1", ".target-div-1");
-      animateText(".move-text-2", ".target-div-2", 120);
+      animateText(".move-text-1", ".target-div-1",-30);
+      animateText(".move-text-2", ".target-div-2", 85);
     });
   }, [])
 
@@ -414,7 +414,7 @@ const Home = () => {
           >
             <div className="page-spacing__medium test">
               <div className="container-large hero-content">
-                <div className="p-body text-2 narrower is-home-hero">
+                <div className="p-body text-2 narrower is-home-hero" style={{marginBottom:20}}>
                   Competitive Edge through Creativity &amp; Technology
                 </div>
                 <div className="homehero__text-wrapper">
