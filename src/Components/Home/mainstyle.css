@@ -606,6 +606,9 @@ textarea.w-select {
   font-weight: 400;
   line-height: 1.2;
 }
+.infinix-desc .word{
+  font-style: normal;
+} 
 .w-file-upload-uploading-btn {
   cursor: pointer;
   background-color: #fafafa;

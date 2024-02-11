@@ -176,9 +176,10 @@ const Home = () => {
       });
       new SplitType("[text-split]", {
         types: "lines, words, chars",
-        tagName: "span",
-        absolute: true
+        tagName: "span"
       });
+
+
 
       // new SplitType("[text-split-blue]", {
       //   types: "words",
