@@ -179,7 +179,7 @@ const Home = () => {
         tagName: "span"
       });
 
-      new SplitType("[text-split] em", {
+      SplitType.create("[text-split] em", {
         types: "words",
         tagName: "em"
       });
