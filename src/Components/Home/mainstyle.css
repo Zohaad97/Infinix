@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Universo-bold";
-  src: url("../assets/font/Fontspring-DEMO-universo-bold.otf")
-    format("opentype");
+  src: url("../assets/font/Universo-Bold.ttf");
 }
 
 html {

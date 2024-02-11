@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Universo-bold";
-  src: url("../assets/font/Fontspring-DEMO-universo-bold.otf")
-    format("opentype");
-}
 .contact-container {
   display: flex;
   justify-content: space-between;

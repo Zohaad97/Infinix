@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Universo-bold";
-  src: url("../assets/font/Fontspring-DEMO-universo-bold.otf") format("opentype");
-}
-
 .about-heading {
   margin-right: 0;
   font-family: "Universo-bold";
