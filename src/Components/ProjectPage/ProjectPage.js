@@ -93,7 +93,7 @@ const ProjectPage = () => {
               }}
             />
           </a>
-          <div style={{marginTop:50}}>
+          <div>
             <ImageSlider images={projectToRender.images} />
             {/* <Slider className="slider-container" {...settings}>
               {projectImages.map((images, index) => (
