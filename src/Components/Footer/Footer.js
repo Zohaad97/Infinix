@@ -54,7 +54,7 @@ const Footer = () => {
             <a
               className="text-3 h3 line-height-1-1 text-blue"
               href="tel:971 567158879"
-              style={{ whiteSpace: 'nowrap' }}
+              style={{ whiteSpace: 'nowrap',fontSize:28 }}
             >
               +971 56 715 8879
             </a>
