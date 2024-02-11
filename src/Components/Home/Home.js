@@ -179,6 +179,11 @@ const Home = () => {
         tagName: "span"
       });
 
+      new SplitType("[text-split] em", {
+        types: "words",
+        tagName: "em"
+      });
+
 
 
       // new SplitType("[text-split-blue]", {
@@ -565,7 +570,7 @@ const Home = () => {
                           interactive technology for events and exhibitions,
                           specializing in <em style={{ color: '#69D3DB' }}>engineering</em>  <em style={{ color: '#69D3DB' }}>unique </em>  <em style={{ color: '#69D3DB' }}>products</em> and &nbsp;
                           <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em style={{ color: '#69D3DB' }}>marketing
-                            campaigns</em> by using   <em style={{ color: '#69D3DB' }}>experiential technology</em> to create &nbsp;
+                            </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em style={{ color: '#69D3DB' }}>experiential technology</em> to create &nbsp;
                           <em style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</em> for every project.
                         </p>
                       </div>
