@@ -6843,7 +6843,7 @@ a {
 /* Extra Large Devices (Large Desktops) */
 @media (min-width: 1201px) {
   .infinix-desc {
-    font-size: 32px;
+    font-size: 29px;
   }
   .partner-item img {
     height: 420px;

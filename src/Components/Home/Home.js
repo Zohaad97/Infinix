@@ -147,12 +147,12 @@ const Home = () => {
       if (screenWidth < 600) {
         animateText(".move-text-1", ".target-div-1");
         animateText(".move-text-2", ".target-div-2");
-      }else{
+      } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);
       }
 
-    
+
     });
   }, [])
 
@@ -177,12 +177,13 @@ const Home = () => {
       new SplitType("[text-split]", {
         types: "lines, words, chars",
         tagName: "span",
+        absolute: true
       });
 
-      new SplitType("[text-split-blue]", {
-        types: "words",
-        tagName: "span",
-      });
+      // new SplitType("[text-split-blue]", {
+      //   types: "words",
+      //   tagName: "span",
+      // });
 
       // Link timelines to scroll position
       function createScrollTrigger(triggerElement, timeline) {
@@ -557,13 +558,15 @@ const Home = () => {
                         text-split=""
                         className="infinix-desc text-balance is-90percent"
                       >
-                        At Infinix Innovations, we surpass the role of
-                        traditional technology providers We go beyond providing
-                        interactive technology for events and exhibitions,
-                        specializing in <span text-split-blue="" className="word" style={{ color: '#69D3DB' }}>engineering unique products</span> and
-                        <span text-split-blue="" className="word" style={{ color: '#69D3DB' }}>solutions.</span> Our dedication lies in boosting <span text-split-blue="" className="word" style={{ color: '#69D3DB' }}>marketing
-                          campaigns</span> by using   <span text-split-blue="" className="word" style={{ color: '#69D3DB' }}>experiential technology</span> to create
-                        <span text-split-blue="" className="word" style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</span> for every project.
+                        <p>
+                          At Infinix Innovations, we surpass the role of
+                          traditional technology providers We go beyond providing
+                          interactive technology for events and exhibitions,
+                          specializing in <em style={{ color: '#69D3DB' }}>engineering</em>  <em style={{ color: '#69D3DB' }}>unique </em>  <em style={{ color: '#69D3DB' }}>products</em> and &nbsp;
+                          <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em style={{ color: '#69D3DB' }}>marketing
+                            campaigns</em> by using   <em style={{ color: '#69D3DB' }}>experiential technology</em> to create &nbsp;
+                          <em style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</em> for every project.
+                        </p>
                       </div>
                     </div>
                   </div>
