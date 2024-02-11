@@ -568,9 +568,9 @@ const Home = () => {
                           At Infinix Innovations, we surpass the role of
                           traditional technology providers We go beyond providing
                           interactive technology for events and exhibitions,
-                          specializing in <em style={{ color: '#69D3DB' }}>engineering</em>  <em style={{ color: '#69D3DB' }}>unique </em>  <em style={{ color: '#69D3DB' }}>products</em> and &nbsp;
-                          <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em style={{ color: '#69D3DB' }}>marketing
-                            </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em style={{ color: '#69D3DB' }}>experiential technology</em> to create &nbsp;
+                          specializing in <em>engineering</em>  <em>unique </em>  <em>products</em> and &nbsp;
+                          <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em>marketing
+                            </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em>experiential technology</em> to create &nbsp;
                           <em style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</em> for every project.
                         </p>
                       </div>
