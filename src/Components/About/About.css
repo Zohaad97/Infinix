@@ -176,6 +176,9 @@
   .about-value-text{
     font-size: 20px;
   }
+  .about-heading {
+    font-size: 36px;
+  }
 }
 
 /* Large Devices (Desktops) */
@@ -183,11 +186,17 @@
   .about-value-text{
     font-size: 24px;
   }
+  .about-heading {
+    font-size: 40px;
+  }
 }
 
 /* Extra Large Devices (Large Desktops) */
 @media (min-width: 1201px) {
   .about-value-text{
     font-size: 28px;
+  }
+  .about-heading {
+    font-size: 50px;
   }
 }
