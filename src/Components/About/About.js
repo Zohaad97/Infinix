@@ -21,10 +21,14 @@ const About = () => {
 
   return (
     <Container hideBackground title={"About"} renderSubtitle={() => <div className="about-desc">
-      We are obsessed with making the most of technology,
-      putting it out there for people to have fun together in
-      the most exciting way possible while playing immersive
-      technologies.
+      We specialize in crafting innovative technology solutions
+      that amplify marketing activations, drawing attention to
+      your campaign like never before. Our goal is to empower
+      your voice and ideas, ensuring they resonate louder
+      and reach further in the ever-evolving landscape
+      of immersive technologies.
+
+
     </div>
     } renderDescription={() => <h1 className="about-heading">
       Our Winning <span className="blue-text">formula</span> is
