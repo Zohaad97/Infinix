@@ -80,7 +80,7 @@ const ProjectPage = () => {
       )}
       renderBody={() => (
         <div>
-          <a className="project-page-item" href="/#">
+          <div className="project-page-item">
             <img
               src={projectToRender.mainImage}
               className="main"
@@ -92,7 +92,7 @@ const ProjectPage = () => {
                 __html: projectToRender.description.replace(/\n/g, "<br/>"),
               }}
             />
-          </a>
+          </div>
           <div>
             <ImageSlider images={projectToRender.images} />
             {/* <Slider className="slider-container" {...settings}>
