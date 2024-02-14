@@ -146,8 +146,8 @@ const Home = () => {
       console.log({screenWidth})
 
       if (screenWidth < 600) {
-        animateText(".move-text-1", ".target-div-1",65);
-        animateText(".move-text-2", ".target-div-2",65);
+        animateText(".move-text-1", ".target-div-1",55);
+        animateText(".move-text-2", ".target-div-2",55);
       } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);
