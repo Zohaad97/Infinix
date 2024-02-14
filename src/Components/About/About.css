@@ -156,7 +156,8 @@
   .about-heading {
     font-size: 32px;
     margin-top: 20px;
-    white-space: unset;
+    white-space: unset !important;
+    padding-left: 8px;
   }
 
   .about-desc {
