@@ -81,7 +81,7 @@ const Home = () => {
     });
 
     const fontSizeBreakpoints = {
-      small: 27,
+      small: 38,
       medium: 47,
       large: 67,
       // Define additional breakpoints as needed
@@ -143,10 +143,11 @@ const Home = () => {
       }
       // Just call these once
       const screenWidth = window.innerWidth;
+      console.log({screenWidth})
 
       if (screenWidth < 600) {
-        animateText(".move-text-1", ".target-div-1");
-        animateText(".move-text-2", ".target-div-2");
+        animateText(".move-text-1", ".target-div-1",65);
+        animateText(".move-text-2", ".target-div-2",65);
       } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);
@@ -471,9 +472,9 @@ const Home = () => {
                     </span>
                   </h1>
                   <h1 className="h1 is-home-hero mobile">
-                    Market Insights that
+                    Technology that
                     <br />
-                    <span className="move-text-1 text-accent">Make a</span>
+                    <span className="move-text-1 text-accent">Makes a</span>
                     <span className="move-text-2 text-accent">Difference</span>
                   </h1>
                   <div className="hide-this">
@@ -601,7 +602,7 @@ const Home = () => {
               >
                 <div className="services-sticky">
                   <h2 className="project-heading-home">Services</h2>
-                  <div className="services-track" style={{ marginTop: 100 }}>
+                  <div className="services-track">
                     <div className="services__wrapper">
                       <div className="w-dyn-list">
                         <div
@@ -1840,8 +1841,8 @@ const Home = () => {
         >
           <em>Infinix </em>
           <span className="opacity-05">
-            - Market Insights
-            <em>that make aDifference</em>
+            - Technology
+            <em>that makes a Difference</em>
           </span>
         </div>
       </div>

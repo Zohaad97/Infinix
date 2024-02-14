@@ -102,12 +102,10 @@ const Footer = () => {
       </div>
       <div  style={{ flex: 1 }} className="footer-content-row text-right-align" >
         <a
-          style={{
-            flex: 1, justifyContent: 'flex-start', display: 'flex', alignItems: 'center'
-          }}
+        
           href="https://www.termsfeed.com/live/92952038-c087-42ad-8648-b0d9b07d85c2"
           target="_blank"
-          className="text-2 p-small text-balance footer-item"
+          className="text-2 p-small text-balance footer-item privacy-policy"
         >
           Privacy Policy
         </a>
