@@ -52,16 +52,16 @@ const Footer = () => {
 
           <h4>
             <a
-              className="text-3 h3 line-height-1-1 text-blue"
+              className="text-3 h3 line-height-1-1 text-blue footer-phone"
               href="tel:971 567158879"
-              style={{ whiteSpace: 'nowrap',fontSize:28 }}
+             
             >
               +971 56 715 8879
             </a>
           </h4>
           <h4>
             <a
-              className="text-3 h3 line-height-1-1 text-blue"
+              className="text-3 h3 line-height-1-1 text-blue footer-email"
               href="mailto:info@infinix.me"
             >
               info@infinix.me
@@ -111,7 +111,7 @@ const Footer = () => {
         </a>
 
         <div  className="text-2 address footer-item" style={{ flex: 1, justifyContent: 'flex-end', display: 'flex', alignItems: 'center' }}>
-          <p>©2024 infinix innovations L.L.C-FZ</p>
+          <p  className="text-2 p-small text-balance footer-item privacy-policy-ext">©2024 infinix innovations L.L.C-FZ</p>
         </div>
 
 

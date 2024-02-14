@@ -375,8 +375,8 @@ const Container = ({
 
         {renderExtra && renderExtra()}
 
-        {/* {!hideBackground && (<div
-          style={{ top: "40%" }}
+        {!hideBackground && (<div
+          style={{ top: "-5%" }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
         >
@@ -388,7 +388,15 @@ const Container = ({
             alt=""
             className="gradient__image is-home-hero-right"
           />
-          <img
+         
+        </div>)}
+
+        {!hideBackground && (<div
+          style={{ top: "50%" }}
+          data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
+          className="gradient__image-wrapper"
+        >
+         <img
             src={background}
             loading="eager"
             sizes="100vw"
@@ -396,7 +404,8 @@ const Container = ({
             alt=""
             className="gradient__image is-home-hero"
           />
-        </div>)} */}
+         
+        </div>)}
 
         <FooterMain />
       </main>

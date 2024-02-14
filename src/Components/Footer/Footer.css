@@ -19,3 +19,21 @@
   flex-direction: row;
   margin-top: 20px;
 }
+
+.footer-phone{
+  font-size: 28px !important;;
+  white-space: nowrap;
+}
+.footer-email{
+  
+}
+
+@media screen and (max-width: 767px) {
+
+  .footer-phone{
+    font-size: 24px !important;
+  }
+  .footer-email{
+    font-size: 26px !important;;
+  }
+}

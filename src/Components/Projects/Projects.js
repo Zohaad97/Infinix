@@ -32,9 +32,13 @@ const Project = () => {
           </div>
         </div>
         <h2 style={{ whiteSpace: 'nowrap' }} className="project-blue-text">
-          Elevate Your Business &nbsp;
-          <br />
-          <span className="project-heading-home">with Actionable Technologies</span>
+       
+      
+          <span className="project-heading-home">Empower Your Activations with &nbsp;</span> <br />
+          Engagement Driven
+          <span className="project-heading-home">&nbsp;Technology</span> 
+          
+         
         </h2>
 
         <ProjectList items={firstFourItems} />

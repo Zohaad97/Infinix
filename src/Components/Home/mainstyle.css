@@ -4971,6 +4971,9 @@ a {
   .footer-content-row .footer-item.privacy-policy {
     justify-content: center !important;
    }
+   .footer-content-row .footer-item.privacy-policy-ext {
+    justify-content: center !important;
+   }
   .partner-item img {
     height: 294px;
   }
@@ -5105,6 +5108,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+ }
+
+
+ .footer-content-row .footer-item.privacy-policy-ext {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
  }
 
 .changed-logo {
