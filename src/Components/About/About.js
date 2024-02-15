@@ -55,6 +55,37 @@ const About = () => {
         </div>
       </div>}
 
+import React, { useRef } from 'react'
+import { Canvas, useFrame } from 'react-three-fiber'
+
+function Box(props) {
+  // This reference will give us direct access to the mesh
+  const mesh = useRef()
+
+  // Rotate mesh every frame, this is outside of React without overhead
+  useFrame(() => {
+    mesh.current.rotation.y += 0.01
+  })
+
+  return (
+    <mesh {...props} ref={mesh}>
+      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
+      <meshStandardMaterial metalness={0.1} attach="material" color={'#f4511e'} />
+    </mesh>
+  )
+}
+
+export default function App() {
+  return (
+    <Canvas>
+      <ambientLight intensity={1} />
+      <spotLight position={[10, 10, 10]} angle={0.15} />
+      <Box position={[-1.2, 0, 0]} />
+      <Box position={[1.2, 0, 0]} />
+    </Canvas>
+  )
+}
+
       renderExtra={() => <> <section style={{ zIndex: 2 }} className="container-medium single__wrapper ">
         <div className="approach-container space-top-10">
           <div className="approach-left">
