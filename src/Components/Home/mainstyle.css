@@ -5740,9 +5740,9 @@ a {
   display: flex;
   position: absolute;
   top: auto;
-  bottom: 0;
+  bottom: 20px;
   left: auto;
-  right: -0.7%;
+  right: 20px;
   overflow: hidden;
 }
 
@@ -6773,13 +6773,13 @@ a {
   right: 20px;
   transition: bottom 1s ease;
 
-  display: none;
+  display: visible;
 }
 
 .floating-button-container.show {
   bottom: 50px; /* Show the button */
 
-  display: none;
+  display: visible;
 }
 
 .floating-button {

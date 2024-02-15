@@ -18,7 +18,7 @@ import isolationMode from "../assets/images/Isolation_Mode (1).png";
 import MaskGroup from "../assets/images/Mask-group.png";
 import { gsap, ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 import SplitType from "split-type";
 import "swiper/css";
@@ -28,6 +28,8 @@ import NewsLetter from "../NewsLetter/NewsLetter";
 import Footer from "../Footer/Footer";
 import Project from "../Projects/Projects";
 import { FooterMain } from "../Footer/FooterMain";
+import YouTube from "react-youtube";
+import VideoPlayer from "../VideoPlayer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,11 +145,11 @@ const Home = () => {
       }
       // Just call these once
       const screenWidth = window.innerWidth;
-      console.log({screenWidth})
+      console.log({ screenWidth })
 
       if (screenWidth < 600) {
-        animateText(".move-text-1", ".target-div-1",55);
-        animateText(".move-text-2", ".target-div-2",55);
+        animateText(".move-text-1", ".target-div-1", 55);
+        animateText(".move-text-2", ".target-div-2", 55);
       } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);
@@ -332,20 +334,20 @@ const Home = () => {
         }
       }
 
-      // let showReelFloatingContainer = document.getElementsByClassName(
-      //   "floating-button-container"
-      // );
-      // let showReel = document.getElementsByClassName("floating-button");
+      let showReelFloatingContainer = document.getElementsByClassName(
+        "floating-button-container"
+      );
+      let showReel = document.getElementsByClassName("floating-button");
 
-      // if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
-      //   if (window.scrollY > window.innerHeight) {
-      //     showReelFloatingContainer[0].style.bottom = "50px";
-      //     showReel[0].style.display = "flex";
-      //   } else {
-      //     showReelFloatingContainer[0].style.bottom = "-450px";
-      //     showReel[0].style.display = "none";
-      //   }
-      // }
+      if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
+        if (window.scrollY > window.innerHeight) {
+          showReelFloatingContainer[0].style.bottom = "50px";
+          showReel[0].style.display = "flex";
+        } else {
+          showReelFloatingContainer[0].style.bottom = "-450px";
+          showReel[0].style.display = "none";
+        }
+      }
     }
 
     // Scroll to the top with a 2-second duration when any button is clicked
@@ -407,10 +409,12 @@ const Home = () => {
     document.dispatchEvent(new Event("DOMContentLoaded"));
   });
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="body">
+      <VideoPlayer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       <div className="floating-button-container">
-        <button href="#difference" className="floating-button">
+        <button onClick={() => setIsModalOpen(true)} href="#difference" className="floating-button">
           <img
             src={Group_3}
             loading="lazy"
@@ -505,13 +509,49 @@ const Home = () => {
                 </div>
               </div>
 
+              <div>
+                <button
+                  style={{ background: 'none' }}
+                  id="show-reel"
+                  onClick={() => setIsModalOpen(true)}
+                  className="home__hero-arrow-wrap w-inline-block"
+                >
+                  <img
+                    src={Group_3}
+                    loading="lazy"
+                    alt=""
+                    className="hide-on-mobile"
+                  />
+                  <img
+                    src={Group_3}
+                    loading="lazy"
+                    alt=""
+                    className="hide-on-desktop"
+                  />
+                </button>
+
+                
+              </div>
 
             </div>
 
             <div className="home-bg">
               <div className="home__hero-bg">
+                <a
+                  href="#"
+                  className="cut-edge is-home-hero home-mobile is-link w-inline-block"
+                >
+                  <img
+                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650ad622817c9f1e05d281c4_white-side.svg"
+                    loading="lazy"
+                    alt=""
+                    className="cut-edge is-home-hero home-mobile"
+                  />
+                </a>
               </div>
             </div>
+
+
 
             <div
               data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
@@ -571,7 +611,7 @@ const Home = () => {
                           interactive technology for events and exhibitions,
                           specializing in <em>engineering</em>  <em>unique </em>  <em>products</em> and &nbsp;
                           <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em>marketing
-                            </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em>experiential technology</em> to create &nbsp;
+                          </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em>experiential technology</em> to create &nbsp;
                           <em style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</em> for every project.
                         </p>
                       </div>
