@@ -5,6 +5,7 @@
     "images": [
       { "src": "/projects/zain-city-scape-ksa/1.png", "tag": "" },
       { "src": "/projects/zain-city-scape-ksa/2.png", "tag": "" }
+      { "src": "/projects/zain-city-scape-ksa/3.png", "tag": "" }
     ],
     "title": "Zain - CityScape KSA"
   },
@@ -14,7 +15,6 @@
     "images": [
       { "src": "projects/site-gitex/1.png", "tag": "" },
       { "src": "projects/site-gitex/2.png", "tag": "" }
-      { "src": "projects/site-gitex/3.png", "tag": "" }
     ],
     "title": "SITE - GITEX 2023"
   },
