@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './slider.css'; // You can customize the styles in this CSS file
+import ProjectTag from '../ProjectTag';
 
 export function sliceArrayIntoPairs(array) {
   const result = [];
@@ -8,6 +9,11 @@ export function sliceArrayIntoPairs(array) {
   }
   return result;
 }
+
+const SliderItem = ({ image, key, tag = "" }) => (<div className='item'>
+  <img className="image" src={image} alt={`Slide ${key}`} />
+  {tag && <ProjectTag tag={tag} />}
+</div>)
 
 const ImageSlider = ({ images }) => {
 
@@ -18,9 +24,8 @@ const ImageSlider = ({ images }) => {
 
       {slicedImages.map((images, index) => (
         <li key={index} className="project-images-list-item">
-          <img className="image" src={images[0]} alt={`Slide ${index}`} />
-          {images[1] && <img  className="image" src={images[1]} alt={`Slide ${index}`} />}
-
+          <SliderItem image={images[0].src} key={index} tag={images[0].tag || ""} />
+          {images[1] && <SliderItem image={images[1].src} key={index} tag={images[1].tag || ""} />}
         </li>
       ))}
     </ul>

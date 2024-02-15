@@ -19,6 +19,7 @@ import Container from "../base/Container";
 import Modal from "../Modal/Modal";
 import { useLocation, useParams } from "react-router-dom";
 import ImageSlider from "../ImageSlider";
+import ProjectTag from "../ProjectTag";
 
 const slideImages = [
   { id: 1, url: slide_1, alt: "Slide 1" },
@@ -82,7 +83,7 @@ const ProjectPage = () => {
         <div>
           <div className="project-page-item">
             <img
-              src={projectToRender.mainImage}
+              src={projectToRender.mainImage.src}
               className="main"
               alt="partner"
             />
@@ -92,6 +93,7 @@ const ProjectPage = () => {
                 __html: projectToRender.description.replace(/\n/g, "<br/>"),
               }}
             />
+            {projectToRender.mainImage.tag && <ProjectTag tag={projectToRender.mainImage.tag} />}
           </div>
           <div>
             <ImageSlider images={projectToRender.images} />

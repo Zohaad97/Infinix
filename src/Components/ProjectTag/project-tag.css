@@ -1,0 +1,25 @@
+.project-tag {
+  background-color: #000000;
+  border-radius: 33px;
+  height: 62px;
+  max-height: 62px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  opacity: 0.8;
+}
+
+.project-tag span {
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .project-tag span {
+    font-size: 16px;
+  }
+}

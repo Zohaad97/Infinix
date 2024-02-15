@@ -3,18 +3,20 @@ import CurveLeft from "../assets/images/heading-curve-left.svg";
 import { Link } from "react-router-dom";
 import projectrender from "../../projects.json";
 import { ProjectName } from "../ProjectList/ProjectList";
+import ProjectTag from "../ProjectTag";
 
-export const ProjectList = ({ items }) => (<div sty className="column-50 flex-vertical is-grid is-footer-grid space-top">
+export const ProjectList = ({ items, enableTags = false }) => (<div sty className="column-50 flex-vertical is-grid is-footer-grid space-top">
   {items.map(item => (
     <Link to={`/project-page?name=${item.title
       .replace(/ /g, "-")
       .toLowerCase()}`} className="partner-item" >
       <div>
-        <img src={item.mainImage} alt="partner" />
+        <img src={item.mainImage.src} alt="partner" />
         <h4 className="project-heading4">
           {ProjectName(item.title)} <br />
           {/* <span className="project-desc">GITEX 2023</span> */}
         </h4>
+        {enableTags && item.mainImage.tag && <ProjectTag tag={item.mainImage.tag} />}
       </div>
 
     </Link>
@@ -32,13 +34,13 @@ const Project = () => {
           </div>
         </div>
         <h2 style={{ whiteSpace: 'nowrap' }} className="project-blue-text">
-       
-      
+
+
           <span className="project-heading-home">Empower Your Activations with &nbsp;</span> <br />
           Engagement Driven
-          <span className="project-heading-home">&nbsp;Technology</span> 
-          
-         
+          <span className="project-heading-home">&nbsp;Technology</span>
+
+
         </h2>
 
         <ProjectList items={firstFourItems} />

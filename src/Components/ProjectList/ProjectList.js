@@ -9,7 +9,6 @@ import "../About/About.css";
 import "../Services/Service.css";
 import Container from "../base/Container";
 import Projectjson from "../../projects.json";
-import { sliceArrayIntoPairs } from "../ImageSlider";
 import Project, { ProjectList } from "../Projects/Projects";
 export function ProjectName(name) {
   try {
@@ -20,9 +19,6 @@ export function ProjectName(name) {
 
 }
 const Projects = () => {
-  const [url, setUrl] = useState();
-  const projectUrl = "/project-page?name=ge-healthcare---arab-health-2023";
-  const slicedProjects = sliceArrayIntoPairs(Projectjson);
   return (
     <Container
       title={"Projects"}
@@ -33,44 +29,7 @@ const Projects = () => {
           Technology
         </h1>
       )}
-      renderBody={() => <ProjectList items={Projectjson} />}
-    // renderBody={() => (
-    //   <div className="space-top">
-
-    //     <ul class="project-images-list">
-
-    //       {slicedProjects.map((projects, index) => (
-    //         <li key={index} className="project-images-list-item">
-    //           <div>
-    //             <Link to={`/project-page?name=${projects[0].title
-    //               .replace(/ /g, "-")
-    //               .toLowerCase()}`}
-    //             >
-    //               <img className="image" src={projects[0].mainImage} alt={`Slide ${index}`} />
-    //               <h4 className="project-heading4">
-    //                 {ProjectName(projects[0].title)}
-    //                 {setUrl(projects[0].title)} <br />
-    //               </h4>
-    //             </Link>
-    //           </div>
-
-    //           {projects[1] && <div>   <Link to={`/project-page?name=${projects[1].title
-    //             .replace(/ /g, "-")
-    //             .toLowerCase()}`}
-    //           > <img className="image" src={projects[1].mainImage} alt={`Slide ${index}`} />
-    //             <h4 className="project-heading4">
-    //               {ProjectName(projects[1].title)}
-    //               {setUrl(projects[1].title)} <br />
-    //             </h4>
-    //           </Link>
-    //           </div>}
-
-    //         </li>
-    //       ))}
-    //     </ul>
-
-    //   </div>
-    // )}
+      renderBody={() => <ProjectList items={Projectjson} enableTags />}
     />
   );
 };

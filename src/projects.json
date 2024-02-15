@@ -1,71 +1,129 @@
 [
   {
-    "mainImage": "/projects/zain-city-scape-ksa/main.png",
+    "mainImage": { "src": "/projects/zain-city-scape-ksa/main.png", "tag": "" },
     "description": "At Cityscape in Saudi Arabia, our emphasis on innovative presentation solutions was evident. The rotating product showcase, featuring an interactive tablet interface and a sleek transparent OLED, allowed users to effortlessly select products displayed on a rotating platform. \n\n This engaging experience, complemented by captivating digital holographic visuals, showcased detailed product information, enhancing the overall presentation. Our commitment to innovation also extended to practical solutions, including hanging LED cubes for the Zain booth executed with precision within demanding timelines. ",
     "images": [
-      "/projects/zain-city-scape-ksa/1.png",
-      "/projects/zain-city-scape-ksa/2.png"
+      { "src": "/projects/zain-city-scape-ksa/1.png", "tag": "" },
+      { "src": "/projects/zain-city-scape-ksa/2.png", "tag": "" }
     ],
     "title": "Zain - CityScape KSA"
   },
   {
-    "mainImage": "/projects/site-gitex/main.png",
+    "mainImage": { "src": "/projects/site-gitex/main.png", "tag": "" },
     "description": "At GITEX 2023, SITE experienced innovation with the Interactive Dynamic Wheel—an intuitive solution where users could effortlessly select topics by moving the wheel, triggering LED Screens to display relevant information. In addition, we introduced interactive screens with custom programming, facilitating the seamless presentation of SITE's services. ",
-    "images": ["projects/site-gitex/1.png","projects/site-gitex/2.png"],
+    "images": [
+      { "src": "projects/site-gitex/1.png", "tag": "" },
+      { "src": "projects/site-gitex/2.png", "tag": "" }
+    ],
     "title": "SITE - GITEX 2023"
   },
   {
-    "mainImage": "/projects/ge-healthcare-arab-health-2023/main.png",
+    "mainImage": {
+      "src": "/projects/ge-healthcare-arab-health-2023/main.png",
+      "tag": ""
+    },
     "description": "We developed a grand rotating platform to enhance the product reveal of the GE Healthcare at the Arab Health Exhibition 2023. The reveal moment demanded attention in the exhibition, becoming the focal point and an impactful event experience  ",
-    "images": ["/projects/ge-healthcare-arab-health-2023/1.png","/projects/ge-healthcare-arab-health-2023/2.png","/projects/ge-healthcare-arab-health-2023/3.png"],
+    "images": [
+      { "src": "/projects/ge-healthcare-arab-health-2023/1.png", "tag": "" },
+      { "src": "/projects/ge-healthcare-arab-health-2023/2.png", "tag": "" },
+      { "src": "/projects/ge-healthcare-arab-health-2023/3.png", "tag": "" }
+    ],
     "title": "GE Healthcare - Arab Health 2023"
   },
   {
-    "mainImage": "/projects/jotun-paints/main.png",
+    "mainImage": { "src": "/projects/jotun-paints/main.png", "tag": "" },
     "description": "Introducing an interactive floor at the Jotun Paints event, we aimed to captivate attendees by allowing them to walk on a virtual desert, leaving distinctive footprints. Our technology simplifies the connection between brands and their audience, enhancing your event ambience  ",
-    "images": ["/projects/jotun-paints/1.png","/projects/jotun-paints/2.png"],
+    "images": [
+      { "src": "/projects/jotun-paints/1.png", "tag": "" },
+      { "src": "/projects/jotun-paints/2.png", "tag": "" }
+    ],
     "title": "Jotun Paints"
   },
   {
-    "mainImage": "/projects/emaar-properties/main.png",
+    "mainImage": { "src": "/projects/emaar-properties/main.png", "tag": "" },
     "description": "At Emaar Properties' property launch, we transformed the atmosphere into a natural oasis. Water-themed floor content synchronized with nature visuals on the walls, creating a mesmerizing synergy. The vivid content displayed on the 3.9 mm pitch floor LED adds a striking visual dimension to events between brands and their audience. ",
-    "images": ["/projects/emaar-properties/1.png","/projects/emaar-properties/2.png"],
+    "images": [
+      { "src": "/projects/emaar-properties/1.png", "tag": "" },
+      { "src": "/projects/emaar-properties/2.png", "tag": "" }
+    ],
     "title": "Emaar Properties"
   },
   {
-    "mainImage": "/projects/tahakom-gitex-2023/main.png",
+    "mainImage": { "src": "/projects/tahakom-gitex-2023/main.png", "tag": "" },
     "description": "At Gitex Global 2023, Tahakom Stand ambience and design was advanced with the  Kinetic Wall—a dynamic display of LED tiles protruding to form captivating patterns, featuring Tahakom branded animations. This eye-catching centerpiece became a focal point, drawing in intrigued visitors. \n\n High-definition facades further enriched the ambiance, showcasing compelling content for a visually captivating experience. To foster engagement, we introduced custom-programmed interactive screens and sliding displays, seamlessly presenting Tahakom's services and products. \n\n The synergy of advanced hardware and innovative programming delivered a distinct and immersive experience, positioning Tahakom at the forefront of the technology exhibition. ",
-    "images": ["/projects/tahakom-gitex-2023/1.png","/projects/tahakom-gitex-2023/2.png","/projects/tahakom-gitex-2023/3.png"],
+    "images": [
+      { "src": "/projects/tahakom-gitex-2023/1.png", "tag": "" },
+      { "src": "/projects/tahakom-gitex-2023/2.png", "tag": "" },
+      { "src": "/projects/tahakom-gitex-2023/3.png", "tag": "" }
+    ],
     "title": "TAHAKOM - GITEX 2023"
   },
   {
-    "mainImage": "/projects/dxb-live-power-interactive-cop28-event/main.png",
+    "mainImage": {
+      "src": "/projects/dxb-live-power-interactive-cop28-event/main.png",
+      "tag": ""
+    },
     "description": "For the COP 28 conference, we undertook the challenge of delivering a visually pleasing and engaging art installation with informative content. Focusing on the power of kinetics, we conceptualized and developed the Dynamic Motion Wall from scratch within a constrained timeframe. Successfully deploying this installation not only met the event's prestige but also showcased our industry-leading engineering skills, reinforcing our commitment to delivering innovative solutions.",
-    "images": ["/projects/dxb-live-power-interactive-cop28-event/1.png","/projects/dxb-live-power-interactive-cop28-event/2.png"],
+    "images": [
+      {
+        "src": "/projects/dxb-live-power-interactive-cop28-event/1.png",
+        "tag": ""
+      },
+      {
+        "src": "/projects/dxb-live-power-interactive-cop28-event/2.png",
+        "tag": ""
+      }
+    ],
     "title": "DXB Live - Power Interactive - COP28 Event"
   },
   {
-    "mainImage": "/projects/sirar-by-stc-blackhat-mea/main.png",
+    "mainImage": {
+      "src": "/projects/sirar-by-stc-blackhat-mea/main.png",
+      "tag": ""
+    },
     "description": "A range of solutions were provided at the Sirar by STC booth at BlackHat MEA. We aimed to deliver custom application integrated touch screens to enable the client for a seamless presentation of services and information. A Transparent OLED interface was used for Touch and throw where the users could simply select a topic from a carousel of topics and swipe up to play content on LED Screens.",
-    "images": ["/projects/sirar-by-stc-blackhat-mea/1.png","/projects/sirar-by-stc-blackhat-mea/2.png","/projects/sirar-by-stc-blackhat-mea/3.png"],
+    "images": [
+      { "src": "/projects/sirar-by-stc-blackhat-mea/1.png", "tag": "" },
+      { "src": "/projects/sirar-by-stc-blackhat-mea/2.png", "tag": "" },
+      { "src": "/projects/sirar-by-stc-blackhat-mea/3.png", "tag": "" }
+    ],
     "title": "Sirar by STC - BlackHat MEA"
   },
   {
-    "mainImage": "/projects/shomul-at-cityscape/main.png",
+    "mainImage": { "src": "/projects/shomul-at-cityscape/main.png", "tag": "" },
     "description": "We successfully implemented a cutting-edge interactive concept, the Automated Sliding Screen, at the Shomoul Stand during Cityscape 2023. Despite a tight timeline, our team delivered a comprehensive solution that creatively showcased various Shomoul’s  establishments. Through a tablet interface, users could select topics, triggering the sliding screen to dynamically display pertinent information about Shomoul's hotels in an engaging manner. ",
-    "images": ["/projects/shomul-at-cityscape/1.png","/projects/shomul-at-cityscape/2.png"],
+    "images": [
+      { "src": "/projects/shomul-at-cityscape/1.png", "tag": "" },
+      { "src": "/projects/shomul-at-cityscape/2.png", "tag": "" }
+    ],
     "title": "SHOMUL AT CITYSCAPE"
   },
   {
-    "mainImage": "/projects/saudi-downtown-company-cityscape-global-event/main.png",
+    "mainImage": {
+      "src": "/projects/saudi-downtown-company-cityscape-global-event/main.png",
+      "tag": ""
+    },
     "description": "At Cityscape Global 2023, we successfully implemented an immersive LED cube for Saudi Downtown booth, enhancing the visitor experience with an immersive installation. Tasked with presenting various upcoming projects of SDC in a unique way, the cube, shaped like a room, featured LED panels both inside and outside, displaying branded content. This strategic setup immersed visitors and called for attention of many more. The cube served as an impactful platform, influencing decisions and effectively showcasing the transformative potential of Saudi Downtown projects.",
-    "images": ["/projects/saudi-downtown-company-cityscape-global-event/1.png","/projects/saudi-downtown-company-cityscape-global-event/2.png"],
+    "images": [
+      {
+        "src": "/projects/saudi-downtown-company-cityscape-global-event/1.png",
+        "tag": ""
+      },
+      {
+        "src": "/projects/saudi-downtown-company-cityscape-global-event/2.png",
+        "tag": ""
+      }
+    ],
     "title": "Saudi Downtown Company - Cityscape Global  event "
   },
   {
-    "mainImage": "/projects/site-blackhat/main.png",
+    "mainImage": { "src": "/projects/site-blackhat/main.png", "tag": "" },
     "description": "We delivered multiple interactive screens with custom programming for SITE. These screens presented SITE's services and products in a modern, engaging manner, captivating booth visitors. Our solution successfully enhanced engagement, leaving a lasting impression and driving SITE's marketing objectives forward. ",
-    "images": ["/projects/site-blackhat/1.png","/projects/site-blackhat/2.png","/projects/site-blackhat/3.png"],
+    "images": [
+      { "src": "/projects/site-blackhat/1.png", "tag": "" },
+      { "src": "/projects/site-blackhat/2.png", "tag": "" },
+      { "src": "/projects/site-blackhat/3.png", "tag": "" }
+    ],
     "title": "SITE - blackhat"
   }
 ]
