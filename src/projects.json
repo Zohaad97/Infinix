@@ -85,8 +85,7 @@
     "description": "A range of solutions were provided at the Sirar by STC booth at BlackHat MEA. We aimed to deliver custom application integrated touch screens to enable the client for a seamless presentation of services and information. A Transparent OLED interface was used for Touch and throw where the users could simply select a topic from a carousel of topics and swipe up to play content on LED Screens.",
     "images": [
       { "src": "/projects/sirar-by-stc-blackhat-mea/1.png", "tag": "" },
-      { "src": "/projects/sirar-by-stc-blackhat-mea/2.png", "tag": "" },
-      { "src": "/projects/sirar-by-stc-blackhat-mea/3.png", "tag": "" }
+      { "src": "/projects/sirar-by-stc-blackhat-mea/2.png", "tag": "" }
     ],
     "title": "Sirar by STC - BlackHat MEA"
   },
