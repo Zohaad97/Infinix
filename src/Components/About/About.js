@@ -21,12 +21,10 @@ const About = () => {
 
   return (
     <Container hideBackground title={"About"} renderSubtitle={() => <div className="about-desc">
-      We specialize in crafting innovative technology solutions
-      that amplify marketing activations, drawing attention to
-      your campaign like never before. Our goal is to empower
-      your voice and ideas, ensuring they resonate louder
-      and reach further in the ever-evolving landscape
-      of immersive technologies.
+      We specialize in crafting innovative technology solutions that amplify
+      marketing activations, drawing attention tocyour campaignlike never before.
+      Our goal is to empower your voice and ideas, ensuring they resonate louder
+      and reach further in the ever-evolving landscape of immersive technologies.
 
 
     </div>
