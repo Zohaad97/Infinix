@@ -29,7 +29,7 @@ const About = () => {
 
     </div>
     } renderDescription={() => <h1 className="about-heading">
-      Our Winning <span className="blue-text">formula</span> is
+      OUR WINING <span className="blue-text">fORMULA</span> IS
     </h1>}
 
       renderBody={() => <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
