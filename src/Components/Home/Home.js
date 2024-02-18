@@ -149,8 +149,8 @@ const Home = () => {
       console.log({ screenWidth })
 
       if (screenWidth < 600) {
-        animateText(".move-text-1", ".target-div-1", 55);
-        animateText(".move-text-2", ".target-div-2", 55);
+        animateText(".move-text-1", ".target-div-1", 43);
+        animateText(".move-text-2", ".target-div-2", 43);
       } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);
@@ -476,12 +476,12 @@ const Home = () => {
                       Difference
                     </span>
                   </h1>
-                  <h1 className="h1 is-home-hero mobile">
-                    Technology <br /> that
-                    <span className="move-text-1 text-accent">Makes a</span>
-                    <span className="move-text-2 text-accent">Difference</span>
-
+                  <h1 class="h1 is-home-hero mobile">
+                    Technology <br/> that  <br/> 
+                    <span class="move-text-1 text-accent">Makes a</span>
+                    <span class="move-text-2 text-accent">Difference</span>
                   </h1>
+
 
                   <div className="hide-this">
                     <div className="home-cta_span">
@@ -1721,7 +1721,7 @@ const Home = () => {
               >
                 <div
                   style={{
-                    width: '36em',
+                    width: window.innerWidth < 600 ? '36em' : '22em',
                     WebkitTransform:
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     MozTransform:
@@ -1839,8 +1839,7 @@ const Home = () => {
                 <div className="logo__single-brand-partner bg-dark">
                   <div
                     style={{
-                      width: '10em',
-                      height: '6em',
+                      width: window.innerWidth < 600 ? '10em' : '6em',
                       WebkitTransform:
                         "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                       MozTransform:

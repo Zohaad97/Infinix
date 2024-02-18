@@ -8313,7 +8313,7 @@ a {
     height: 20em;
   }
   .single-service {
-    top: 250px;
+    top: 100px;
   }
   .button-outter {
     width: 70%;
@@ -9127,11 +9127,21 @@ a {
     grid-row-gap: 8px;
   }
   .move-text-1.text-accent {
-    display: inline-block;
+    display: inline; 
+    translate: none;
+    rotate: none;
+    scale: none;
+    font-size: 38px; 
+    transform: translate(0px, 0px);
   }
   .move-text-2.text-accent {
     margin-top: 60px;
-    display: inline-block;
+    display: inline; 
+    translate: none;
+    rotate: none;
+    scale: none;
+    font-size: 38px; 
+    transform: translate(0px, 0px);
   }
   .newsletter-button-text.text-3 {
     padding-top: 10px;
@@ -9142,7 +9152,7 @@ a {
     grid-row-gap: 16px;
   }
   .single-service {
-    top: 160px;
+    top: 100px;
   }
   .footer__sitemap-holder {
     align-items: flex-start;
