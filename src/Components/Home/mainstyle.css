@@ -8313,7 +8313,7 @@ a {
     height: 20em;
   }
   .single-service {
-    top: 100px;
+    top: 40px;
   }
   .button-outter {
     width: 70%;
@@ -9152,7 +9152,7 @@ a {
     grid-row-gap: 16px;
   }
   .single-service {
-    top: 100px;
+    top: 40px;
   }
   .footer__sitemap-holder {
     align-items: flex-start;
