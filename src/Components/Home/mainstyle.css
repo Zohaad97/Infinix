@@ -239,6 +239,11 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+
+#show-reel {
+  animation: rotate 8s linear infinite;
+}
+
 html.w-mod-touch * {
   background-attachment: scroll !important;
 }
@@ -3210,7 +3215,7 @@ a {
 .cut-edge.top-right-outside {
   width: 1.5em;
   transform-origin: 100% 0;
-  top: 0%;
+  top: 14px;
   bottom: auto;
   left: auto;
   right: 0.5px;
@@ -3224,12 +3229,26 @@ a {
   width: 1.5em;
   height: 1.5em;
   transform-origin: 100% 0;
-  top: 0%;
+  top: 14px;
   bottom: auto;
   left: 0.5px;
   right: auto;
   transform: translate(-100%);
 }
+
+.cut-edge.top-left-outside path {
+ fill:#1e252e;
+}
+
+.cut-edge.top-right-outside path {
+  fill:#1e252e;
+}
+
+.logos-expander path {
+  fill:#1e252e;
+}
+
+
 .cut-edge.bottom-right-outside {
   width: 1.2em;
   height: auto;
@@ -3240,6 +3259,7 @@ a {
   height: auto;
   left: -1.2em;
   right: auto;
+  top:35px;
 }
 .cut-edge.top-only {
   width: 2em;
@@ -3852,7 +3872,7 @@ a {
 }
 .record-div {
   width: 22.5%;
-  height: 3.5em;
+  height: 4em;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   flex-direction: column;
@@ -6167,6 +6187,10 @@ a {
   left: auto;
   right: auto;
 }
+
+.scroll-lottie path {
+  stroke: #30B1BB;
+}
 .back-to-top-arrow {
   width: 1.8em;
   height: 1.8em;
@@ -6791,6 +6815,7 @@ a {
 .floating-button {
   cursor: pointer;
   background-color: transparent;
+  animation: rotate 8s linear infinite;
 }
 
 .home__hero-arrrow-floating {
@@ -7749,6 +7774,7 @@ a {
   .cut-edge.top-right-outside.is-record {
     width: 18px;
     height: 18px;
+    top: 0px;
   }
   .cut-edge.top-right-outside.is-record.is-hidden-on-desktop {
     top: auto;
@@ -7762,11 +7788,13 @@ a {
   .cut-edge.bottom-left-outside {
     width: 18px;
     left: -18px;
+    top:22px
   }
   .cut-edge.top-only {
     width: 18px;
     height: 18px;
     top: -18px;
+    right: 12px;
   }
   .p-body-normal.text-3.line-height-1-5.z-index-5.is-testimonial {
     font-size: 16px;
@@ -9309,4 +9337,13 @@ a {
   font-style: normal;
 
   font-display: swap;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -3,6 +3,7 @@ import "../Home/mainstyle.css";
 import BrandPartner from "../assets/images/brand_partner.svg";
 import Interactive_Installation from "../assets/images/Interactive_Installation.svg";
 import programming from "../assets/images/programming.svg";
+import ServiceIcon from "../assets/images/service-icon.svg";
 import layer_1_3 from "../assets/images/Vector.svg";
 import background from "../assets/images/background-500.jpg";
 import v_rentals from "../assets/images/V Rentals.svg";
@@ -476,12 +477,12 @@ const Home = () => {
                     </span>
                   </h1>
                   <h1 className="h1 is-home-hero mobile">
-                    Technology <br /> that 
+                    Technology <br /> that
                     <span className="move-text-1 text-accent">Makes a</span>
                     <span className="move-text-2 text-accent">Difference</span>
-                  
+
                   </h1>
-                 
+
                   <div className="hide-this">
                     <div className="home-cta_span">
                       <div className="span-element">
@@ -531,7 +532,7 @@ const Home = () => {
                   />
                 </button>
 
-                
+
               </div>
 
             </div>
@@ -673,7 +674,7 @@ const Home = () => {
                                 </div>
                               </div>
                               <img
-                                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f32f6bda170853c4dea2_VectorTest.svg"
+                                src={ServiceIcon}
                                 loading="lazy"
                                 alt=""
                                 className="cut-edge top-right is-services"
@@ -727,7 +728,7 @@ const Home = () => {
                                 </div>
                               </div>
                               <img
-                                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f32f6bda170853c4dea2_VectorTest.svg"
+                                src={ServiceIcon}
                                 loading="lazy"
                                 alt=""
                                 className="cut-edge top-right is-services"
@@ -778,7 +779,7 @@ const Home = () => {
                                 </div>
                               </div>
                               <img
-                                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f32f6bda170853c4dea2_VectorTest.svg"
+                                src={ServiceIcon}
                                 loading="lazy"
                                 alt=""
                                 className="cut-edge top-right is-services"
@@ -827,7 +828,7 @@ const Home = () => {
                                 </div>
                               </div>
                               <img
-                                src="https://assets-global.website-files.com/63793925c7db23ce040b0824/64f5f32f6bda170853c4dea2_VectorTest.svg"
+                                src={ServiceIcon}
                                 loading="lazy"
                                 alt=""
                                 className="cut-edge top-right is-services"

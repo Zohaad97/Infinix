@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
   return (
     <Container
+      hideBottomBackground
       title={"Contact Us"}
       renderBody={() => (
         <div className="contact-container">

@@ -21,6 +21,8 @@ import Footer from "../Footer/Footer";
 import "../About/About.css";
 import "../Services/Service.css";
 import { FooterMain } from "../Footer/FooterMain";
+import CurveRight from "./CurveRight";
+import CurveLeft from "./CurveLeft";
 gsap.registerPlugin(ScrollTrigger);
 
 const Container = ({
@@ -29,7 +31,8 @@ const Container = ({
   renderDescription,
   renderBody,
   renderExtra,
-  hideBackground = false
+  hideTopBackground = false,
+  hideBottomBackground = false,
 }) => {
   useGSAP(() => {
     gsap.fromTo(
@@ -343,7 +346,9 @@ const Container = ({
               <div className="container-small is-track-record remove-bottom_space">
 
                 <div className="record-div bg--4">
-                 
+                  <CurveLeft hideOnDesktop />
+                  <CurveLeft />
+                  <CurveRight />
                   <div className="record__heading-div">
                     <h2 style={{ textAlign: 'center' }} className="p-leading opacity-06">{title}</h2>
                   </div>
@@ -375,7 +380,7 @@ const Container = ({
 
         {renderExtra && renderExtra()}
 
-        {!hideBackground && (<div
+        {!hideTopBackground && (<div
           style={{ top: "-5%" }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
@@ -388,15 +393,15 @@ const Container = ({
             alt=""
             className="gradient__image is-home-hero-right"
           />
-         
+
         </div>)}
 
-        {!hideBackground && (<div
+        {!hideBottomBackground && (<div
           style={{ top: "50%" }}
           data-w-id="83518ac2-f205-f7c2-7dd0-8484af416ef0"
           className="gradient__image-wrapper"
         >
-         <img
+          <img
             src={background}
             loading="eager"
             sizes="100vw"
@@ -404,7 +409,7 @@ const Container = ({
             alt=""
             className="gradient__image is-home-hero"
           />
-         
+
         </div>)}
 
         <FooterMain />

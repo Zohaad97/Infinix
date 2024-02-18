@@ -1,0 +1,7 @@
+const CurveRight = () => {
+  return (<svg  class="cut-edge top-left-outside"  xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M-3.40949e-06 4.64916e-06C21.5391 2.76615e-06 39 17.461 39 39L39 1.23967e-06L-3.40949e-06 4.64916e-06Z" fill="#262D29"/>
+  </svg>)
+}
+
+export default CurveRight

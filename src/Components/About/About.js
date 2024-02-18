@@ -20,7 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 const About = () => {
 
   return (
-    <Container hideBackground title={"About"} renderSubtitle={() => <div className="about-desc">
+    <Container title={"About"} renderSubtitle={() => <div className="about-desc">
       We specialize in crafting innovative technology solutions that amplify
       marketing activations, drawing attention tocyour campaignlike never before.
       Our goal is to empower your voice and ideas, ensuring they resonate louder
@@ -104,7 +104,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="approach-right is-single-process">
+          <div className="approach-right is-single-process hide-on-mobile">
             <div style={{top:'20vh'}} className="single_process-sticky-heading">
               <img src={Circle} alt="" />
             </div>

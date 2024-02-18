@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 500px;
 }
 
 .contact-left {
@@ -28,12 +27,14 @@
 /* Styles for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 767px) {
   .contact-heading {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   .contact-container {
     height: auto;
     flex-direction: column;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 

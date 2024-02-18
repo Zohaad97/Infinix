@@ -119,6 +119,9 @@
 
 
 @media screen and (max-width: 767px) {
+  .approach-heading {
+    text-align: center;
+  }
   .approach-container {
     flex-direction: column-reverse;
     margin: 0;
