@@ -33,15 +33,11 @@ const Project = () => {
             <h2 className="p-leading opacity-06">Projects</h2>
           </div>
         </div>
-        <h2 style={{ whiteSpace: 'nowrap' }} className="project-blue-text">
-
-
-          <span className="project-heading-home">Empower Your Activations with &nbsp;</span> <br />
-          Engagement Driven
-          <span className="project-heading-home">&nbsp;Technology</span>
-
-
-        </h2>
+        <h1 style={{ whiteSpace: 'nowrap', lineHeight: 1.2 }} className="about-heading">
+          Empower Your Activations with <br />
+          <span className="blue-text">Engagement Driven </span>
+          Technology
+        </h1>
 
         <ProjectList items={firstFourItems} />
         <div className="logos-expander bg--4">

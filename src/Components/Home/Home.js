@@ -476,11 +476,12 @@ const Home = () => {
                     </span>
                   </h1>
                   <h1 className="h1 is-home-hero mobile">
-                    Technology that
-                    <br />
+                    Technology <br /> that 
                     <span className="move-text-1 text-accent">Makes a</span>
                     <span className="move-text-2 text-accent">Difference</span>
+                  
                   </h1>
+                 
                   <div className="hide-this">
                     <div className="home-cta_span">
                       <div className="span-element">
@@ -537,17 +538,6 @@ const Home = () => {
 
             <div className="home-bg">
               <div className="home__hero-bg">
-                <a
-                  href="#"
-                  className="cut-edge is-home-hero home-mobile is-link w-inline-block"
-                >
-                  <img
-                    src="https://assets-global.website-files.com/63793925c7db23ce040b0824/650ad622817c9f1e05d281c4_white-side.svg"
-                    loading="lazy"
-                    alt=""
-                    className="cut-edge is-home-hero home-mobile"
-                  />
-                </a>
               </div>
             </div>
 
@@ -776,8 +766,7 @@ const Home = () => {
                                 className="service__single-text-block"
                               >
                                 <h3 className="p-leading line-height-1-1 is-service-single-text text-balance">
-                                  Programming & Gaming Solution For Events &
-                                  Exhibitions
+                                  Programming & Gaming
                                 </h3>
                                 <div className="service_single-small-wrapper">
                                   <div className="p-small text-4 is-bigger is-services-tablet">
@@ -1731,7 +1720,7 @@ const Home = () => {
               >
                 <div
                   style={{
-                    width: '16em',
+                    width: '36em',
                     WebkitTransform:
                       "translate3d(0, 3em, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",
                     MozTransform:
@@ -1837,7 +1826,7 @@ const Home = () => {
               </div>
               <div
                 data-w-id="d028ce38-b804-de18-8480-4aa4e1dcf3b5"
-                className="logo__single hide-on-desktop bg-dark"
+                className="logo__single hide-on-desktop is-empty"
               ></div>
               <div className="logo__single is-empty hide-on-mobile"></div>
 
@@ -1849,7 +1838,7 @@ const Home = () => {
                 <div className="logo__single-brand-partner bg-dark">
                   <div
                     style={{
-                      width: '7em',
+                      width: '10em',
                       height: '6em',
                       WebkitTransform:
                         "translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)",

@@ -761,6 +761,7 @@ textarea.w-select {
 @media screen and (max-width: 991px) {
   .infinix-desc {
     font-size: 32px;
+    margin-top: 12px;
   }
   .w-container {
     max-width: 728px;
@@ -2665,7 +2666,7 @@ a {
     font-size: 12px;
   }
   .partner-item h4 {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
@@ -3277,7 +3278,7 @@ a {
 }
 
 .p-body-large {
-  font-size: 29px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -4955,6 +4956,11 @@ a {
 
 /* Media query for mobile responsiveness */
 @media (max-width: 767px) {
+
+  .service__single-image-wrap img {
+   height: 53px;
+  }
+
   .footer-content-row {
     flex-direction: column;
   }
@@ -4983,6 +4989,7 @@ a {
   }
   .infinix-desc {
     font-size: 28px;
+    margin-top: 12px;
   }
   .footer-new {
     grid-template-columns: 1fr;
@@ -6874,6 +6881,7 @@ a {
   }
   .infinix-desc {
     font-size: 20px;
+    margin-top: 12px;
   }
 }
 
@@ -6881,6 +6889,7 @@ a {
 @media (min-width: 993px) and (max-width: 1200px) {
   .infinix-desc {
     font-size: 24px;
+    margin-top: 12px;
   }
   .partner-item img {
     height: 320px;
@@ -6891,6 +6900,7 @@ a {
 @media (min-width: 1201px) {
   .infinix-desc {
     font-size: 29px;
+    margin-top: 12px;
   }
   .partner-item img {
     height: 420px;
@@ -6953,10 +6963,10 @@ a {
   }
   .p-leading.line-height-1-1.is-service-single-text {
     padding-right: 29%;
-    font-size: 28px;
+    font-size: 22px;
   }
   .p-body {
-    font-size: 18px;
+    font-size: 14px;
   }
   .p-body.text-3.opacity-08.text-balance.is-faq-question {
     font-size: 20px;
@@ -7134,8 +7144,8 @@ a {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
-    height: 350px;
-    padding-bottom: 40px;
+    height: 100%;
+    padding-bottom: 35px;
   }
   .service-item,
   .service-item.is-service-index {
@@ -7191,7 +7201,7 @@ a {
     height: 160px;
   }
   .logo__single-brand-partner {
-    width: 38.7%;
+    width: 33.7%;
     height: 100%;
   }
   .logo__heading-brand h2 {
@@ -7207,7 +7217,7 @@ a {
     padding-left: 24px;
   }
   .logo__heading-brand {
-    width: 60.65%;
+    width: 100%;
     height: 160px;
   }
   .testimonial__single-item {
@@ -7419,15 +7429,15 @@ a {
     padding-right: 0;
   }
   .section.track__record {
-    padding: 19px 19px;
+    padding: 12px 12px;
   }
   .section.is-service.is-accordion {
     padding-top: 48px;
     padding-bottom: 48px;
   }
   .section.is-full.logo-changer {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .section.is-resources {
     margin-top: 0;
@@ -7494,7 +7504,7 @@ a {
   }
   .p-leading.line-height-1-1.is-service-single-text {
     padding-right: 10%;
-    font-size: 32px;
+    font-size: 22px;
   }
   .p-leading.is-bigger {
     font-size: 24px;
@@ -7594,8 +7604,8 @@ a {
     padding-right: 50px;
   }
   .container-small {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .container-small.is-track-record {
     padding-bottom: 8px;
@@ -7824,6 +7834,7 @@ a {
   .service-item,
   .service-item.is-service-index {
     width: 100%;
+    height: 177px;
   }
   .service__single-arrow {
     top: 8px;
@@ -7906,7 +7917,7 @@ a {
   }
 
   .logo__single-brand-partner {
-    width: 50.6%;
+    width: 33.6%;
     height: 100%;
     padding: 10px;
   }
@@ -7922,8 +7933,8 @@ a {
   }
 
   .logo__heading-brand {
-    width: 66%;
-    height: 120px;
+    width: 100%;
+    height: 130px;
     padding: 10px;
   }
 
@@ -8159,7 +8170,7 @@ a {
     margin-top: 4px;
   }
   .p-body-large {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
   }
@@ -8398,8 +8409,8 @@ a {
   }
 
   .section.is-full.logo-changer.in-home.is-8 {
-    padding-left: 19px;
-    padding-right: 19px;
+    padding-left: 12px;
+    padding-right: 12px;
     overflow: hidden;
   }
   .section.is-testimonials {
@@ -8435,7 +8446,7 @@ a {
   }
 
   .p-body-large {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
   }
@@ -8599,7 +8610,7 @@ a {
   }
   .container-large.hero-content {
     grid-row-gap: 16px;
-    justify-content: flex-end;
+    justify-content: center;
     padding-bottom: 124px;
     padding-left: 24px;
     padding-right: 20px;
@@ -9048,11 +9059,10 @@ a {
   }
   .home__hero-arrow-wrap {
     z-index: 4;
-    width: 48px;
-    height: 50px;
-    top: 25%;
-    bottom: auto;
-    right: 4px;
+    width: 84px;
+    height: 84px;
+    bottom: 20px;
+    right: 20px;
   }
   .single__wrapper {
     grid-row-gap: 16px;
