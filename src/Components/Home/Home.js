@@ -477,7 +477,7 @@ const Home = () => {
                     </span>
                   </h1>
                   <h1 class="h1 is-home-hero mobile">
-                    Technology <br/> that  <br/> 
+                    Technology <br /> that  <br />
                     <span class="move-text-1 text-accent">Makes a</span>
                     <span class="move-text-2 text-accent">Difference</span>
                   </h1>
@@ -571,7 +571,6 @@ const Home = () => {
             <div className="page-spacing__medium z-index-5">
               <div className="container-small">
                 <div className="section__home-about">
-                  <div className="spacing-container-03"></div>
                   <div id="difference" className="spacing-container-03"></div>
                   <div className="wrapper__teleport">
                     <div ref={targetDiv1} className="target-div-1 z-index-5"></div>
@@ -583,7 +582,59 @@ const Home = () => {
                     data-w-id="581c9748-1d05-0e08-4e64-c932eb159c10"
                     className="separator bg--0"
                   ></div>
-                  <div className="spacing-container-02"></div>
+                  {/* <div className="spacing-container-02"></div>
+                  <div className="home__about-wrapper-inner">
+                    <div className="column-50 flex-vertical">
+                      <div className="p-body-large text-2 text-lighter sticky-heading mobile-h2">
+                        Why we exist?
+                      </div>
+                    </div>
+                    <div className="column-50 flex-vertical">
+                      <div
+                        scrub-each-word=""
+                        text-split=""
+                        className="infinix-desc text-balance is-90percent"
+                      >
+                        <p>
+                          At Infinix Innovations, we surpass the role of
+                          traditional technology providers We go beyond providing
+                          interactive technology for events and exhibitions,
+                          specializing in <em>engineering</em>  <em>unique </em>  <em>products</em> and &nbsp;
+                          <em style={{ color: '#69D3DB' }}> solutions.</em> Our dedication lies in boosting <em>marketing
+                          </em> <em style={{ color: '#69D3DB' }}>campaigns</em> by using   <em>experiential technology</em> to create &nbsp;
+                          <em style={{ color: '#69D3DB' }}> &nbsp; state of the art experiences</em> for every project.
+                        </p>
+                      </div>
+                    </div>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-id="739117db-c5ef-61c8-e2f2-1eaf84c45ea8"
+              className="gradient__image-wrapper"
+            >
+              <img
+                src={background}
+                loading="lazy"
+                alt=""
+                className="gradient__image is-4 opacity-06"
+              />
+            </div>
+          </section>
+
+
+          <section className="section track__record logo-changer container-small">
+            <Project />
+          </section>
+
+          <section
+            tr-scrollflip-scrubend="40% center"
+            className="section is-not-overflow"
+          >
+            <div className="page-spacing__medium z-index-5">
+              <div className="container-small">
+                <div className="section__home-about">             
                   <div className="home__about-wrapper-inner">
                     <div className="column-50 flex-vertical">
                       <div className="p-body-large text-2 text-lighter sticky-heading mobile-h2">
@@ -611,19 +662,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div
-              data-w-id="739117db-c5ef-61c8-e2f2-1eaf84c45ea8"
-              className="gradient__image-wrapper"
-            >
-              <img
-                src={background}
-                loading="lazy"
-                alt=""
-                className="gradient__image is-4 opacity-06"
-              />
-            </div>
+          
           </section>
         </div>
+
         <section className="section is-service z-index-5">
           <div style={{ paddingBottom: '10em' }}>
             <div className="container-small is-service">
@@ -857,9 +899,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section track__record logo-changer container-small">
-          <Project />
-        </section>
+
         <section className="section is-full logo-changer container-small page-spacing__large">
           <div className="space-top radius-36" style={{ width: '100%' }}>
             <div className="logos__inner-wrapper">
