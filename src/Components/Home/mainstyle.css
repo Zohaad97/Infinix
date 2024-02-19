@@ -3215,7 +3215,7 @@ a {
 .cut-edge.top-right-outside {
   width: 1.5em;
   transform-origin: 100% 0;
-  top: 14px;
+  top: 0px;
   bottom: auto;
   left: auto;
   right: 0.5px;
@@ -3229,7 +3229,7 @@ a {
   width: 1.5em;
   height: 1.5em;
   transform-origin: 100% 0;
-  top: 14px;
+  top: 0px;
   bottom: auto;
   left: 0.5px;
   right: auto;
