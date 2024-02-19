@@ -120,7 +120,7 @@ const Home = () => {
         path.setAttribute("fill", "currentColor");
       });
 
-      function animateText(textClass, targetClass, offset = 0) {
+      function animateText(textClass, targetClass, offset = 0, isMobile = false) {
         let textElements = document.querySelectorAll(textClass);
         let targetDiv = document.querySelector(targetClass);
         let endX = targetDiv.getBoundingClientRect().left;
@@ -133,11 +133,11 @@ const Home = () => {
           console.log({ startX, endX, index })
           gsap.to(textToMove, {
             x: endX - startX + offset,
-            y: finalY - startY,
+            y: finalY - startY + (isMobile ? 150 : 50),
             fontSize: getFontSize() + "px",
             scrollTrigger: {
               trigger: ".teleport-component",
-              start: "2% top",
+              start: "0% top",
               end: "center top",
               scrub: 0.5,
             },
@@ -634,7 +634,7 @@ const Home = () => {
           >
             <div className="page-spacing__medium z-index-5">
               <div className="container-small">
-                <div className="section__home-about">             
+                <div className="section__home-about">
                   <div className="home__about-wrapper-inner">
                     <div className="column-50 flex-vertical">
                       <div className="p-body-large text-2 text-lighter sticky-heading mobile-h2">
@@ -662,7 +662,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          
+
           </section>
         </div>
 
