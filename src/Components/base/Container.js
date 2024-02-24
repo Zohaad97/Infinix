@@ -45,22 +45,6 @@ const Container = ({
         ease: "power1.inOut",
       }
     );
-    let tl = gsap.timeline({
-      delay: 0.5,
-      defaults: { duration: 0.2, ease: "power4.out" },
-    });
-    function progressUpdate() {
-      let progress = Math.round(this.progress() * 99);
-      $(".loader_number").text(progress);
-    }
-    tl.to(".loader_bottom_bar", {
-      width: "100%",
-      duration: 2.7,
-      onUpdate: progressUpdate,
-      ease: "power4.out", // Add your desired easing function here
-    }).set(".loader", {
-      display: "none",
-    });
 
     document.addEventListener("DOMContentLoaded", function () {
       // Initialize Swiper

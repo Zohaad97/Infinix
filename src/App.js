@@ -7,7 +7,8 @@ import Contact from "./Components/Contact/Contact";
 import ServiceDesc from "./Components/ServiceDesc/ServiceDesc";
 import User from "./Components/User/User";
 import ProjectPage from "./Components/ProjectPage/ProjectPage";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -26,6 +27,9 @@ const ScrollToTop = () => {
 function App() {
   return (
     <>
+      <ToastContainer autoClose={5000}
+        hideProgressBar={true}
+        closeOnClick />
       <Router >
         <ScrollToTop />
         <Switch>

@@ -5,10 +5,65 @@ import { gsap, ScrollTrigger } from "gsap/all";
 import "swiper/css";
 
 import Container from "../base/Container";
-
+import { toast } from 'react-toastify';
+import { useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone, setPhone] = useState('')
+  const [message, setMessage] = useState('')
+  const onSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateForm()) return;
+
+    fetch('https://infinix.me/mail/send.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, phone, message }),
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        toast("Request sent successfully!")
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }
+
+
+
+  const validateForm = () => {
+    console.log({ email, })
+    if (!email || !validateEmail(email)) {
+      alert('Please enter a valid email.');
+      return false;
+    }
+    if (!name) {
+      alert('Please enter your name.');
+      return false;
+    }
+    if (!message) {
+      alert('Please enter a message.');
+      return false;
+    }
+    return true;
+  };
+
+  function validateEmail(email) {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  }
+
+  const alert = (message) => {
+    toast(message, { type: 'error', autoClose: 3000 })
+  }
+
   return (
     <Container
       hideBottomBackground
@@ -26,14 +81,10 @@ const Contact = () => {
           </div>
 
           <div class="column-50 flex-vertical">
-            <div class="w-form">
+            <div>
               <form
-                id="wf-form-Contact-form"
-                name="wf-form-Contact-form"
-                data-name="Contact form"
-                method="get"
-                data-wf-page-id="652ab251b8dc5f55fea70f25"
-                data-wf-element-id="dd55e6bb-92a3-3e99-6015-c3c57372d774"
+
+                method="post"
               >
                 <div class="footer__form-field-wrapper">
                   <input
@@ -45,6 +96,8 @@ const Contact = () => {
                     type="text"
                     id="Name-5"
                     required=""
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                   <input
                     class="footer__form-field w-input"
@@ -55,6 +108,8 @@ const Contact = () => {
                     type="email"
                     id="Email-5"
                     required=""
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <input
                     class="footer__form-field w-input phone"
@@ -64,6 +119,8 @@ const Contact = () => {
                     placeholder="Phone"
                     type="tel"
                     id="Phone-3"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
 
                   <textarea
@@ -74,12 +131,15 @@ const Contact = () => {
                     placeholder="Your message*"
                     required=""
                     class="footer__form-field is-text w-input"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                   <div
-                    data-w-id="3f146fd9-1078-aa91-a0fc-1dd29c24f774"
+
                     class="footer__submit-button-wrapper"
                   >
                     <input
+                      onClick={onSubmit}
                       type="submit"
                       data-wait="Please wait..."
                       class="footer__submit-button text-3 w-button"
