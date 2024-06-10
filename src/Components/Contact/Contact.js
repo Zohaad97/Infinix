@@ -14,25 +14,34 @@ const Contact = () => {
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [message, setMessage] = useState('')
+  const [isLoading, setLoading] = useState(false)
   const onSubmit = (e) => {
     e.preventDefault();
+    setLoading(true)
 
-    if (!validateForm()) return;
+    if (!validateForm()) {
+      setLoading(false)
+      return
+    }
 
-    fetch('https://infinix.me/mail/send.php', {
+    fetch('https://infinix.me/mail/contact.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ name, email, phone, message }),
     })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
+      .then(() => {
         toast("Request sent successfully!")
+        setLoading(false)
+        setName('')
+        setEmail('')
+        setPhone('')
+        setMessage('')
       })
       .catch((error) => {
         console.error('Error:', error);
+        setLoading(false)
       });
   }
 
@@ -139,11 +148,12 @@ const Contact = () => {
                     class="footer__submit-button-wrapper"
                   >
                     <input
+                      disabled={isLoading}
                       onClick={onSubmit}
                       type="submit"
                       data-wait="Please wait..."
                       class="footer__submit-button text-3 w-button"
-                      value="Send Message"
+                      value={isLoading ? "Please wait..." : "Send Message"}
                     />
                   </div>
                 </div>
