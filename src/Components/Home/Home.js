@@ -66,7 +66,7 @@ const Home = () => {
         ease: "power1.inOut",
       }
     );
- 
+
 
     const fontSizeBreakpoints = {
       small: 38,
@@ -125,7 +125,7 @@ const Home = () => {
               trigger: ".teleport-component",
               start: "0% top",
               end: "center top",
-              scrub: 1
+              scrub: 0.5
             },
           });
         });
@@ -135,8 +135,8 @@ const Home = () => {
       console.log({ screenWidth })
 
       if (screenWidth < 600) {
-        animateText(".move-text-1", ".target-div-1", 43);
-        animateText(".move-text-2", ".target-div-2", 43);
+        animateText(".move-text-1", ".target-div-1", 43, true);
+        animateText(".move-text-2", ".target-div-2", 43, true);
       } else {
         animateText(".move-text-1", ".target-div-1", -30);
         animateText(".move-text-2", ".target-div-2", 85);

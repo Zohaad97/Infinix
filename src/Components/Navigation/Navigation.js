@@ -1,4 +1,4 @@
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import nav_arrow from "../assets/images/Arrow 7.svg";
 const Navigation = () => {
   return (
@@ -265,7 +265,7 @@ const Navigation = () => {
             <div className="nav_main-bottom-wrapper">
               <a
                 stagger-link=""
-                href="https://www.upwork.com/freelancers/hristodikov/"
+                href="https://www.instagram.com/infinixinnovations?igsh=MXVqaHV2emVxdHRiZA%3D%3D&utm_source=qr"
                 className="menu-link w-inline-block"
               >
                 <div stagger-link-text="" className="nav_fontsize-30 ">
@@ -274,14 +274,14 @@ const Navigation = () => {
               </a>
               <a
                 stagger-link=""
-                href="https://www.fiverr.com/dikovh"
+                href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO"
                 className="menu-link w-inline-block"
               >
                 <div stagger-link-text="" className="nav_fontsize-30 ">
                   Facebook
                 </div>
               </a>
-             
+
               <a
                 stagger-link=""
                 href="https://youtube.com/@InfinixInnovations-hp1sv?si=5lHA0_yxThH9b08t"
