@@ -1,5 +1,55 @@
+import { useState } from "react";
 import RightArrow from "../assets/images/right-arrow.svg";
+import { toast } from 'react-toastify';
 const NewsLetter = () => {
+
+  const [email, setEmail] = useState('')
+  const [isLoading, setLoading] = useState(false)
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
+
+    if (!validateForm()) {
+      setLoading(false)
+      return
+    }
+
+    fetch('https://infinix.me/mail/subscribe.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, }),
+    })
+      .then(() => {
+        toast("Request sent successfully!")
+        setLoading(false)
+        setEmail('')
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        setLoading(false)
+      });
+  }
+
+
+
+  const validateForm = () => {
+    if (!email || !validateEmail(email)) {
+      alert('Please enter a valid email.');
+      return false;
+    }
+    return true;
+  };
+
+  function validateEmail(email) {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  }
+
+  const alert = (message) => {
+    toast(message, { type: 'error', autoClose: 3000 })
+  }
   return (
     <div className="blog__newsletter-wrapper is-home radius-16">
       <div className="container-medium" style={{ justifyContent: 'space-around', alignItems: 'center', display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -19,44 +69,36 @@ const NewsLetter = () => {
         </div>
         <div className="blog__newsletter-form">
           <div
-            fs-formsubmit-enhance="true"
-            fs-formsubmit-element="form"
             className="blog__newsletter-block w-form"
           >
             <form
               id="email-form"
               name="email-form"
-              data-name="Email Form"
-              action="https://assets.mailerlite.com/jsonp/614959/forms/100454619644167706/subscribe"
-              method="post"
               className="blog__newsletter-form"
-              data-wf-page-id="652ab251b8dc5f55fea70ec0"
-              data-wf-element-id="bd262f9d-3f0a-c3cc-1540-073a764f18cc"
             >
               <input
-
                 className="blog__newsletter-field is-home w-input"
                 maxlength="256"
-                name="fields[email]"
-                data-name="fields[email]"
+                name="email"
                 placeholder="Email Address"
                 type="email"
-                id="fields[email]"
                 required=""
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div className="newsletter__button-wrapper is-home">
                 <div
                   data-w-id="3c0b519a-a9a3-60c4-48e0-5d02c9bac54d"
                   className="newsletter-button-text text-3"
                 >
-                  Subscribe
+                  {isLoading ? "Please wait..." : "Subscribe"}
                 </div>
                 <input
+                  onClick={onSubmit}
                   type="submit"
-                  data-wait="Please wait..."
-                  data-w-id="bd262f9d-3f0a-c3cc-1540-073a764f18cf"
+                  disabled={isLoading}
                   className="newsletter__submit-button-inner line-height-1 w-button"
-                  value="Subscribe"
+                  value={isLoading ? "Please wait..." : "Subscribe"}
                 />
                 <img
                   data-w-id="bd262f9d-3f0a-c3cc-1540-073a764f18d0"
