@@ -1,6 +1,7 @@
 import YoutubeIcon from "../assets/images/footer-youtube.svg"
 import InstaIcon from "../assets/images/footer-instagram.svg"
 import FacebookIcon from "../assets/images/footer-facebook.svg"
+import LinkedInIcon from "../assets/images/footer-LinkedIn.svg"
 import YoutubeIconHover from "../assets/images/footer-youtube-hover.svg"
 import InstaIconHover from "../assets/images/footer-instagram-hover.svg"
 import FacebookIconHover from "../assets/images/footer-facebook-hover.svg"
@@ -18,11 +19,11 @@ const Footer = () => {
           <div className="social-icons-wrapper">
             <a
               className="text-2 text-balance text-blue"
-              href="https://www.facebook.com/profile.php?id=61555398414386&mibextid=9R9pXO"
+              href="https://www.linkedin.com/company/infinix-innovations/"
               target="_blank"
             >
               <div className="footer-social-icon">
-                <img src={FacebookIcon} style={{ width: 17, height: 30 }} />
+                <img src={LinkedInIcon} style={{ width: 30, height: 30 }} />
               </div>
             </a>
             <a

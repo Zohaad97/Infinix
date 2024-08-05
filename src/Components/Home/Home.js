@@ -328,7 +328,7 @@ const Home = () => {
 
       if (showReel && showReelFloatingContainer && showReel[0].style && showReelFloatingContainer[0].style) {
         if (window.scrollY > window.innerHeight) {
-          showReelFloatingContainer[0].style.bottom = "50px";
+          showReelFloatingContainer[0].style.bottom = "100px";
           showReel[0].style.display = "flex";
         } else {
           showReelFloatingContainer[0].style.bottom = "-450px";
@@ -509,12 +509,14 @@ const Home = () => {
                     loading="lazy"
                     alt=""
                     className="hide-on-mobile"
+                   
                   />
                   <img
                     src={Group_3}
                     loading="lazy"
                     alt=""
                     className="hide-on-desktop"
+                    
                   />
                 </button>
 
